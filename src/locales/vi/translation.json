@@ -1,0 +1,2281 @@
+{
+  "navbar": {
+    "home": "Trang Chủ",
+    "area": "Khám Phá Khu Vực",
+    "trip_planner": "Lên Kế Hoạch Du Lịch",
+    "must_visit": "Những Điểm Nổi Bật",
+    "travel_journal": "Nhật Ký Du Lịch"
+  },
+  "hero": {
+    "subtitle": "Vẻ Đẹp Vượt Thời Gian, Chia Sẻ Bền Vững",
+    "title": "Vẻ Đẹp Trường Tồn Qua Thời Gian",
+    "subheading": "Khám phá di sản cổ xưa và vẻ thanh bình của Kurashiki",
+    "button": "Bắt Đầu Khám Phá",
+    "guide_text": "Hướng dẫn du lịch có ý thức về vẻ đẹp của Kurashiki"
+  },
+  "languages": {
+    "ja": "Tiếng Nhật",
+    "en": "Tiếng Anh",
+    "my": "Tiếng Myanmar",
+    "vi": "Tiếng Việt",
+    "ko": "Tiếng Hàn"
+  },
+  "about": {
+    "canal_title": "Khu Vực Kênh Bikan",
+    "canal_desc": "Trải nghiệm vẻ đẹp thanh bình của các kênh lịch sử và lối đi rợp bóng liễu, được bảo tồn hàng thế kỷ.",
+    "history_title": "Lịch Sử Sống Động",
+    "history_desc": "Đi bộ qua các kho hàng tường trắng kể câu chuyện về thương mại thời Edo ở Nhật Bản.",
+    "art_title": "Di Sản Nghệ Thuật Sinh Thái",
+    "art_desc": "Nơi đặt Bảo Tàng Nghệ Thuật Ohara, kết hợp kiệt tác toàn cầu với giá trị bền vững địa phương."
+  },
+  "attractions": {
+    "subtitle": "Những Điểm Nổi Bật Cần Tham Quan",
+    "title": "Các Địa Điểm Sinh Thái Được Chọn Lọc",
+    "desc": "Chúng tôi tin vào du lịch mang lại lợi ích cho đất và cộng đồng Kurashiki, bảo tồn vẻ đẹp cho các thế hệ mai sau"
+  },
+  "section": {
+    "title": "Những Điểm Nổi Bật",
+    "subtitle": "Các địa điểm sinh thái được chọn lọc",
+    "quote": "Chúng tôi tin vào du lịch mang lại lợi ích cho đất và cộng đồng Kurashiki.",
+    "details_btn": "Xem Chi Tiết Điểm"
+  },
+  "spot1": {
+    "title": "Khu Lịch Sử Kurashiki Bikan",
+    "tag": "Di Sản",
+    "desc": "Khu kênh đẹp như tranh nổi tiếng với các kho hàng tường trắng và cây liễu.",
+    "longDesc": "Khu Lịch Sử Kurashiki Bikan là một trong những khu di sản được bảo tồn đẹp nhất Nhật Bản, mang đến hành trình yên bình quay về thời kỳ Edo (1603-1867). Tên 'Bikan' nghĩa là 'Cảnh Đẹp,' và khu vực này xứng đáng với cái tên đó với hàng kho hàng 'Kura' tường trắng trang trí gạch đen 'Namako'. Lịch sử Kurashiki là trung tâm giao thương gạo quan trọng, và kênh chính được sử dụng để vận chuyển hàng hóa đến cảng gần đó.\n\nNgày nay, những ngôi nhà thương nhân và kho hàng được bảo tồn cẩn thận đã trở thành bảo tàng hàng đầu thế giới, quán cà phê boutique dễ thương, cửa hàng thủ công truyền thống và xưởng rượu sake địa phương. Khi đi dạo trên những con đường lát đá, dưới bóng cây liễu, bạn sẽ cảm nhận được lịch sử thương nhân sâu sắc. Khu vực này nổi bật với sự kết hợp kiến trúc Nhật truyền thống và ảnh hưởng phương Tây đầu thế kỷ 20, phản ánh sự hiện đại hóa nhanh chóng của Nhật Bản.\n\nDù bạn khám phá các ngõ nhỏ Honmachi và Higashimachi, đi thuyền thư giãn trên kênh, hay thưởng thức không khí tao nhã tại các quán trà, Bikan Quarter mang đến trải nghiệm văn hóa đích thực, vừa yên bình vừa giàu trí thức. Đây không chỉ là điểm tham quan; mà là bảo tàng sống nơi niềm tự hào lịch sử Kurashiki được bảo tồn cho các thế hệ tương lai.",
+    "fee": "Miễn Phí (Khu Vực)",
+    "avgDuration": "3 - 5 Giờ",
+    "hours_weekdays": "24 Giờ (Khu/Shops: 09:00 AM — 05:30 PM)",
+    "hours_sat": "24 Giờ (Khu/Shops: 09:00 AM — 06:00 PM)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.454261730419!2d133.7680072763261!3d34.59267199026365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551564796385adb%3A0x11ce094116eb0dae!2sKurashiki%20Bikan%20Historical%20Quarter!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "Đi bộ 10-15 phút từ Lối Ra Nam của Ga JR Kurashiki.",
+    "access_step2": "Đi qua khu mua sắm Ebisu-dori để có khung cảnh đẹp.",
+    "busDesc": "Xe buýt Kurashiki Loop dừng tại lối vào chính Bikan mỗi 20-30 phút.",
+    "walkDesc": "Đi bộ dễ dàng, bằng phẳng qua khu mua sắm địa phương.",
+    "highlight1": "Đi thuyền gỗ truyền thống trên kênh lịch sử",
+    "highlight2": "Các kho hàng tường trắng với hoa văn gạch đen",
+    "highlight3": "Bảo Tàng Nghệ Thuật Ohara - Bảo tàng nghệ thuật phương Tây đầu tiên Nhật Bản",
+    "wisdomTip": "Để tránh đông đúc và chụp ảnh đẹp nhất, hãy đến sớm vào buổi sáng (trước 10:00 AM) hoặc ở lại đến buổi chiếu sáng 'Kura-no-Akari'. Đừng quên khám phá các ngõ nhỏ Honmachi để thấy các sản phẩm thủ công địa phương!",
+    "openStatus": "Mở cửa tham quan"
+  },
+  "spot2": {
+    "title": "Bảo tàng Nghệ thuật Ohara",
+    "tag": "Nghệ thuật & Di sản",
+    "desc": "Bảo tàng đầu tiên của Nhật Bản về nghệ thuật phương Tây, trưng bày các kiệt tác thế giới.",
+    "longDesc": "Được thành lập năm 1930, công trình tân cổ điển này lưu giữ bộ sưu tập ấn tượng, bao gồm 'The Annunciation' của El Greco, 'Water Lilies' của Claude Monet và các tác phẩm của Gauguin và Picasso. Toàn bộ khu bảo tàng kết hợp tinh tế các kiệt tác phương Tây với linh hồn kiến trúc Nhật Bản.",
+    "fee": "Người lớn: ¥2,000 | Sinh viên: ¥500",
+    "avgDuration": "2-4 giờ",
+    "hours_weekdays": "09:00 — 17:00",
+    "hours_sat": "09:00 — 17:00 (Đóng cửa thứ Hai)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.743128475249!2d133.76848417625973!3d34.59422008928424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355157ca00000001%3A0x8677f50a80e7225c!2sOhara%20Museum%20of%20Art!5e0!3m2!1sen!2smm!4v1710000000000",
+    "access_step1": "Nằm trực tiếp bên trong Khu lịch sử Bikan.",
+    "access_step2": "Tìm tòa nhà phong cách đền Hy Lạp nổi bật gần cầu chính của kênh.",
+    "busDesc": "Đi bất kỳ xe buýt nào đến trạm 'Ohara Bijutsukan-mae'.",
+    "walkDesc": "Đi bộ 15 phút ngắm cảnh từ ga.",
+    "highlight1": "Các kiệt tác gốc của El Greco, Monet và Picasso",
+    "highlight2": "Kiến trúc tân cổ điển mang tính biểu tượng",
+    "highlight3": "Khu vườn phụ thanh bình và các phòng trưng bày thủ công truyền thống",
+    "wisdomTip": "Bảo tàng yên tĩnh nhất vào buổi sáng các ngày trong tuần. Đừng bỏ lỡ mặt ngoài được phủ đầy dây thường xuân.",
+    "openStatus": "Mở để tham quan"
+  },
+  "spot3": {
+    "title": "Kurashiki Ivy Square",
+    "tag": "Di sản công nghiệp",
+    "desc": "Một khu phức hợp gạch đỏ xinh đẹp được hồi sinh từ một nhà máy dệt lịch sử.",
+    "longDesc": "Được xây dựng năm 1889 như nhà máy bông hiện đại đầu tiên ở Nhật Bản, khu vực này nay là một ốc đảo văn hóa. Những bức tường gạch đỏ đặc trưng được phủ xanh bởi dây thường xuân, được trồng từ đầu để điều hòa nhiệt độ. Nơi đây có khách sạn, bảo tàng và các xưởng thủ công.",
+    "fee": "Vào cửa miễn phí (Bảo tàng tính riêng)",
+    "avgDuration": "1-2 giờ",
+    "hours_weekdays": "Mở 24 giờ (Khuôn viên)",
+    "hours_sat": "Mở 24 giờ (Khuôn viên)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5042861218524!2d133.771243976326!3d34.59140359033108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515638428e2c0b%3A0x29f474bc3f0c0cfc!2sKurashiki%20Ivy%20Square!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "Nằm ở phía đông của Khu lịch sử Bikan.",
+    "access_step2": "Tìm các bức tường gạch đỏ lớn và cổng phủ dây thường xuân.",
+    "busDesc": "Xuống tại trạm 'Cổng Nam Ivy Square'.",
+    "walkDesc": "Chỉ mất 5 phút đi bộ từ khu vực kênh Kurashiki.",
+    "highlight1": "Các bức tường gạch đỏ nổi bật được phủ dây thường xuân theo mùa",
+    "highlight2": "Xưởng gốm và dệt thủ công",
+    "highlight3": "Nhà tưởng niệm Kurabo lịch sử",
+    "wisdomTip": "Hãy đến vào mùa thu khi lá thường xuân chuyển sang màu đỏ rực rỡ.",
+    "openStatus": "Mở để tham quan"
+  },
+  "spot4": {
+    "title": "Kurashiki Ivy Square",
+    "tag": "Di sản & Văn hóa",
+    "desc": "Một khu phức hợp gạch đỏ xinh xắn với tường phủ dây thường xuân, từng là nhà máy bông hiện đại đầu tiên của Nhật Bản.",
+    "longDesc": "Kurashiki Ivy Square là một di tích bảo tồn lịch sử cách mạng công nghiệp của Nhật Bản. Ban đầu xây dựng năm 1889 như Nhà máy Dệt Kurashiki (Kurabō), đây là nhà máy bông hiện đại đầu tiên của đất nước. Sau khi kết thúc hoạt động công nghiệp, nhà máy gạch đỏ đã được cải tạo thành khu phức hợp văn hóa đa năng vào năm 1974.\n\nKiến trúc là ví dụ điển hình của thời Meiji, với gạch đỏ đặc trưng và dây thường xuân xanh mướt bao phủ các bức tường — được trồng để điều hòa nhiệt độ bên trong nhà máy. Ngày nay, nơi này chứa Nhà tưởng niệm Kurabō, ghi lại lịch sử dệt địa phương, và Bảo tàng Nghệ thuật Kojima Torajiro, trưng bày các tác phẩm phương Tây.\n\nKhách tham quan có thể dạo quanh sân 'Ivy Court', tham gia các workshop làm gốm truyền thống tại Ivy Pottery, hoặc nghỉ tại khách sạn boutique tích hợp trong công trình lịch sử. Đây là nơi kết hợp giáo dục lịch sử, cảm hứng nghệ thuật và thư giãn yên bình ngay trung tâm Khu Bikan.",
+    "fee": "Vào cửa miễn phí (Bảo tàng & workshop tính phí riêng)",
+    "avgDuration": "1,5 - 2,5 giờ",
+    "hours_weekdays": "Mở 24 giờ (Cửa hàng/Bảo tàng: 09:00 — 17:30)",
+    "hours_sat": "Mở 24 giờ (Cửa hàng/Bảo tàng: 09:00 — 18:00)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5042861218524!2d133.771243976326!3d34.59140359033108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515638428e2c0b%3A0x29f474bc3f0c0cfc!2sKurashiki%20Ivy%20Square!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "Chỉ cách Kênh Kurashiki chính 3 phút đi bộ.",
+    "access_step2": "Vào cổng chính bằng gạch; khu phức hợp có nhiều lối ra.",
+    "busDesc": "Đi xe Kurashiki Loop Bus đến trạm 'Bikan Historical Quarter'.",
+    "walkDesc": "Đi bộ ngắm cảnh 15 phút từ Ga Kurashiki South Exit.",
+    "highlight1": "Tái sử dụng kiến trúc công nghiệp thời Meiji đạt giải thưởng",
+    "highlight2": "Tường phủ dây thường xuân thay đổi màu theo mùa (xanh đậm đến đỏ rực)",
+    "highlight3": "Workshop văn hóa bao gồm làm gốm thủ công và hộp nhạc",
+    "wisdomTip": "Đừng bỏ lỡ ánh sáng ban đêm. Sau 18:00, ánh sáng vàng nhẹ trên gạch đỏ tạo bầu không khí huyền ảo, yên tĩnh hơn ban ngày.",
+    "openStatus": "Mở để tham quan"
+  },
+  "spot5": {
+    "title": "Phố Denim Kurashiki",
+    "tag": "Thời trang & Văn hóa",
+    "desc": "Nơi sinh ra denim Nhật Bản sôi động, mang đến kỹ thuật thủ công đẳng cấp và ẩm thực đường phố màu chàm độc đáo.",
+    "longDesc": "Phố Denim Kurashiki tôn vinh di sản của thành phố như 'Thánh địa Denim.' Khu vực Kojima gần đó là nơi đầu tiên sản xuất quần jeans nội địa ở Nhật Bản vào những năm 1960, và con phố này mang kỹ thuật thủ công đẳng cấp thế giới vào trung tâm Khu lịch sử Bikan. Denim Nhật nổi tiếng toàn cầu nhờ chất lượng vượt trội, dệt bằng khung cửi truyền thống, nhuộm chàm tự nhiên tạo ra các vệt màu độc đáo theo thời gian.\n\nKhi đi dạo, bạn sẽ tìm thấy các boutique chuyên biệt trưng bày từ denim 'selvedge' cao cấp, đồ workwear cứng cáp đến phụ kiện nhuộm chàm tinh tế và văn phòng phẩm. Ngoài thời trang, phố nổi tiếng với các món ăn sáng tạo 'Denim Blues' đầy màu sắc. Du khách thích thử 'Bánh bao chàm' (nhân thịt nhưng màu xanh chàm nổi bật), 'Kem mềm Denim' (hương ramune và việt quất) và thậm chí 'Burger Denim.'\n\nDù bạn là tín đồ denim muốn tìm chiếc quần thủ công hoàn hảo hay khách du lịch muốn trải nghiệm ẩm thực Instagram-worthy, Phố Denim là sự kết hợp hoàn hảo giữa niềm tự hào công nghiệp Kurashiki và tinh thần sáng tạo hiện đại. Phố được trang trí với các chi tiết denim và cửa hàng màu xanh, trở thành một trong những điểm nổi bật sôi động nhất trong khu lịch sử.",
+    "fee": "Vào cửa miễn phí (Chi phí mua sắm & ăn uống tùy)",
+    "avgDuration": "1 - 1,5 giờ",
+    "hours_weekdays": "10:00 — 17:30",
+    "hours_sat": "10:00 — 18:00",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.475458032731!2d133.76882647632593!3d34.592134590292554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515640e03145c5%3A0x4f705d26ac59c4bb!2sKurashiki%20Denim%20Street!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "Nằm ở lối vào phía nam của Khu lịch sử Bikan, gần cuối kênh.",
+    "access_step2": "Tìm ghế phủ denim đặc trưng và các biểu ngữ màu xanh lớn.",
+    "busDesc": "Muốn đến nhà máy thực tế, đi 'Jeans Bus' từ Ga Kurashiki đến khu vực Kojima (30-40 phút).",
+    "walkDesc": "Đi bộ 15 phút từ Ga Kurashiki South Exit.",
+    "highlight1": "Kỹ thuật denim Nhật Bản 'Selvedge' đẳng cấp thế giới",
+    "highlight2": "Bánh bao và Kem mềm Indigo Blue nổi tiếng",
+    "highlight3": "Phụ kiện thủ công và văn phòng phẩm nhuộm chàm",
+    "wisdomTip": "Nhiều cửa hàng miễn thuế cho khách quốc tế. Mang hộ chiếu để được giảm 10% quần jeans cao cấp! Kem mềm Denim là món nên thử với hương việt quất-ramune độc đáo.",
+    "openStatus": "Mở để tham quan"
+  },
+  "spot6": {
+    "title": "Đèn Đêm Kurashiki Bikan",
+    "tag": "Trải nghiệm không khí",
+    "desc": "Một sự biến hóa kỳ diệu của khu lịch sử, nơi bóng mờ nhẹ nhàng và ánh sáng ấm áp mang thời kỳ Edo trở lại.",
+    "longDesc": "Khi mặt trời lặn trên Khu lịch sử Kurashiki Bikan, khu vực biến hóa ngoạn mục gọi là 'Cảnh quan Đêm Kurashiki.' Thiết kế ánh sáng đẳng cấp thế giới này do nhà thiết kế ánh sáng nổi tiếng Motoko Ishii thực hiện, nhấn mạnh vẻ đẹp kiến trúc mà không áp đảo. Không giống các ánh sáng rực rỡ thông thường, ánh sáng ở đây nhẹ nhàng, ấm áp, tạo bóng mờ nhảy múa trên các kho trắng và phản chiếu tuyệt đẹp trên mặt nước tĩnh của Sông Kurashiki.\n\nÁnh sáng được bố trí cẩn thận để làm nổi bật kết cấu cầu đá, bóng dáng cây liễu rũ và kiến trúc nan truyền thống của các tòa nhà lịch sử. Bầu không khí về đêm tạo cảm giác yên bình, điện ảnh, như hành trình trở về thời Edo. Đi dọc các ngõ hẹp dưới ánh đèn đường nhẹ, bạn sẽ trải nghiệm hoàn toàn khác so với ban ngày — lãng mạn, yên tĩnh và sâu lắng. Đây là thời điểm hoàn hảo cho nhiếp ảnh gia chụp hiệu ứng 'gương' trên kênh hoặc cho các cặp đôi đi dạo sau khi đám đông ban ngày tan.",
+    "fee": "Miễn phí (Khu vực công cộng mở)",
+    "avgDuration": "45 phút - 1,5 giờ",
+    "hours_weekdays": "Hoàng hôn — 21:00 (Th10 - Th3) | Hoàng hôn — 22:00 (Th4 - Th9)",
+    "hours_sat": "Hoàng hôn — 21:00 (Th10 - Th3) | Hoàng hôn — 22:00 (Th4 - Th9)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5042861218524!2d133.771243976326!3d34.59140359033108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515638428e2c0b%3A0x29f474bc3f0c0cfc!2sKurashiki%20Ivy%20Square!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "Ánh sáng chiếu toàn bộ khu vực kênh và phố Honmachi/Higashimachi.",
+    "access_step2": "Tốt nhất bắt đầu từ cầu Nakabashi và đi dọc bờ sông.",
+    "busDesc": "Xe buýt đêm hạn chế, nhưng khu vực vẫn dễ đi bộ.",
+    "walkDesc": "Đi bộ yên tĩnh 15 phút từ Ga Kurashiki South Exit.",
+    "highlight1": "Ánh sáng ấm do Motoko Ishii thiết kế chuyên nghiệp",
+    "highlight2": "Phản chiếu 'Gương' tuyệt đẹp của tường trắng trên kênh",
+    "highlight3": "Bầu không khí điện ảnh và lãng mạn với ít đám đông",
+    "wisdomTip": "Ảnh 'Giờ Xanh' đẹp nhất chụp 15-20 phút sau hoàng hôn khi bầu trời xanh thẫm và ánh sáng vàng vừa bật. Hầu hết cửa hàng đóng cửa lúc 18:00, nên đây chỉ là trải nghiệm đi dạo ngắm cảnh.",
+    "openStatus": "Đêm nay được chiếu sáng tuyệt đẹp"
+  },
+  "seasonal": {
+    "subtitle": "Không khí",
+    "title": "Bốn mùa ở Kurashiki",
+    "spring_title": "MÙA XUÂN",
+    "spring_date": "Tháng 3 - Tháng 5",
+    "summer_title": "MÙA HÈ",
+    "summer_date": "Tháng 6 - Tháng 8",
+    "autumn_title": "MÙA THU",
+    "autumn_date": "Tháng 9 - Tháng 11",
+    "nightlight": "ÁNH SÁNG ĐÊM",
+    "nightlight_date": "Chiếu sáng",
+    "spring_desc": "Trải nghiệm vẻ đẹp thơ mộng của hoa anh đào phản chiếu trên kênh Kurashiki.",
+    "summer_desc": "Các lễ hội sôi động và đèn truyền thống thắp sáng những đêm hè.",
+    "autumn_desc": "Những bức tường trắng lịch sử nổi bật với lá phong đỏ rực.",
+    "night_desc": "Ánh sáng huyền diệu 'Kura-no-Akari' biến kênh thành một cảnh mơ vàng óng."
+  },
+  "concierge": {
+    "title": "Green Trip Concierge",
+    "desc": "Lên kế hoạch hành trình bền vững của bạn với những tiện ích du lịch được tuyển chọn. Chúng tôi giúp bạn khám phá Kurashiki trong khi giảm thiểu tác động môi trường.",
+    "book_hotel": "Chỗ nghỉ thân thiện môi trường",
+    "walking_map": "Hướng dẫn đi bộ kỹ thuật số",
+    "museum_pass": "Thẻ tham quan Bảo tàng Di sản",
+    "form_title": "Lên kế hoạch chuyến thăm",
+    "label_arrival": "Ngày đến",
+    "label_guests": "Số khách",
+    "submit_btn": "Nhận Hướng dẫn Xanh của Tôi"
+  },
+  "sidebar": {
+    "explore": "Khám phá Menu",
+    "search": "Tìm kiếm Kurashiki...",
+    "language": "Chọn ngôn ngữ"
+  },
+  "footer": {
+    "title": "Trải nghiệm",
+    "greentitle": "Vẻ đẹp vượt thời gian",
+    "subtitle": "của Kurashiki",
+    "navigation_label": "Liên kết nhanh",
+    "desc": "Tận tâm bảo tồn sự quyến rũ lịch sử và vẻ đẹp tự nhiên của Kurashiki thông qua du lịch bền vững và thân thiện môi trường.",
+    "contact_label": "Liên hệ",
+    "privacy": "Chính sách bảo mật",
+    "cookie": "Chính sách Cookie",
+    "copyright": "© 2025 Kurashiki Eco-Tourism. Bảo lưu mọi quyền.",
+    "email": "hello@kurashiki-eco.com",
+    "hours_label": "Giờ phục vụ",
+    "hours_value": "Thứ Hai – Thứ Sáu, 9:00 – 17:00 JST",
+    "location": "Kurashiki, Okayama, Nhật Bản",
+    "badges": {
+      "eco_tourism": "Chứng nhận Du lịch Sinh thái",
+      "sustainable_partner": "Đối tác Bền vững Nhật Bản",
+      "zero_waste": "Chính sách Không rác thải"
+    }
+  },
+  "menu": {
+    "quick_menu": "Menu Nhanh",
+    "search_destinations": "TÌM ĐIỂM ĐẾN",
+    "search_looking_for": "BẠN ĐANG TÌM GÌ?",
+    "select_language": "Chọn Ngôn ngữ"
+  },
+  "map": {
+    "label": "Bản đồ",
+    "title_main": "Khám phá",
+    "title_italic": "Trái tim lịch sử.",
+    "description": "Sử dụng bản đồ này làm hướng dẫn cá nhân để điều hướng các con đường bên kênh và khám phá những ngôi nhà thương nhân được bảo tồn tốt.",
+    "legend": {
+      "riverside": "Ven sông",
+      "museums": "Bảo tàng",
+      "teahouses": "Nhà trà",
+      "kojima": "Kojima Jean"
+    },
+    "nav_label": "Điều hướng trực tiếp",
+    "nav_action": "Mở Google Maps"
+  },
+  "weather": {
+    "clear": "trời quang",
+    "clouds": "nhiều mây",
+    "rain": "mưa",
+    "loading": "đang tải"
+  },
+  "gallery": {
+    "canalView": "Quang cảnh kênh",
+    "traditional": "Kho lưu trữ truyền thống",
+    "streetView": "Quang cảnh đường phố",
+    "museumFront": "Mặt tiền bảo tàng",
+    "westernArt": "Bộ sưu tập Nghệ thuật phương Tây",
+    "denimShop": "Cửa hàng Denim",
+    "indigoProcess": "Quy trình nhuộm chàm",
+    "localFood": "Món ăn địa phương",
+    "cafeInterior": "Bên trong quán cà phê",
+    "ivyTunnel": "Hầm cây thường xuân",
+    "gardenView": "Quang cảnh vườn",
+    "mountainView": "Quang cảnh núi",
+    "shrineSteps": "Bậc thang đền thờ"
+  },
+  "common": {
+    "back": "Quay lại",
+    "search": "Tìm kiếm ...",
+    "free_entry": "Vào cửa miễn phí",
+    "navigate": "ĐIỀU HƯỚNG",
+    "more": "Khám phá thêm",
+    "free": "Miễn phí",
+    "closed": "Đóng cửa",
+    "last": "Nơi lịch sử, văn hóa và thiên nhiên hòa quyện tuyệt đẹp.",
+    "status_open": "Mở để khám phá",
+    "reviews": {
+      "r1": {
+        "role": "Nhiếp ảnh gia",
+        "comment": "Sương mù 5 giờ sáng là thơ ca thuần túy. Sarah đã nắm bắt trọn vẹn linh hồn Kurashiki."
+      },
+      "r2": {
+        "role": "Người sành ăn",
+        "comment": "Đề xuất Baran Sushi ngon nhất! Hãy thử quán gần cầu đá."
+      },
+      "r3": {
+        "role": "Khám phá viên",
+        "comment": "Tôi vừa ghé thăm khu Bikan dựa trên gợi ý này! Tuyệt vời."
+      }
+    },
+    "tags": {
+      "food": "Ẩm thực",
+      "heritage": "Di sản",
+      "eco": "Du lịch sinh thái",
+      "nature": "Thiên nhiên",
+      "art": "Nghệ thuật",
+      "drink": "Đồ uống",
+      "lifestyle": "Phong cách sống",
+      "culture": "Văn hóa"
+    },
+    "tabs": {
+      "food": "Ẩm thực",
+      "heritage": "Di sản",
+      "life_style": "Phong cách sống",
+      "night_view": "Quang cảnh đêm",
+      "art": "Nghệ thuật",
+      "cultural": "Văn hóa",
+      "local_craft": "Thủ công địa phương"
+    }
+  },
+  "experience": {
+    "top": "Điểm đến hàng đầu",
+    "subtitle": "Bộ sưu tập chọn lọc",
+    "title": "Kurashiki’s",
+    "greentitle": " Linh hồn sống",
+    "kurashiki_denim_street": "Phố Denim Kurashiki",
+    "ohara_museum": "Bảo tàng Ohara",
+    "greco": "Quán EL GRECO",
+    "cafe": "Quán Ohte manju",
+    "white_house_street": "Phố White House",
+    "bikan_night": "Ánh sáng đêm Bikan",
+    "western_japanese_menu": "Thực đơn Tây - Nhật",
+    "coffee_ueda": "Coffee Ueda",
+    "tako_tamago": "Tako Tamago",
+    "tea_house": "Nhà trà / Cat Noren",
+    "stick_tempura": "Tempura que",
+    "soft_serve": "Kem ốc quế",
+    "street_food_combo": "Takoyaki & Karaage",
+    "gyoza": "Gyoza",
+    "ramen": "Ramen",
+    "canal": "Thiên nga trên kênh",
+    "momotaro_tshirt_shop": "Cửa hàng áo Momotaro",
+    "desserts": "Warabi Mochi & Kuzu-mochi",
+    "restaurant_kiyutei": "Nhà hàng KIYUTEI",
+    "banana_smoothie": "Sinh tố chuối",
+    "snacks": "Senbei",
+    "tsukemono_shop": "Cửa hàng Tsukemono",
+    "peach_curry": "Cà ri đào",
+    "miffy_bakery": "Tiệm bánh Miffy",
+    "kojima_jeans_street": "Phố Jeans Kojima",
+    "ivy_square": "Ivy Square",
+    "romance_of_kurashiki": "Lãng mạn Kurashiki",
+    "kurashiki_momoko": "Kurashiki Momoko",
+    "shopping_arcade": "Khu mua sắm",
+    "achi_shrine": "Đền Achi",
+    "description": "Từ những gợn sóng yên tĩnh trên kênh đến linh hồn thủ công trong các gian bếp địa phương và phòng tranh đẳng cấp thế giới – khám phá hành trình chọn lọc qua di sản vượt thời gian, hương vị theo mùa và sự thanh bình tự nhiên của Kurashiki.",
+    "uptitle": "6 địa điểm gợi ý",
+    "downtitle": "Kỷ niệm vui cho bạn!",
+    "join_btn": "Tham gia trải nghiệm",
+    "explore_more": "Khám phá thêm >>>",
+    "pratical": "Thông tin thực tế",
+    "discover": "Khám phá vẻ đẹp Kurashiki",
+    "filter_label": "Bộ lọc",
+    "no_results": "Không tìm thấy trải nghiệm nào trong danh mục này.",
+    "page_title_1": "Trải nghiệm",
+    "page_title_accent": "của chúng tôi",
+    "page_description": "Khám phá những viên ngọc ẩn của Kurashiki. Từ thủ công truyền thống đến các chuyến tham quan sinh thái bền vững, khám phá bộ sưu tập chọn lọc của chúng tôi.",
+    "tabs": {
+      "all": "Tất cả",
+      "heritage": "Di sản",
+      "eco": "Du lịch sinh thái",
+      "art": "Thủ công & Nghệ thuật",
+      "food": "Ẩm thực",
+      "drink": "Đồ uống",
+      "lifestyle": "Phong cách sống"
+    }
+  },
+  "details": {
+    "journal": "NHẬT KÝ DU LỊCH",
+    "discovering": "Khám phá",
+    "locationAccess": "Vị trí & Hướng dẫn",
+    "openMaps": "Mở trên Google Maps",
+    "step1Title": "Đến ga",
+    "step2Title": "Đi bộ ngắn cảnh đẹp",
+    "walkingTip": "Khu vực chủ yếu dành cho người đi bộ. Chúng tôi khuyên nên đi giày thoải mái để thưởng thức những con đường đá lịch sử.",
+    "curationNote": "GHI CHÚ CHỌN LỌC",
+    "essentialGuide": "Hướng dẫn thiết yếu",
+    "entryFee": "Phí vào cửa",
+    "timeRequired": "Thời gian cần thiết",
+    "openingHours": "Giờ mở cửa",
+    "weekdays": "Ngày thường & Lễ",
+    "saturday": "Chủ nhật / Sự kiện đặc biệt",
+    "keyExperience": "Trải nghiệm chính",
+    "localWisdom": "Trí tuệ địa phương",
+    "openStatus": "Mở cửa hôm nay",
+    "galleryTitle": "Kỷ niệm hình ảnh",
+    "transport": "Phương tiện di chuyển",
+    "gettingThere": "Cách đến đây",
+    "transportSubtitle": "Cách tiện lợi để đến điểm này từ Ga Kurashiki.",
+    "publicBus": "Xe buýt công cộng",
+    "walking": "Đi bộ cảnh quan",
+    "busTime": "Khoảng 10 phút",
+    "walkTime": "Đi bộ 15-20 phút",
+    "curatedSelection": "Lựa chọn chọn lọc",
+    "continueJourney": "Tiếp tục hành trình",
+    "continueJourneySubtitle": "Khám phá các điểm gần đó trong Khu lịch sử Bikan.",
+    "nextStops": "Điểm dừng tiếp theo",
+    "attractionsCount": "Điểm tham quan"
+  },
+  "mission": {
+    "hero_sub": "Di sản từ những năm 1600",
+    "hero_title_1": "sâu sắc",
+    "hero_title_2": "Sâu sắc",
+    "hero_title_3": "Du lịch.",
+    "hero_tracking": "THEO DÕI GIAO DỊCH 0.9",
+    "hero_desc_1": "Trải nghiệm Kurashiki không chỉ là du lịch, mà là một",
+    "hero_desc_highlight_1": "người bảo vệ",
+    "hero_desc_2": "của",
+    "hero_desc_highlight_2": "linh hồn 400 năm tuổi",
+    "hero_desc_3": ".",
+    "cta_button": "Bắt đầu khám phá",
+    "vision_label": "Tầm nhìn của chúng tôi",
+    "vision_title_1": "Du lịch với",
+    "vision_title_highlight": "Ý định",
+    "brand_name": "Kurashiki.Eco",
+    "location_name": "Kurashiki",
+    "vision_p1_part1": "Tại",
+    "vision_p1_part2": ", chúng tôi không chỉ là một hướng dẫn du lịch; chúng tôi là một tập thể tận tâm bảo tồn linh hồn 400 năm tuổi của Khu lịch sử Bikan. Sứ mệnh của chúng tôi là bảo vệ di sản thời Edo đồng thời tiên phong du lịch sinh thái carbon thấp tôn trọng môi trường.",
+    "vision_p2_part1": "Bằng cách trao quyền cho các nghệ nhân địa phương và hỗ trợ phục hồi di sản, chúng tôi đảm bảo",
+    "vision_p2_part2": "vẫn là một thành phố sống động, chứ không phải bảo tàng tĩnh. Chúng tôi tin rằng mỗi chuyến đi nên để lại dấu chân tích cực – cân bằng giữa tiếng thì thầm của quá khứ với lời hứa bền vững cho tương lai.",
+    "pill_heritage": "Di sản",
+    "pill_eco": "Du lịch sinh thái",
+    "pill_community": "Cộng đồng",
+    "pill_waste": "Không rác thải",
+    "team_label": "Tập thể",
+    "team_title": "Gặp gỡ những Người bảo vệ",
+    "team_kenji_name": "Kenji Sato",
+    "team_kenji_role": "Chuyên gia Di sản",
+    "team_aoi_name": "Aoi Tanaka",
+    "team_aoi_role": "Nhà Du lịch Sinh thái",
+    "team_hiroshi_name": "Hiroshi Mori",
+    "team_hiroshi_role": "Trưởng cộng đồng",
+    "team_yuki_name": "Yuki Kato",
+    "team_yuki_role": "Chuyên gia Xanh",
+    "tips_title": "Làm thế nào để trở thành Du khách thông thái.",
+    "tips_subtitle": "Giúp chúng tôi bảo tồn phép màu thông qua những lựa chọn nhỏ nhưng tác động lớn.",
+    "tip_1_title": "Chọn địa phương",
+    "tip_1_desc": "Hỗ trợ cửa hàng gia đình thay vì chuỗi toàn cầu.",
+    "tip_2_title": "Mang theo chai riêng",
+    "tip_2_desc": "Mang theo bình nước cá nhân. Sử dụng các trạm nạp lại.",
+    "tip_3_title": "Tôn trọng sự yên tĩnh",
+    "tip_3_desc": "Giữ giọng nói thấp trong khu dân cư.",
+    "tip_4_title": "Chụp ảnh có ý thức",
+    "tip_4_desc": "Tôn trọng lệnh cấm chụp ảnh ở khu vực linh thiêng."
+  },
+  "mustVisit": {
+    "side_title": "Những nơi nổi tiếng ở Kurashiki",
+    "hero_sub": "Lựa chọn chọn lọc",
+    "hero_title": "Phải đến",
+    "hero_title_accent": "Các điểm.",
+    "hero_desc": "Trải nghiệm vẻ đẹp vượt thời gian của Kurashiki thông qua những điểm đến được chọn lọc cẩn thận, nơi lịch sử gặp gỡ sự bền vững hiện đại.",
+    "spots_title": "Điểm đến biểu tượng",
+    "spots_subtitle": "Các di sản được chọn",
+    "navigate": "Điều hướng",
+    "start": "Bắt đầu khám phá",
+    "nature": "Thiên nhiên hoang sơ",
+    "fee": "Miễn phí",
+    "explore_story": "Khám phá toàn bộ câu chuyện",
+    "tabs": {
+      "all": "Tất cả",
+      "eco": "Du lịch sinh thái",
+      "art": "Thủ công & Nghệ thuật",
+      "food": "Ẩm thực"
+    }
+  },
+  "experience_detail": {
+    "back": "Quay lại",
+    "not_found": "Không tìm thấy trải nghiệm.",
+    "duration": "3 giờ",
+    "expect_title": "Điều bạn sẽ trải nghiệm",
+    "expect_items": {
+      "guides": "Được hướng dẫn bởi các nghệ nhân địa phương",
+      "sustainable": "Vật liệu bền vững & thân thiện môi trường",
+      "traditional": "Kỹ thuật và lịch sử truyền thống",
+      "intimate": "Nhóm nhỏ, không gian gần gũi"
+    },
+    "intro_text": "Hòa mình vào linh hồn đích thực của Kurashiki. Trải nghiệm chọn lọc này dành cho du khách có ý thức muốn kết nối sâu sắc với truyền thống, thủ công và lối sống bền vững.",
+    "inquiry_desc": "Quan tâm trải nghiệm này? Liên hệ với chúng tôi để kiểm tra chỗ và đặt tour sinh thái.",
+    "book_btn": "Đặt ngay",
+    "hours_title": "Giờ mở cửa",
+    "location": "Kurashiki, Okayama",
+    "inquiry_title": "Yêu cầu riêng"
+  },
+  "eco": {
+    "title": "Bản chất của Kurashiki.Eco",
+    "subtitle": "Vượt ra ngoài tham quan, chúng tôi mời bạn trải nghiệm sự cân bằng hài hòa giữa truyền thống cổ xưa và bền vững hiện đại.",
+    "preserve_title": "Di sản được bảo tồn",
+    "preserve_para": "Hệ thống kênh 400 năm tuổi của chúng tôi không chỉ là di tích của quá khứ. Nó là một cơ sở hạ tầng sống được duy trì bằng các phương pháp truyền thống thân thiện với môi trường, đảm bảo nguồn nước luôn là nguồn sống cho các thế hệ.",
+    "architecture_title": "Kiến trúc tái sử dụng",
+    "architecture_para": "Sự bền vững được xây dựng trong những bức tường của chúng tôi. Thay vì xây mới, chúng tôi thổi luồng sinh khí mới vào các kho Kura lịch sử, biến chúng thành các bảo tàng đẳng cấp thế giới, xưởng thủ công và quán cà phê không rác thải.",
+    "conscious_title": "Kết nối có ý thức",
+    "conscious_para": "Mỗi bước đi của bạn ở Kurashiki là cơ hội kết nối với các nghệ nhân địa phương. Sứ mệnh của chúng tôi là thúc đẩy du lịch tôn trọng môi trường đồng thời trao quyền cho cộng đồng thông qua trao đổi văn hóa.",
+    "learn_more": "Tìm hiểu thêm về sứ mệnh của chúng tôi"
+  },
+  "practical": {
+    "label": "Hướng dẫn thiết yếu",
+    "title_part1": "Thông tin",
+    "title_part2": "Du lịch thiết thực",
+    "access_title": "Cách đi đến đây",
+    "access_desc": "Từ Ga Okayama: Đi JR Sanyo Line đến Ga Kurashiki (khoảng 15-20 phút). Khu Bikan cách Lối ra phía Nam 10 phút đi bộ cảnh quan.",
+    "time_title": "Thời gian tốt nhất để thăm",
+    "time_desc": "Tháng 4 cho hoa anh đào dọc kênh, hoặc tháng 11 cho lá đỏ mùa thu rực rỡ và nhiệt độ đi bộ dễ chịu.",
+    "tip_label": "Mẹo chuyên gia",
+    "tip_text": "Thuê thuyền truyền thống vào sáng sớm để tận hưởng phản chiếu trên kênh mà không bị đông khách vào buổi chiều.",
+    "explore": "Khám phá chi tiết hơn",
+    "travelled": "+1,2K Đã đi"
+  },
+  "planner": {
+    "title": "Chuẩn bị chuyến thăm",
+    "discovery": {
+      "label": "1. Khám phá",
+      "desc": "Kurashiki nên được khám phá bằng cách đi bộ. Tập trung vào Khu lịch sử Bikan để chiêm ngưỡng cảnh kênh biểu tượng."
+    },
+    "essentials": {
+      "label": "2. Thiết yếu",
+      "desc": "Mang giày thoải mái và mang theo tiền mặt; nhiều cửa hàng truyền thống chưa chấp nhận thanh toán kỹ thuật số."
+    },
+    "booking": {
+      "label": "3. Đặt vé",
+      "desc": "Đặt vé đi thuyền trên kênh ngay khi đến vì vé thường hết vào buổi trưa."
+    },
+    "cta": "Đi tới Trip Planner"
+  },
+  "insights": {
+    "badge": "Kho lưu trữ chuyên gia",
+    "title_main": "Vượt qua bề mặt",
+    "title_highlight": ".",
+    "denim": {
+      "title": "Di sản Indigo",
+      "desc": "Kurashiki là trung tâm denim của Nhật Bản. Ngoài mua sắm, hãy ghé các boutique ở khu Kojima nơi bạn có thể chứng kiến quá trình \"nhuộm dây\" truyền thống tạo nên nét độc đáo cho denim Nhật."
+    },
+    "night": {
+      "title": "Chiếu sáng buổi tối",
+      "desc": "Khi hoàng hôn buông xuống, đám đông tan. Kênh trở thành nơi yên tĩnh dưới ánh sáng mềm của đèn đá, làm nổi bật sự tương phản của kho trắng bên cạnh mặt nước tối."
+    },
+    "tea": {
+      "title": "Nghi lễ trà ẩn giấu",
+      "desc": "Đi vào các hẻm nhỏ của Honmachi-dori để tìm các nhà thương nhân cổ. Nhiều nơi có vườn trong riêng (Tsuboniwa) nơi bạn có thể thưởng thức Matcha trong im lặng tuyệt đối."
+    }
+  },
+  "explorer": {
+    "nav_label": "Điều hướng",
+    "title_main": "Kurashiki",
+    "title_sub": "Hướng dẫn",
+    "search_placeholder": "Tìm kiếm bất kỳ địa điểm nào ở Nhật Bản...",
+    "no_result": "Nhấn \"Mở bản đồ\" để tìm",
+    "cta_directions": "Lấy hướng dẫn",
+    "map_view": "Xem bản đồ",
+    "satellite_view": "Vệ tinh",
+    "live_marker": "Đánh dấu trực tiếp",
+    "target_label": "Vị trí mục tiêu",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Khu lịch sử Bikan Kurashiki",
+        "type": "Khu văn hóa",
+        "icon": "🛶"
+      },
+      {
+        "id": 2,
+        "name": "Bảo tàng Nghệ thuật Ohara",
+        "type": "Bảo tàng nghệ thuật",
+        "icon": "🖼️"
+      },
+      {
+        "id": 3,
+        "name": "Kurashiki Ivy Square",
+        "type": "Di tích lịch sử",
+        "icon": "🌿"
+      },
+      {
+        "id": 4,
+        "name": "Đền Achi",
+        "type": "Đền Shinto",
+        "icon": "⛩️"
+      },
+      {
+        "id": 5,
+        "name": "Công viên Mt. Shuriuzan",
+        "type": "Công viên & Điểm ngắm",
+        "icon": "⛰️"
+      },
+      {
+        "id": 6,
+        "name": "Bảo tàng khảo cổ Kurashiki",
+        "type": "Bảo tàng",
+        "icon": "🏺"
+      },
+      {
+        "id": 7,
+        "name": "Bảo tàng Đồ chơi Nông thôn Nhật Bản",
+        "type": "Bảo tàng chuyên ngành",
+        "icon": "🎎"
+      },
+      {
+        "id": 8,
+        "name": "Công viên Tsurugata-yama",
+        "type": "Công viên thành phố",
+        "icon": "🌸"
+      },
+      {
+        "id": 9,
+        "name": "Bảo tàng Thủ công dân gian",
+        "type": "Bảo tàng nghệ thuật",
+        "icon": "🎨"
+      },
+      {
+        "id": 10,
+        "name": "Phố Jeans Kojima",
+        "type": "Phố mua sắm",
+        "icon": "👖"
+      },
+      {
+        "id": 11,
+        "name": "Washuzan Highland",
+        "type": "Công viên giải trí",
+        "icon": "🎡"
+      },
+      {
+        "id": 12,
+        "name": "Điểm ngắm Cầu Seto lớn",
+        "type": "Đài quan sát",
+        "icon": "🌉"
+      },
+      {
+        "id": 13,
+        "name": "Phố Kanmachi",
+        "type": "Phố lịch sử",
+        "icon": "🏮"
+      },
+      {
+        "id": 14,
+        "name": "Biệt thự Yurinso",
+        "type": "Nhà ở lịch sử",
+        "icon": "🏡"
+      },
+      {
+        "id": 15,
+        "name": "Bảo tàng Nghệ thuật Thành phố Kurashiki",
+        "type": "Phòng triển lãm nghệ thuật",
+        "icon": "🏛️"
+      },
+      {
+        "id": 16,
+        "name": "Đền Shinkaisansho",
+        "type": "Đền yên tĩnh",
+        "icon": "🕊️"
+      },
+      {
+        "id": 17,
+        "name": "Bảo tàng Jeans Betty Smith",
+        "type": "Bảo tàng lịch sử",
+        "icon": "🧵"
+      },
+      {
+        "id": 18,
+        "name": "Khu công nghiệp ven biển Mizuushima",
+        "type": "Ngắm đêm",
+        "icon": "🏭"
+      },
+      {
+        "id": 19,
+        "name": "Vườn Bệnh viện Trung tâm Kurashiki",
+        "type": "Vườn cảnh quan",
+        "icon": "🏥"
+      },
+      {
+        "id": 20,
+        "name": "Mitsui Outlet Park Kurashiki",
+        "type": "Trung tâm mua sắm",
+        "icon": "🛍️"
+      },
+      {
+        "id": 21,
+        "name": "Kurashiki Kokusai Hotel",
+        "type": "Khách sạn sang trọng",
+        "icon": "🏨"
+      },
+      {
+        "id": 22,
+        "name": "Royal Park Hotel Kurashiki",
+        "type": "Nghỉ hiện đại",
+        "icon": "🛌"
+      },
+      {
+        "id": 23,
+        "name": "Hotel Nikko Kurashiki",
+        "type": "Khách sạn cao cấp",
+        "icon": "✨"
+      },
+      {
+        "id": 24,
+        "name": "Ryokan Kurashiki",
+        "type": "Nhà trọ Nhật truyền thống",
+        "icon": "👘"
+      },
+      {
+        "id": 25,
+        "name": "Dormy Inn Kurashiki Suối nước nóng tự nhiên",
+        "type": "Khách sạn Onsen",
+        "icon": "♨️"
+      },
+      {
+        "id": 26,
+        "name": "The OneFive Kurashiki",
+        "type": "Khách sạn Boutique",
+        "icon": "💎"
+      },
+      {
+        "id": 27,
+        "name": "Kurashiki Ivy Square Hotel",
+        "type": "Nghỉ di sản",
+        "icon": "🧱"
+      },
+      {
+        "id": 28,
+        "name": "Tsurugata Ryokan",
+        "type": "Ryokan truyền thống",
+        "icon": "🍵"
+      },
+      {
+        "id": 29,
+        "name": "Green Rich Hotel Kurashiki Ekimae",
+        "type": "Khách sạn kinh doanh",
+        "icon": "🚉"
+      },
+      {
+        "id": 30,
+        "name": "Hostel Cuore Kurashiki",
+        "type": "Hostel thiết kế",
+        "icon": "🎒"
+      }
+    ]
+  },
+  "journal": {
+    "review": {
+      "name": "Tên của bạn ...",
+      "occupation": "Nhập nghề nghiệp của bạn (ví dụ: Học sinh, Du khách)",
+      "reflection": "Chia sẻ câu chuyện của bạn...",
+      "button": "Đăng bài chia sẻ",
+      "fullname": "Họ và Tên",
+      "occu": "Nghề nghiệp",
+      "refl": "Chia sẻ của bạn",
+      "recent": "Chia sẻ gần đây",
+      "view": "4,2k Lượt xem"
+    },
+    "hero": {
+      "subtitle": "Một hành trình yên bình xuyên thời gian",
+      "title_main": "Kurashiki",
+      "title_sub": "Lịch sử & Kênh đào",
+      "label_location": "Địa điểm",
+      "location_value": "Kurashiki, Okayama",
+      "label_date": "Ngày",
+      "date_value": "Tháng 12, 2025"
+    },
+    "author": {
+      "name": "Milon",
+      "role": "Người kể chuyện du lịch"
+    },
+    "mapping": {
+      "expedition_label": "Cuộc thám hiểm văn hóa",
+      "title": "Bản đồ Khu Bikan",
+      "description": "Nhấp vào các thẻ dưới đây để di chuyển bản đồ đến các địa điểm tôi đã khám phá.",
+      "locations": {
+        "ohara": {
+          "name": "Bảo tàng Ohara",
+          "desc": "Bảo tàng đầu tiên của Nhật Bản về nghệ thuật phương Tây, nằm trong tòa nhà tân cổ điển."
+        },
+        "bikan": {
+          "name": "Kênh Bikan",
+          "desc": "Con kênh trung tâm hai bên bờ là cây liễu và kho trắng."
+        },
+        "ivy": {
+          "name": "Ivy Square",
+          "desc": "Khu phức hợp gạch đỏ được xây trên nền nhà máy bông hiện đại đầu tiên."
+        },
+        "kojima": {
+          "name": "Jeans Kojima",
+          "desc": "Nơi khai sinh denim Nhật và các xưởng nhuộm chàm thủ công."
+        },
+        "shop": {
+          "name": "Đền Achi",
+          "desc": "Ngôi đền cổ trên đỉnh đồi với tầm nhìn toàn cảnh khu phố cổ."
+        }
+      }
+    },
+    "content": {
+      "intro_text": "Tuần trước, tôi đã đến Kurashiki và chuyến đi thật sự tuyệt vời. Bầu không khí yên bình, cảnh quan lịch sử và nhịp sống chậm rãi làm chuyến đi thư giãn sâu sắc. Một trong những khoảnh khắc đáng nhớ nhất là đi thuyền truyền thống trên Kênh Lịch sử Bikan, mang đến trải nghiệm thị trấn từ góc nhìn độc đáo và thanh bình.",
+      "body_header": "Lịch sử ngắn gọn về Kurashiki",
+      "body_text": "Kurashiki phát triển rực rỡ trong thời Edo (1603–1868) như trung tâm phân phối gạo và thương mại quan trọng dưới quyền Shogun Tokugawa. Các thương nhân giàu có xây dựng các kho trắng thanh lịch (kura), nhiều kho vẫn còn đến ngày nay, kể câu chuyện về sự thịnh vượng và vai trò quan trọng trong lịch sử kinh tế Nhật Bản.",
+      "culture": "Văn hóa và Cảnh quan phố",
+      "culture_text": "Trái tim của Kurashiki nằm ở Khu Lịch sử Bikan. Nhà truyền thống, cầu đá, kênh cây liễu, và đường hẹp tạo nên cảnh quan hoài niệm và photogenic. Nghệ thuật và văn hóa cũng là trung tâm của thị trấn, đại diện bởi Bảo tàng Nghệ thuật Ohara, bảo tàng phương Tây đầu tiên của Nhật.",
+      "experience": "Trải nghiệm của tôi: Đi thuyền trên kênh",
+      "experience_text": "Chuyến đi thuyền là điểm nhấn của chuyến đi. Khi thuyền trôi chậm trên kênh, tôi thấy các tòa nhà lịch sử phản chiếu trên mặt nước. Môi trường yên tĩnh, chuyển động nhẹ nhàng và âm thanh nước êm ái khiến trải nghiệm thư giãn và gần như thiền. Cảm giác như bước vào quá khứ trong khi tận hưởng hiện tại.",
+      "video_label": "Phim không gian",
+      "slow_life_title": "Cuộc sống chậm bên kênh",
+      "slow_life_desc": "Chúng tôi dành nhiều giờ quan sát người lái thuyền chèo những chiếc thuyền gỗ đáy bằng qua mặt nước yên ả. Không vội vàng ở đây. Ở Kurashiki, quá khứ không chỉ là bảo tàng; nó là một phần sống động của cộng đồng.",
+      "caption_evening": "— Ánh sáng buổi tối trên tường trắng",
+      "caption_autumn": "— Lá mùa thu bên kênh"
+    },
+    "sidebar": {
+      "index": "Mục lục Nhật ký",
+      "progress": "Tiến độ",
+      "cta_title": "Thưởng thức nhịp sống chậm",
+      "cta_desc": "Kurashiki không chỉ là điểm đến; nó là nơi lịch sử, văn hóa và thiên nhiên hòa quyện.",
+      "cta_button": "Lên kế hoạch chuyến đi",
+      "live_context": "Thông tin địa phương trực tiếp",
+      "weather_feels": "Cảm giác như",
+      "craftsmanship": {
+        "label": "Thủ công truyền thống",
+        "indigo_title": "Nghệ thuật chàm",
+        "indigo_desc": "Kurashiki và khu Kojima nổi tiếng thế giới về denim và nhuộm chàm truyền thống.",
+        "learn_more": "Khám phá Denim Kojima"
+      },
+      "subscribe": {
+        "title": "Tham gia hành trình",
+        "subtitle": "Nhận các câu chuyện du lịch qua email",
+        "placeholder": "Địa chỉ email của bạn",
+        "button": "Đăng ký",
+        "success_title": "Chào mừng",
+        "success_msg": "Cảm ơn bạn đã tham gia cộng đồng du lịch của chúng tôi."
+      }
+    },
+    "community": {
+      "title_main": "Cộng đồng",
+      "title_sub": "Tiếng nói",
+      "desc": "Chia sẻ câu chuyện và trải nghiệm của bạn từ Khu Bikan Kurashiki.",
+      "form": {
+        "label_name": "Họ và tên",
+        "label_role": "Nghề nghiệp",
+        "label_msg": "Chia sẻ của bạn",
+        "placeholder_name": "Tên của bạn...",
+        "placeholder_role": "Du khách",
+        "placeholder_msg": "Chia sẻ câu chuyện của bạn...",
+        "button": "Đăng bài chia sẻ"
+      },
+      "stats": {
+        "recent": "Chia sẻ gần đây",
+        "views": "4,2k Lượt xem"
+      }
+    },
+    "reviews": {
+      "title_main": "Cộng đồng",
+      "title_sub": "Tiếng nói",
+      "description": "Chia sẻ câu chuyện và trải nghiệm của bạn từ Khu Bikan Kurashiki.",
+      "form": {
+        "label_name": "Họ và tên",
+        "placeholder_name": "Tên của bạn...",
+        "label_role": "Nghề nghiệp",
+        "placeholder_role": "Du khách",
+        "label_comment": "Chia sẻ của bạn",
+        "placeholder_comment": "Chia sẻ câu chuyện của bạn...",
+        "button": "Đăng bài chia sẻ"
+      },
+      "list": {
+        "title": "Chia sẻ gần đây",
+        "views": "4,2k Lượt xem"
+      }
+    },
+    "gallery": {
+      "title": "Những mảnh thời gian",
+      "subtitle": "Bộ sưu tập kỹ thuật số của du khách",
+      "vol": "VOL_2025 // KURASHIKI",
+      "location_tag": "Okayama, Kurashiki, JP / 2025",
+      "camera_settings": {
+        "iso": "ISO 400",
+        "aperture": "f/2.8",
+        "shutter": "1/1000s"
+      }
+    },
+    "conclusion_section": {
+      "today_label": "Hiện tại",
+      "today_title": "Kurashiki ngày nay",
+      "today_desc": "Kurashiki hiện đại hòa quyện truyền thống với đời sống đương đại. Trong khi bảo tồn cảnh quan lịch sử, thị trấn chào đón du khách toàn cầu. Quán cà phê, cửa hàng thủ công, bảo tàng và không gian văn hóa hiện hữu hài hòa với các công trình hàng trăm năm tuổi, là ví dụ điển hình về du lịch văn hóa và bền vững.",
+      "closing_title": "Suy ngẫm cuối cùng",
+      "closing_desc": "Chuyến đi đến Kurashiki yên bình, truyền cảm hứng và đáng nhớ. Đi thuyền, lịch sử, văn hóa và ẩm thực tạo nên trải nghiệm khó quên. Kurashiki không chỉ là điểm đến – nó là nơi lịch sử, văn hóa và thiên nhiên hòa quyện tuyệt đẹp.",
+      "signature": "Ghi chú của du khách",
+      "live": "Cảnh quan trực tiếp"
+    }
+  },
+  "itinerary": {
+    "label": "Nhật ký hành trình",
+    "title_top": "Ba ngày ở",
+    "title_bottom": "Thành phố tường trắng",
+    "quote": "Một lộ trình được lựa chọn qua lịch sử và ẩm thực.",
+    "edition": "Phiên bản mùa đông 2025",
+    "highlights": "Điểm nổi bật hằng ngày",
+    "day": "Ngày",
+    "stats": {
+      "distance_label": "Khoảng cách khám phá",
+      "distance_val": "12,4 km",
+      "transport_label": "Phương tiện di chuyển",
+      "transport_val": "Đi bộ & Thuyền",
+      "button": "Xem bản đồ Kurashiki"
+    },
+    "days": [
+      {
+        "d": "01",
+        "t": "Đến & Bên kênh",
+        "loc": "Khu kênh Bikan",
+        "s": "Khởi đầu trải nghiệm tại Khu Lịch sử Bikan.",
+        "temp": "22°C",
+        "activities": [
+          "Đi thuyền trên kênh",
+          "Kho Kura",
+          "Đường liễu"
+        ]
+      },
+      {
+        "d": "02",
+        "t": "Nghệ thuật & Di sản",
+        "loc": "Kojima & Bảo tàng Ohara",
+        "s": "Khám phá bảo tàng nghệ thuật phương Tây đầu tiên của Nhật.",
+        "temp": "19°C",
+        "activities": [
+          "Bảo tàng Ohara",
+          "Ivy Square",
+          "Quán trà địa phương"
+        ]
+      },
+      {
+        "d": "03",
+        "t": "Ẩm thực địa phương",
+        "loc": "Phố mua sắm & Quán cà phê",
+        "s": "Khám phá ẩm thực tinh hoa của Okayama.",
+        "temp": "20°C",
+        "activities": [
+          "Thưởng thức Barazushi",
+          "Cửa hàng thủ công chàm",
+          "Đi dạo ngắm hoàng hôn"
+        ]
+      }
+    ]
+  },
+  "experience_details": {
+    "location_guide": "Khám phá Khu vực Kurashiki",
+    "subtitle": "Những phản chiếu vượt thời gian của Nhật Bản cổ",
+    "activity": "Hoạt động",
+    "policy": "Chính sách",
+    "nature": "Thiên nhiên",
+    "hours": "Thời gian",
+    "eco_walk": "Đi bộ sinh thái",
+    "zero_waste": "Không rác thải",
+    "protected": "Bảo vệ",
+    "story": "Câu chuyện của chúng tôi",
+    "top_exp": "Trải nghiệm hàng đầu",
+    "respect": "Tham quan có tôn trọng",
+    "sub_desc": "Để bảo tồn vẻ đẹp của Kurashiki, chúng tôi khuyến khích tất cả du khách tham quan với sự tôn trọng truyền thống địa phương và cân bằng môi trường.",
+    "guide": "Hướng dẫn du lịch có ý thức",
+    "act": "Hành động nhỏ, ảnh hưởng lớn",
+    "transit": "Di chuyển xanh hơn",
+    "opt": "Chọn tàu JR hoặc xe đạp thuê gần Ga Kurashiki để giữ không khí trong lành.",
+    "shop": "Mua sắm có đạo đức",
+    "beauty": "BẢO TỒN VẺ ĐẸP",
+    "choose": "Chọn denim hoặc canvas sản xuất tại Kurashiki. Mua hàng hỗ trợ trực tiếp các gia đình nghệ nhân địa phương.",
+    "admire": "Ngắm các kho trắng bằng mắt, tránh chạm vào các công trình lịch sử dễ vỡ.",
+    "clean": "GIỮ GÌN DI SẢN",
+    "leave": "Áp dụng quy tắc 'Không để lại dấu vết'. Vui lòng mang rác về khách sạn hoặc bỏ vào thùng quy định.",
+    "invite": "Mời người khác tham gia hành trình",
+    "foot": "Chỉ để lại dấu chân",
+    "discover": "Khám phá Bộ sưu tập Di sản",
+    "district": "Khu Bikan Kurashiki"
+  },
+  "cafe": {
+    "name": "Ohte Manju Cafe",
+    "address": "1-4-7 Chuo, Kurashiki, Okayama",
+    "hours": "11:00 AM — 05:00 PM (Đóng cửa: Thứ 3)",
+    "short_intro": "Hương vị truyền thống Bizen, tái hiện cho du khách hiện đại.",
+    "full_desc": "Ohte Manju là một trong những món ngọt truyền thống nổi tiếng nhất Nhật Bản, với lịch sử hơn 180 năm. Quán cafe kết hợp hài hòa nội thất kho Kura của Kurashiki với thiết kế tối giản hiện đại...",
+    "activities": [
+      {
+        "title": "Bộ hấp Ohte",
+        "desc": "Thưởng thức Ohte Manju hấp nóng, kèm Matcha lấy từ địa phương."
+      },
+      {
+        "title": "Chụp ảnh kiến trúc",
+        "desc": "Bắt trọn sự tương phản ánh sáng và bóng tối trong sân tối giản."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Mức giá",
+        "value": "¥500 — ¥1,500"
+      },
+      {
+        "label": "Món đặc trưng",
+        "value": "Bộ hấp Ohte Manju"
+      },
+      {
+        "label": "Chụp ảnh",
+        "value": "Chụp ảnh nội thất được chào đón"
+      },
+      {
+        "label": "Đặt trước",
+        "value": "Không đặt trước (Chỉ phục vụ khách đến trực tiếp)"
+      },
+      {
+        "label": "WiFi",
+        "value": "Miễn phí cho khách"
+      }
+    ]
+  },
+  "greco": {
+    "name": "Cafe El Greco",
+    "address": "1-1-11 Chuo, Kurashiki, Okayama 710-0046",
+    "hours": "10:00 AM — 05:00 PM (Đóng cửa: Thứ Hai)",
+    "short_intro": "Nơi tĩnh lặng phủ đầy cây thường xuân với nhạc cổ điển và cà phê tinh tế.",
+    "full_desc": "Được thành lập năm 1959, Cafe El Greco nằm trong tòa nhà hành chính cũ của gia đình Ohara, ngay cạnh Bảo tàng Nghệ thuật Ohara nổi tiếng thế giới. Quán nổi tiếng với bức tường phủ đầy cây thường xuân xanh tươi, chuyển sang sắc đỏ và cam rực rỡ vào mùa thu. Bên trong, trần cao vòm và dầm gỗ nặng tạo nên không gian tinh tế hậu chiến Nhật kết hợp phong cách châu Âu. Đây là nơi văn hóa nơi du khách có thể thưởng thức cà phê pha kỹ lưỡng và nghe nhạc cổ điển bất hủ, là điểm đến không thể bỏ qua cho tín đồ nghệ thuật và cà phê.",
+    "activities": [
+      {
+        "title": "Nghi lễ cà phê cổ điển",
+        "desc": "Thưởng thức cà phê pha đặc trưng trong tách sứ vintage, giữa kiến trúc lịch sử."
+      },
+      {
+        "title": "Chụp ảnh bức tường thường xuân theo mùa",
+        "desc": "Bắt trọn mặt tiền xanh ngọc hoặc đỏ mùa thu – biểu tượng di sản nghệ thuật Kurashiki."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Mức giá",
+        "value": "¥600 — ¥1,200"
+      },
+      {
+        "label": "Món đặc trưng",
+        "value": "Cà phê pha đặc biệt El Greco"
+      },
+      {
+        "label": "Lịch sử",
+        "value": "Chuyển đổi từ tòa nhà văn phòng (1959)"
+      },
+      {
+        "label": "Đặt trước",
+        "value": "Không cần (Chỉ phục vụ khách đến trực tiếp)"
+      },
+      {
+        "label": "Không gian",
+        "value": "Nhạc cổ điển & học tập yên tĩnh"
+      }
+    ]
+  },
+  "ohara_museum": {
+    "name": "Bảo tàng Nghệ thuật Ohara",
+    "address": "1-1-15 Chuo, Kurashiki, Okayama 710-8575",
+    "hours": "09:00 AM — 05:00 PM (Đóng cửa: Thứ Hai)",
+    "short_intro": "Bảo tàng tư nhân đầu tiên của Nhật về nghệ thuật phương Tây, kiệt tác thiết kế tân cổ điển.",
+    "full_desc": "Được thành lập năm 1930 bởi doanh nhân Magosaburo Ohara nhằm vinh danh người bạn, họa sĩ Kojima Torajiro, Bảo tàng Nghệ thuật Ohara là một dấu mốc quan trọng trong lịch sử văn hóa Nhật Bản. Mặt tiền ấn tượng với các cột đá kiểu Hy Lạp khổng lồ mang vẻ hùng vĩ Địa Trung Hải vào khu phố trắng truyền thống Nhật Bản. Bộ sưu tập cực kỳ quý giá đối với một bảo tàng tư nhân, gồm tác phẩm 'The Annunciation' của El Greco cùng các kiệt tác của Monet, Matisse, Renoir và Picasso. Ngoài Phòng Trưng bày Chính, khu bảo tàng còn có Phòng Trưng bày Nghệ thuật Thủ công và Phòng Trưng bày Nghệ thuật Châu Á, nằm trong khuôn viên được chăm sóc tỉ mỉ, kết nối hài hòa giữa hiện đại phương Tây và truyền thống phương Đông.",
+    "activities": [
+      {
+        "title": "Tham quan kiệt tác phương Tây",
+        "desc": "Dạo qua các phòng trưng bày chứa tác phẩm gốc của các danh họa châu Âu hiếm khi rời quê hương."
+      },
+      {
+        "title": "Ngắm kiến trúc",
+        "desc": "Nghiên cứu sự kết hợp giữa kiến trúc đền Hy Lạp và cảnh quan kênh liễu truyền thống Nhật Bản."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Vé vào cửa",
+        "value": "¥2,000 (Người lớn)"
+      },
+      {
+        "label": "Chụp ảnh",
+        "value": "Cấm trong phòng trưng bày"
+      },
+      {
+        "label": "Tác phẩm nổi bật",
+        "value": "'The Annunciation' của El Greco"
+      },
+      {
+        "label": "Tiện nghi",
+        "value": "Cửa hàng bảo tàng & Nhà vệ sinh"
+      },
+      {
+        "label": "Ngôn ngữ",
+        "value": "Hướng dẫn âm thanh bằng tiếng Anh có sẵn"
+      }
+    ]
+  },
+  "samurai": {
+    "name": "Cửa hàng cổ vật: Di sản Samurai",
+    "address": "Phố Honmachi, Khu Bikan, Kurashiki",
+    "hours": "10:00 AM — 06:00 PM",
+    "short_intro": "Kho báu bí mật gồm hiện vật Edo chính gốc và thủ công denim địa phương.",
+    "full_desc": "Nằm trên phố Honmachi lịch sử, cửa hàng cổ vật và thủ công này mang đến cái nhìn hiếm hoi về linh hồn phong kiến Nhật Bản. Cửa sổ trưng bày áo giáp Samurai Edo chính gốc (Yoroi) và kiếm Katana sắc bén, được các chuyên gia địa phương chăm sóc tỉ mỉ. Đồng thời, cửa hàng cũng tôn vinh Kurashiki như 'cái nôi của denim Nhật'. Bên trong, bạn sẽ tìm thấy các sản phẩm denim thủ công và vải nhuộm chàm cao cấp, giữ nguyên kỹ thuật từng dùng cho trang phục chiến binh. Đây là nơi lịch sử và sáng tạo dệt may hiện đại hòa quyện hoàn hảo.",
+    "activities": [
+      {
+        "title": "Nghiên cứu hiện vật phong kiến",
+        "desc": "Xem các chi tiết kim loại và dây lụa tinh xảo của áo giáp Samurai và vũ khí cổ Nhật Bản."
+      },
+      {
+        "title": "Thủ công Denim & Chàm",
+        "desc": "Mua các sản phẩm denim thủ công độc quyền chỉ có ở vùng Okayama."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Đặc sản",
+        "value": "Áo giáp Samurai & Katana chính gốc"
+      },
+      {
+        "label": "Thủ công địa phương",
+        "value": "Denim cao cấp Kojima"
+      },
+      {
+        "label": "Vận chuyển",
+        "value": "Gửi quốc tế cho cổ vật"
+      },
+      {
+        "label": "Vào cửa",
+        "value": "Miễn phí xem"
+      },
+      {
+        "label": "Chụp ảnh",
+        "value": "Được phép với sự đồng ý của nhân viên"
+      }
+    ]
+  },
+  "stick_tempura": {
+    "name": "Sano-ya: Bậc thầy Tempura cá",
+    "address": "1-1-1 Honmachi, Kurashiki, Okayama 710-0054 (Trên phố mua sắm chính Bikan)",
+    "hours": "09:00 AM — 05:30 PM (Hằng ngày)",
+    "short_intro": "Bánh cá Nhật 'Satsuma-age' chính gốc, chiên nóng và xiên que, trải nghiệm ăn vặt trên phố hoàn hảo.",
+    "full_desc": "Sano-ya là một địa chỉ yêu thích ở Khu Bikan, nổi tiếng với cờ đỏ và mùi chiên cá hấp dẫn. Khác với tempura rau thông thường, đây là 'Satsuma-age' – kỹ thuật truyền thống Nhật Bản, trộn bột cá trắng chất lượng với mực, gừng hoặc phô mai, sau đó chiên vàng. 'Stick Tempura' của Sano-ya là biểu tượng ẩm thực đường phố Kurashiki, thiết kế để ăn khi đi bộ. Kết cấu 'mochi-mochi' (dẻo dai), và mỗi que được chuẩn bị trong suốt ngày để đảm bảo luôn nóng và ngọt nước. Đây là món mặn hoàn hảo bên cạnh nhiều món ngọt xung quanh.",
+    "activities": [
+      {
+        "title": "Thưởng thức xiên hương vị",
+        "desc": "Chọn từ hơn 10 hương vị khác nhau. 'Tako-Shiso' (Bạch tuộc & lá tía tô) mát nhẹ, 'Cheese-maki' mềm và béo."
+      },
+      {
+        "title": "Đi dạo phố Bikan",
+        "desc": "Cầm xiên nóng đi về phía kênh; trải nghiệm Kurashiki điển hình là vừa đi vừa thưởng thức món mặn."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Món được yêu thích",
+        "value": "Tako-negi (Bạch tuộc & Hành) ¥450"
+      },
+      {
+        "label": "Tùy chọn chay",
+        "value": "Củ Burdock hoặc Edamame"
+      },
+      {
+        "label": "Thuận tiện",
+        "value": "Que dễ cầm, giấy chống dầu"
+      },
+      {
+        "label": "Cách ăn",
+        "value": "Có chỗ ngồi nhỏ bên trong hoặc ăn khi đi bộ"
+      },
+      {
+        "label": "Thanh toán",
+        "value": "Chấp nhận tiền mặt và thẻ IC chính (Suica/Pasmo)"
+      }
+    ]
+  },
+  "soft_serve": {
+    "name": "Hokkaido & Okayama Fusion Creamery",
+    "address": "Quảng trường trung tâm Bikan, Kurashiki",
+    "hours": "09:30 AM — 06:00 PM",
+    "short_intro": "Thế giới kem mềm đầy màu sắc với hơn 15 hương vị Nhật độc đáo.",
+    "full_desc": "Chuyến đi Nhật mà chưa ăn kem mềm là chưa trọn vẹn. Quán này là bữa tiệc thị giác với menu như bản đồ hương vị Nhật Bản. Dùng sữa Hokkaido cao cấp làm nền, đảm bảo béo mịn. Du khách có thể chọn từ 'Uji Matcha', 'Hokkaido Vanilla' đến hương địa phương 'Shine Muscat' và 'White Peach'. Quán cũng nổi tiếng với cốc 'Warabi Mochi' mềm, phủ bột matcha tinh. Một nơi rực rỡ, mỗi cốc kem đều hoàn hảo để chụp ảnh và chia sẻ.",
+    "activities": [
+      {
+        "title": "Tìm hương vị theo mùa",
+        "desc": "Xem nhãn 'MỚI' cho hương vị giới hạn như 'Khoai lang' mùa thu hay 'Sakura' mùa xuân."
+      },
+      {
+        "title": "Phủ bột Matcha",
+        "desc": "Chọn cốc Warabi Mochi và xem nhân viên rắc bột matcha cao cấp lên mochi."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥400 - ¥450/cốc"
+      },
+      {
+        "label": "Lựa chọn phổ biến",
+        "value": "Uji Matcha cao cấp"
+      },
+      {
+        "label": "Tùy chọn khác",
+        "value": "Sorbet trái cây không sữa"
+      },
+      {
+        "label": "Cách ăn",
+        "value": "Hoàn thành kem trước khi vào các cửa hàng xung quanh"
+      }
+    ]
+  },
+  "ramen": {
+    "name": "Ikumen-ya: Tonkotsu Kurashiki chính gốc",
+    "address": "Lối vào Khu Lịch sử Bikan, Kurashiki",
+    "hours": "11:00 AM — 08:00 PM (Đóng cửa: Thứ Ba)",
+    "short_intro": "Món khoái khẩu địa phương với nước dùng xương heo béo, mỳ chín vừa.",
+    "full_desc": "Bước vào Ikumen-ya như vào quán ramen Nhật cổ điển. Món đặc trưng là Tonkotsu (xương heo) hầm lâu, sánh mịn, giàu collagen. Tô ramen mang lại cảm giác ấm áp, có thịt Chashu tan chảy, nấm tai gỗ giòn, trứng lòng đào nêm vừa. Tô đỏ biểu tượng cho niềm đam mê từng phục vụ. Hoàn hảo sau buổi sáng dài đi bộ quanh kênh.",
+    "activities": [
+      {
+        "title": "Tùy chọn nước dùng",
+        "desc": "Chọn độ đậm đặc nước dùng và độ chín mỳ theo khẩu vị."
+      },
+      {
+        "title": "Thử gia vị địa phương",
+        "desc": "Thêm tỏi giã hoặc cải Takana chua cay tại bàn để tăng hương vị ramen."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Món đặc trưng",
+        "value": "Tonkotsu Ramen đặc biệt"
+      },
+      {
+        "label": "Mức giá",
+        "value": "¥800 - ¥1,200"
+      },
+      {
+        "label": "Không gian",
+        "value": "Thân thiện & Nhanh nhẹn"
+      },
+      {
+        "label": "Chế độ ăn",
+        "value": "Chứa thịt heo (Không Halal)"
+      }
+    ]
+  },
+  "canal": {
+    "name": "Sông Kurashiki: Bản Serenade của Thiên Nga",
+    "address": "Khu Lịch sử Bikan Trung tâm, Kurashiki",
+    "hours": "Truy cập 24 giờ (Khung giờ đẹp nhất ban ngày)",
+    "short_intro": "Trái tim yên bình của khu phố, nơi thiên nga trắng lướt nhẹ qua lịch sử.",
+    "full_desc": "Kênh sông Kurashiki là linh hồn của Khu Bikan. Từng là tuyến giao thương nhộn nhịp cho gạo và bông thời Edo, giờ đây là con kênh yên bình, hai bên là cây liễu rủ và kho trắng truyền thống (Kura). Điểm nhấn cho du khách là đôi thiên nga trắng thanh thoát sinh sống trên sông này. Nhìn chúng trôi nhẹ dưới các cây cầu đá lịch sử, khi thuyền gỗ đáy bằng Tenryu-maru đi qua, tạo nên trải nghiệm như bưu thiếp sống. Đây là địa điểm được chụp nhiều nhất trong thành phố, mang không khí yên tĩnh như quay lại 300 năm trước.",
+    "activities": [
+      {
+        "title": "Thuyền Truyền thống",
+        "desc": "Đi thuyền có hướng dẫn 20 phút để xem các tòa nhà lịch sử từ mặt nước."
+      },
+      {
+        "title": "Chiếu sáng buổi tối",
+        "desc": "Trở lại lúc chạng vạng để thấy kênh sáng rực bởi đèn lồng mềm, tạo ánh sáng lãng mạn và bí ẩn."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Điểm nhấn",
+        "value": "Thiên nga trắng cư trú"
+      },
+      {
+        "label": "Thời gian tốt nhất",
+        "value": "Sáng sớm hoặc hoàng hôn"
+      },
+      {
+        "label": "Giá thuyền",
+        "value": "¥500/người lớn"
+      },
+      {
+        "label": "Thiên nhiên",
+        "value": "Lá liễu theo mùa (Xuân/Hạ)"
+      }
+    ]
+  },
+  "bikan_night": {
+    "name": "Chiếu sáng đêm Bikan",
+    "address": "Khu Lịch sử Bikan",
+    "hours": "Hoàng hôn đến 10:00 PM",
+    "short_intro": "Sự biến hóa huyền diệu của khu kênh dưới ánh đèn lồng mềm.",
+    "full_desc": "Khi mặt trời lặn, Khu Lịch sử Bikan trải qua sự biến đổi yên tĩnh. Ánh sáng kiến trúc, được thiết kế bởi các nhà thiết kế nổi tiếng thế giới, làm nổi bật các kho trắng và cây liễu rủ dọc kênh. Không khí buổi tối yên tĩnh hơn nhiều so với ban ngày, mang đến trải nghiệm lãng mạn, thiền định, làm nổi bật vẻ đẹp vượt thời gian của các công trình thời Edo.",
+    "activities": [
+      {
+        "title": "Dạo kênh đêm",
+        "desc": "Đi bộ dọc theo nước để thấy các tòa nhà phản chiếu hoàn hảo trên mặt sông tĩnh lặng."
+      },
+      {
+        "title": "Chụp ảnh phơi sáng dài",
+        "desc": "Bắt ánh sáng mềm của đèn lồng trên nền trời xanh thẫm lúc chạng vạng."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Chi phí",
+        "value": "Miễn phí đi bộ"
+      },
+      {
+        "label": "Không khí",
+        "value": "Yên tĩnh, Lãng mạn, Thanh bình"
+      },
+      {
+        "label": "Thời gian tốt nhất",
+        "value": "Ngay sau giờ xanh (blue hour)"
+      }
+    ]
+  },
+  "white_house_street": {
+    "name": "Phố Tường Trắng: Con đường Truyền thống",
+    "address": "Honmachi & Higashimachi, Khu Bikan, Kurashiki",
+    "hours": "Truy cập 24 giờ (Cửa hàng thường 10:00 AM — 05:00 PM)",
+    "short_intro": "Bước vào cuộn phim sống động về kiến trúc thời Edo và di sản thương gia.",
+    "full_desc": "Ngoài con kênh nổi tiếng, trái tim thực sự của lịch sử thương gia Kurashiki là các con phố tường trắng Honmachi và Higashimachi. Những ngõ hẹp, uốn lượn được xếp dọc bởi 'Kura' (kho truyền thống) với cửa sổ 'Kurashiki-mado' biểu tượng và tường vữa 'Namako-kabe' (họa tiết lưới). Từng là trung tâm thương mại thành phố, nay các công trình được bảo tồn tỉ mỉ, chuyển đổi thành phòng trưng bày, quán trà truyền thống và xưởng thủ công. Đi bộ qua khu vực này như du hành thời gian, sự tương phản giữa vữa trắng tinh khiết và khung gỗ tối tạo nhịp điệu hình ảnh độc đáo của di sản Nhật.",
+    "activities": [
+      {
+        "title": "Đi bộ kiến trúc di sản",
+        "desc": "Quan sát các họa tiết Namako-kabe tinh xảo và cửa lưới truyền thống tạo nên phong cách kiến trúc độc đáo của Kurashiki."
+      },
+      {
+        "title": "Trải nghiệm quán trà",
+        "desc": "Dừng chân tại quán trà trong kho được chuyển đổi, thưởng thức khoảnh khắc yên tĩnh với bánh ngọt và trà xanh truyền thống."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Không khí",
+        "value": "Lịch sử, Chính gốc, Dễ chụp ảnh"
+      },
+      {
+        "label": "Điểm nổi bật",
+        "value": "Namako-kabe (Tường vữa)"
+      },
+      {
+        "label": "Chụp ảnh",
+        "value": "Tốt nhất vào sáng sớm"
+      },
+      {
+        "label": "Khả năng tiếp cận",
+        "value": "Ngõ hẹp thân thiện với người đi bộ"
+      },
+      {
+        "label": "Thủ công địa phương",
+        "value": "Nơi có nhiều phòng trưng bày gốm Bizen"
+      }
+    ]
+  },
+  "snacks": {
+    "name": "Sanado-ya: Cửa sổ Đồ ăn Thủ công",
+    "address": "Phố Honmachi, Khu Bikan, Kurashiki",
+    "hours": "09:30 AM — 05:30 PM",
+    "short_intro": "Cửa hàng nhỏ đầy hoài niệm với bánh gạo nướng và xiên bánh cá mặn.",
+    "full_desc": "Nằm trên phố Honmachi duyên dáng, Sanado-ya là thiên đường 'window-shopping' cho tín đồ ẩm thực. Cửa hàng nổi tiếng với 'Senbei' (bánh gạo nướng) trưng bày trong hộp kính, từ nước tương truyền thống đến wasabi cay và muối biển. Bên cạnh là 'Satsuma-age' (bánh cá chiên) xiên que tiện đi bộ. Xiên nhồi các nguyên liệu địa phương như củ Burdock, bạch tuộc và gừng. Hương gạo nướng và cá chiên lan tỏa, mời gọi du khách thưởng thức các món đường phố Nhật bản địa được yêu thích qua nhiều thế hệ.",
+    "activities": [
+      {
+        "title": "Thử nướng tươi",
+        "desc": "Thưởng thức 'Nure-senbei' ấm (bánh gạo ẩm) với kết cấu mềm-dẻo độc đáo."
+      },
+      {
+        "title": "Mua quà lưu niệm",
+        "desc": "Mua các hộp bánh được đóng gói đẹp mắt làm quà du lịch lâu dài."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Nên thử",
+        "value": "Xiên Tako-negi (Bạch tuộc & Hành)"
+      },
+      {
+        "label": "Giá trung bình",
+        "value": "¥200 - ¥500/món"
+      },
+      {
+        "label": "Thanh toán",
+        "value": "Ưu tiên tiền mặt cho món nhỏ"
+      },
+      {
+        "label": "Cách ăn",
+        "value": "Có thùng rác tại cửa hàng"
+      }
+    ]
+  },
+  "desserts": {
+    "name": "Quán Ngọt Kurashiki: Thiên đường Matcha & Trái cây",
+    "address": "Gần Bảo tàng Nghệ thuật Ohara, Khu Bikan",
+    "hours": "10:00 AM — 05:00 PM",
+    "short_intro": "Điểm dừng thú vị cho sinh tố trái cây địa phương và món Matcha Uji cao cấp.",
+    "full_desc": "Tỉnh Okayama nổi tiếng là 'Vương quốc Trái cây' Nhật Bản, và quán này đem điều đó sống động. Menu có kem mềm màu sắc làm từ sữa Hokkaido với hương vị địa phương như Đào Trắng và Nho Kyoho. Nếu muốn trải nghiệm văn hóa sâu hơn, 'Matcha Warabi Mochi' (bánh bột bracken phủ bột trà xanh) mang lại cảm giác mịn màng, mát lạnh. Quán cũng có sinh tố chuối cao cấp làm từ chuối trồng tại Okayama hiếm. Đây là điểm dừng lý tưởng cho những ai yêu ngọt và cần nghỉ ngơi giữa các chuyến thăm bảo tàng.",
+    "activities": [
+      {
+        "title": "Thử hương vị",
+        "desc": "Thử các hương vị 'Mới' theo mùa, thường là những thu hoạch địa phương giới hạn."
+      },
+      {
+        "title": "Trình diễn Warabi Mochi",
+        "desc": "Xem nhân viên cắt và phủ mochi mềm bằng bột matcha xanh tươi."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Món đặc trưng",
+        "value": "Kem mềm Uji Matcha cao cấp"
+      },
+      {
+        "label": "Đặc sản",
+        "value": "Sinh tố Chuối Okayama (¥700)"
+      },
+      {
+        "label": "Chỗ ngồi",
+        "value": "Có băng ghế nhỏ ngoài trời"
+      },
+      {
+        "label": "Menu tiếng Anh",
+        "value": "Có hình minh họa"
+      }
+    ]
+  },
+  "gyoza": {
+    "name": "Hanetsuki Gyoza: Nhà Cánh Giòn",
+    "address": "Gourmet Alley, Khu Bikan, Kurashiki",
+    "hours": "11:30 AM — 09:00 PM",
+    "short_intro": "Nổi tiếng với 'Gyoza có cánh', giòn tan trong từng miếng.",
+    "full_desc": "Nếu bạn đang tìm món ăn kèm hoàn hảo cho ramen, đây chính là nó. Những chiếc bánh này được chế biến kiểu 'Hanetsuki', chiên với lớp bột mỏng tạo 'cánh' giòn kết nối các chiếc bánh. Du khách yêu thích sự tương phản giữa đáy giòn tan và nhân thịt heo, hành lá mềm mọng nước. Mỗi đĩa được phục vụ ngay từ chảo gang, óng ánh dầu mè. Trải nghiệm cả nghe, cả vị, tiếng giòn tan và hương umami khiến đây là một phần không thể quên của ẩm thực Kurashiki.",
+    "activities": [
+      {
+        "title": "Pha chế nước chấm",
+        "desc": "Tạo nước chấm hoàn hảo từ xì dầu, giấm và 'Ra-yu' (dầu ớt) tại bàn."
+      },
+      {
+        "title": "Xem bếp mở",
+        "desc": "Ngồi quầy để thấy đầu bếp lật gyoza để lộ lớp vỏ vàng nâu giòn."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Nên thử",
+        "value": "Gyoza Thịt heo & Gừng"
+      },
+      {
+        "label": "Giá",
+        "value": "¥450 - ¥600/đĩa"
+      },
+      {
+        "label": "Kèm món",
+        "value": "Hoàn hảo với bia lạnh Nhật"
+      },
+      {
+        "label": "Mang về",
+        "value": "Có hộp chuyên dụng"
+      }
+    ]
+  },
+  "street_food_combo": {
+    "name": "Takoyaki & Karaage",
+    "address": "Quầy Ăn dọc Sông, Kurashiki",
+    "hours": "10:00 AM — 06:00 PM",
+    "short_intro": "Bộ đôi hạng nặng của ẩm thực đường phố Nhật: Bánh bạch tuộc & Gà chiên.",
+    "full_desc": "Dành cho du khách vội, đĩa kết hợp này là đỉnh cao của ẩm thực tinh thần Nhật Bản. Trên cùng là Takoyaki—bánh bột nóng, nhân bạch tuộc, rưới nước sốt ngọt-mặn và vụn rong biển. Dưới là Karaage—gà chiên kiểu Nhật ướp gừng, tỏi, xì dầu, chiên vàng. Thêm Kimchi cay bên cạnh tạo vị chua nhẹ, hiện đại cho Kurashiki, cắt bớt độ béo và chiên. Món ăn hoàn hảo khi ngồi trên bậc đá ven kênh.",
+    "activities": [
+      {
+        "title": "Thử nóng",
+        "desc": "Cẩn thận! Takoyaki nóng bên trong. Ăn theo kiểu 'huff-and-puff' như người bản địa."
+      },
+      {
+        "title": "Vắt chanh",
+        "desc": "Vắt lát chanh tươi lên Karaage để tăng hương vị gia vị với mùi chanh."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá combo",
+        "value": "¥800 - ¥1,000"
+      },
+      {
+        "label": "Không khí",
+        "value": "Phong cách lễ hội đường phố"
+      },
+      {
+        "label": "Món kèm",
+        "value": "Kimchi bắp cải cay"
+      },
+      {
+        "label": "Phù hợp cho",
+        "value": "Bữa trưa nhanh, đầy đủ"
+      }
+    ]
+  },
+  "tea_house": {
+    "name": "Neko-no-Yume: Quán Trà Yêu Mèo",
+    "address": "Ngõ ẩn, Honmachi, Kurashiki",
+    "hours": "10:00 AM — 05:00 PM",
+    "short_intro": "Không gian nghỉ ngơi ấm cúng, dễ thương với rèm vải 'Cats in London' đặc trưng.",
+    "full_desc": "Ẩn mình khỏi lối đi chính ven kênh, quán nhỏ chào đón khách với Noren kỳ quái in hình mèo đầy màu sắc. Quán này hoàn hảo nắm bắt văn hóa 'Zakka' Nhật Bản. Bên trong, du khách tìm thấy nơi yên tĩnh tránh đám đông, thường được phục vụ bởi cư dân địa phương thân thiện, thể hiện 'Omotenashi' (hiếu khách tận tâm). Dù bán đồ thủ công hay phục vụ trà, không khí gắn liền với cuộc sống Kurashiki. Trang trí kể câu chuyện về cảm hứng toàn cầu pha lẫn kiến trúc gỗ truyền thống Nhật.",
+    "activities": [
+      {
+        "title": "Chụp ảnh",
+        "desc": "Lối vào với Noren chủ đề mèo và trang trí theo mùa là điểm yêu thích của các du khách Instagram."
+      },
+      {
+        "title": "Khám phá thủ công",
+        "desc": "Xem các kệ nhỏ bên trong để tìm đồ lưu niệm chủ đề mèo và vải thủ công địa phương độc đáo."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Chủ đề",
+        "value": "Nghệ thuật & Nghỉ ngơi lấy cảm hứng từ mèo"
+      },
+      {
+        "label": "Không khí",
+        "value": "Yên tĩnh, Địa phương, Ấm cúng"
+      },
+      {
+        "label": "Cách tìm",
+        "value": "Tìm rèm 'Cats in London'"
+      },
+      {
+        "label": "Mẹo",
+        "value": "Thích hợp nghỉ ngơi ngắn tránh đám đông du lịch"
+      }
+    ]
+  },
+  "banana_smoothie": {
+    "name": "Okayama Banana Lab: Trải Nghiệm Từ Vỏ Đến Ruột Chuối Hiếm Có",
+    "address": "Kurashiki Riverside Walk, Khu Bikan",
+    "hours": "10:00 — 18:00",
+    "short_intro": "Quán sinh tố sang trọng với chuối Okayama nổi tiếng ngọt ngào.",
+    "full_desc": "Ở Nhật Bản, Okayama nổi tiếng về trái cây, nhưng chuối ở đây thật sự đặc biệt. Quán phục vụ sinh tố 'Mongee Banana', loại hiếm và tinh khiết đến mức vỏ cũng có thể ăn được! Sinh tố dày mịn, hòa quyện hương vị chuối chín dưới nắng, mang đến vị ngọt tự nhiên không thể thay thế bằng siro nhân tạo. Với du khách, đây không chỉ là thức uống, mà là trải nghiệm về sự đổi mới nông nghiệp của Okayama. Quán còn hợp tác với 'Cold Stone Creamery', phục vụ kem que trang trí trái cây như tác phẩm nghệ thuật có thể ăn được. Đây là cách tuyệt vời để làm mát trong khi khám phá những con phố ngập nắng của khu vực kênh đào.",
+    "activities": [
+      {
+        "title": "Thưởng Thức Sinh Tố Cao Cấp",
+        "desc": "Trải nghiệm kết cấu kem mịn của chuối trồng theo phương pháp 'Freeze-Thaw Awakening', độc đáo tại vùng này."
+      },
+      {
+        "title": "Lựa Chọn Kem Que Cold Stone",
+        "desc": "Chọn từ nhiều loại kem que trang trí bằng dâu tây, xoài và nho Muscat đông lạnh, đẹp mắt như nghệ thuật."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Thức Uống Đặc Trưng",
+        "value": "Sinh tố Chuối Okayama (¥700)"
+      },
+      {
+        "label": "Đặc Sản",
+        "value": "Chuối vỏ ăn được"
+      },
+      {
+        "label": "Nguồn Trái Cây",
+        "value": "100% trồng tại địa phương, Okayama"
+      },
+      {
+        "label": "Góc Chụp Ảnh",
+        "value": "Mặt tiền màu vàng rực rỡ theo chủ đề chuối"
+      }
+    ]
+  },
+  "tsukemono_shop": {
+    "name": "Quán Tsukemono & Thực Phẩm Bảo Quản Địa Phương",
+    "address": "Khu Phố Lịch Sử Bikan, Kurashiki",
+    "hours": "10:00 — 17:30",
+    "short_intro": "Một góc yên tĩnh với dưa muối thủ công từ nông sản theo mùa.",
+    "full_desc": "Nằm dọc theo những con phố lịch sử của Kurashiki, cửa hàng này tôn vinh nghệ thuật bảo quản thực phẩm truyền thống. Sử dụng rau củ từ các nông trại lân cận, các món dưa muối được chế biến tối giản và theo kỹ thuật truyền thống lâu đời. Kệ gỗ, giỏ mây, nhãn tay phản ánh lối sống trân trọng bền vững, kiên nhẫn và tôn trọng thiên nhiên. Mỗi sản phẩm kể câu chuyện về khí hậu, đất đai và nhịp điệu mùa vụ địa phương.",
+    "activities": [
+      {
+        "title": "Thử Vị Theo Mùa",
+        "desc": "Khám phá cách hương vị thay đổi tự nhiên theo từng mùa."
+      },
+      {
+        "title": "Quà Lưu Niệm Ý Thức",
+        "desc": "Chọn thực phẩm đóng gói thân thiện môi trường, hỗ trợ nhà sản xuất địa phương."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥300 - ¥800"
+      },
+      {
+        "label": "Món Yêu Thích Địa Phương",
+        "value": "Khoai Sen Kinpira"
+      },
+      {
+        "label": "Ghi Chú Sinh Thái",
+        "value": "Rau củ nguồn gốc địa phương"
+      },
+      {
+        "label": "Phong Cách",
+        "value": "Tôn trọng không gian yên tĩnh"
+      }
+    ]
+  },
+  "peach_curry": {
+    "name": "Cà Ri Đào Trắng Okayama",
+    "address": "Khu Bikan, Kurashiki",
+    "hours": "11:00 — 20:00",
+    "short_intro": "Sự kết hợp nhẹ nhàng giữa trái cây và gia vị lấy cảm hứng từ mùa vụ địa phương.",
+    "full_desc": "Món ăn này phản ánh mối liên kết sâu sắc của Okayama với đất đai, hòa quyện đào trắng ngọt với gia vị cân bằng. Thay vì vị cay mạnh, cà ri mang đến sự ấm áp nhẹ nhàng, tôn vinh vị ngọt tự nhiên. Nguyên liệu được lựa chọn kỹ lưỡng, nhấn mạnh bản sắc vùng miền và sản phẩm theo mùa. Đây là trải nghiệm chậm rãi, mời du khách thưởng thức hương vị của cảnh quan.",
+    "activities": [
+      {
+        "title": "Trải Nghiệm Hương Vị Địa Phương",
+        "desc": "Nếm thử cách trái cây và gia vị hòa hợp tự nhiên."
+      },
+      {
+        "title": "Ăn Uống Bền Vững",
+        "desc": "Hỗ trợ nông nghiệp địa phương qua ẩm thực."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥1,200 - ¥2,000"
+      },
+      {
+        "label": "Lựa Chọn Tốt Nhất",
+        "value": "Cà ri đào chuẩn"
+      },
+      {
+        "label": "Độ Cay",
+        "value": "Nhẹ và cân bằng"
+      },
+      {
+        "label": "Phong Cách",
+        "value": "Thưởng thức chậm rãi và tinh tế"
+      }
+    ]
+  },
+  "western_japanese_menu": {
+    "name": "Món Ăn Nhật Kiểu Phương Tây",
+    "address": "Thành phố Kurashiki",
+    "hours": "11:30 AM — 09:00 PM",
+    "short_intro": "Món ăn được chuẩn bị cẩn thận với nguyên liệu địa phương chất lượng.",
+    "full_desc": "Những món ăn lấy cảm hứng từ phương Tây được điều chỉnh theo giá trị Nhật Bản về sự cân bằng và chăm sóc. Từ Hamburg steak đến tôm chiên và thịt bò Wagyu, mỗi bữa ăn được phục vụ với khẩu phần vừa phải kèm súp và rau theo mùa. Trọng tâm không phải là quá mức, mà là sự hài hòa – giữa hương vị, dinh dưỡng và môi trường. Ăn uống ở đây mang cảm giác bình yên, ấm áp và không vội vàng.",
+    "activities": [
+      {
+        "title": "Ăn Uống Chậm Rãi",
+        "desc": "Dành thời gian để thưởng thức kết cấu, hương vị và cách trình bày."
+      },
+      {
+        "title": "Lựa Chọn Có Trách Nhiệm",
+        "desc": "Chọn các món nhấn mạnh chất lượng hơn số lượng."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥1,950 - ¥4,400"
+      },
+      {
+        "label": "Món Phổ Biến",
+        "value": "Hamburg Steak sốt Demi-glace"
+      },
+      {
+        "label": "Tùy Chọn Cao Cấp",
+        "value": "Thịt bò Wagyu Steak"
+      },
+      {
+        "label": "Cách Ứng Xử",
+        "value": "Khuyến khích ăn uống yên tĩnh và tôn trọng"
+      }
+    ]
+  },
+  "kurashiki_momoko": {
+    "name": "Kurashiki Momoko (くらしき桃子)",
+    "address": "Khu Lịch Sử Bikan, Kurashiki",
+    "hours": "10:00 AM — 06:00 PM",
+    "short_intro": "Quán trái cây cao cấp nổi tiếng với parfait trái cây theo mùa của Nhật Bản.",
+    "full_desc": "Nằm trong một kho lưu trữ truyền thống được phục hồi đẹp mắt, Kurashiki Momoko là điểm đến mơ ước cho những người yêu thích món tráng miệng. Quán chuyên về parfait làm từ các loại trái cây nổi tiếng thế giới của Okayama, như Đào Trắng và Nho Muscat Alexandria. Sự trình bày tinh tế và sự kết hợp giữa trái cây tươi và kem chất lượng cao mang đến hương vị xa xỉ của 'Vương quốc Trái cây' Nhật Bản.",
+    "activities": [
+      {
+        "title": "Thưởng Thức Parfait Theo Mùa",
+        "desc": "Thưởng thức món tráng miệng tuyệt vời với trái cây tươi nhất theo mùa."
+      },
+      {
+        "title": "Mua Quà Tặng",
+        "desc": "Chọn mua thạch trái cây và mứt chất lượng cao làm quà lưu niệm cao cấp."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥1,500 - ¥3,000"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "Shine Muscat Parfait"
+      },
+      {
+        "label": "Không Gian",
+        "value": "Thanh lịch và thích hợp chụp ảnh Instagram"
+      },
+      {
+        "label": "Thời Gian Chờ",
+        "value": "Thường đông vào cuối tuần"
+      }
+    ]
+  },
+  "kurashiki_denim_street": {
+    "name": "Đường Denim Kurashiki",
+    "address": "1-10-11 Chuo, Kurashiki, Okayama",
+    "hours": "10:00 AM — 05:00 PM",
+    "short_intro": "Nơi sinh ra denim Nhật Bản, với ẩm thực đường phố màu xanh độc đáo.",
+    "full_desc": "Kurashiki là trung tâm công nghiệp denim của Nhật Bản. Khu vực sôi động này trưng bày mọi thứ liên quan đến denim – từ quần jean cao cấp đến phụ kiện độc đáo. Nổi tiếng nhất với ẩm thực 'Denim Blue', bao gồm bánh bao hấp màu xanh (Denim-man) và kem mềm màu xanh, tất cả được nhuộm bằng hoa dành dành tự nhiên để phù hợp với màu chàm của denim cổ điển.",
+    "activities": [
+      {
+        "title": "Thử Thách Ẩm Thực Denim",
+        "desc": "Thử các món bánh bao và kem màu xanh cực kỳ ngon miệng."
+      },
+      {
+        "title": "Tour Thủ Công",
+        "desc": "Khám phá các cửa hàng địa phương với sản phẩm denim 'Made in Kojima' chính gốc."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥400 - ¥600 (Đồ ăn nhẹ)"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "Kem mềm Denim"
+      },
+      {
+        "label": "Đặc Sản",
+        "value": "Thẩm mỹ màu chàm"
+      },
+      {
+        "label": "Sự Thú Vị",
+        "value": "Ngay cả nước chanh cũng màu xanh!"
+      }
+    ]
+  },
+  "achi_shrine": {
+    "name": "Đền Achi (阿智神社)",
+    "address": "12-1 Honmachi, Kurashiki (Đỉnh Núi Tsurugata)",
+    "hours": "Luôn mở cửa (Văn phòng đền: 08:30 AM — 05:00 PM)",
+    "short_intro": "Ngôi đền cổ cho tầm nhìn toàn cảnh Khu Lịch Sử Bikan.",
+    "full_desc": "Nằm trên đỉnh núi Tsurugata, Đền Achi đã canh giữ Kurashiki hơn 1,700 năm. Leo qua các bậc đá dưới cổng Torii biểu tượng, du khách sẽ được thưởng thức bầu không khí yên bình và tầm nhìn toàn cảnh tuyệt đẹp của thành phố tường trắng bên dưới. Nơi đây còn có 'Akebono-fuji', một trong những cây tử đằng cổ thụ và lớn nhất Nhật Bản.",
+    "activities": [
+      {
+        "title": "Điểm Nhìn Toàn Cảnh Thành Phố",
+        "desc": "Chiêm ngưỡng toàn cảnh khu lịch sử từ sân đền."
+      },
+      {
+        "title": "Cầu Nguyện Tâm Linh",
+        "desc": "Trải nghiệm nghi lễ Shinto truyền thống cầu bình an và thịnh vượng."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "Vào cửa miễn phí"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "Omamori hoa (Bùa may mắn)"
+      },
+      {
+        "label": "Thể Lực",
+        "value": "Cần leo một số bậc thang"
+      },
+      {
+        "label": "Lưu Ý Thiên Nhiên",
+        "value": "Hoa tử đằng đẹp vào cuối tháng 4"
+      }
+    ]
+  },
+  "miffy_bakery": {
+    "name": "Tiệm Bánh Miffy Sakura",
+    "address": "Khu Lịch Sử Bikan, Kurashiki",
+    "hours": "10:00 AM — 05:30 PM",
+    "short_intro": "Tiệm bánh đáng yêu theo chủ đề chú thỏ Miffy nổi tiếng của Hà Lan.",
+    "full_desc": "Kết hợp văn hóa 'Kawaii' Nhật Bản với nghề làm bánh truyền thống, cửa hàng này là điểm yêu thích của các gia đình và fan của Miffy. Tiệm cung cấp nhiều loại bánh hình Miffy và bạn bè, thường sử dụng hương vị Nhật như matcha, đậu đỏ và sakura. Nội thất trang trí theo chủ đề Miffy và có các sản phẩm độc quyền tại Kurashiki.",
+    "activities": [
+      {
+        "title": "Lựa Chọn Bánh Nhân Vật",
+        "desc": "Chọn từ các chiếc bánh mới nướng hình các nhân vật Miffy."
+      },
+      {
+        "title": "Mua Sắm Hàng Độc Quyền",
+        "desc": "Mua dụng cụ nhà bếp và thú nhồi bông Miffy chỉ có tại Kurashiki."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥300 - ¥500 mỗi bánh"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "Miffy Anpan (Bánh đậu đỏ)"
+      },
+      {
+        "label": "Không Gian",
+        "value": "Dễ thương và thân thiện với gia đình"
+      },
+      {
+        "label": "Mẹo",
+        "value": "Các mặt hàng phổ biến thường hết vào buổi chiều"
+      }
+    ]
+  },
+  "romance_of_kurashiki": {
+    "name": "Romance of Kurashiki (倉敷の浪漫)",
+    "address": "1-1-11 Chuo, Kurashiki, Okayama",
+    "hours": "09:30 AM — 05:30 PM",
+    "short_intro": "Cửa hàng quyến rũ chuyên về thủy tinh Kurashiki và đồ thủ công kaleidoscope.",
+    "full_desc": "Đúng với tên gọi, cửa hàng này nắm bắt bản chất lãng mạn của thời Taisho. Nó trưng bày bộ sưu tập 'Kurashiki Glass' tuyệt đẹp, nổi bật với màu xanh đặc trưng và chất lượng thổi tay chắc chắn. Từ kaleidoscope tinh xảo đến trang sức thủy tinh, mỗi món đều phản ánh tinh thần nghệ thuật của thị trấn. Tòa nhà cũng là một ví dụ đẹp về kiến trúc truyền thống Kurashiki.",
+    "activities": [
+      {
+        "title": "Khám Phá Thủ Công",
+        "desc": "Xem chi tiết tinh xảo của kaleidoscope và đồ trang trí thủy tinh thủ công."
+      },
+      {
+        "title": "Quà Lưu Niệm Vượt Thời Gian",
+        "desc": "Mua một món thủy tinh Kurashiki chính gốc để mang về nhà."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥1,000 - ¥10,000+"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "Cốc thủy tinh xanh"
+      },
+      {
+        "label": "Thẩm Mỹ",
+        "value": "Truyền thống và Nghệ thuật"
+      },
+      {
+        "label": "Cách Ứng Xử",
+        "value": "Vật dụng dễ vỡ – hãy cẩn thận khi xử lý"
+      }
+    ]
+  },
+  "ivy_square": {
+    "name": "Kurashiki Ivy Square",
+    "address": "7-2 Honmachi, Kurashiki, Okayama",
+    "hours": "Mở cửa 24 giờ (Tùy cơ sở)",
+    "short_intro": "Khu phức hợp gạch đỏ lịch sử phủ đầy dây thường xuân, phản ánh di sản công nghiệp Nhật Bản.",
+    "full_desc": "Được xây dựng trên địa điểm của nhà máy bông hiện đại đầu tiên ở Nhật Bản, Ivy Square là khu phức hợp đa năng kết hợp kiến trúc công nghiệp châu Âu với thẩm mỹ Nhật Bản. Những bức tường gạch đỏ mang tính biểu tượng được phủ xanh dây thường xuân, ban đầu được trồng để điều hòa nhiệt độ bên trong nhà máy. Ngày nay, nơi đây có khách sạn, bảo tàng, xưởng thủ công và các sân trong đẹp mắt. Đây là biểu tượng của sự chuyển mình từ thị trấn thương mại sang trung tâm công nghiệp, mang đến không khí hoài cổ và lãng mạn, lý tưởng cho những chuyến dạo chơi thư thái.",
+    "activities": [
+      {
+        "title": "Đi Bộ Lịch Sử",
+        "desc": "Khám phá sân trong phủ đầy dây thường xuân và chụp ảnh kiến trúc gạch đỏ độc đáo."
+      },
+      {
+        "title": "Xưởng Thủ Công Trải Nghiệm",
+        "desc": "Thử làm gốm hoặc dệt trong các xưởng thủ công tại chỗ."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Vào Cửa",
+        "value": "Miễn phí vào khuôn viên"
+      },
+      {
+        "label": "Không Gian",
+        "value": "Lịch sử, Yên tĩnh và Lãng mạn"
+      },
+      {
+        "label": "Điểm Nhìn Nhất Định",
+        "value": "Hồ Lily lấy cảm hứng từ Monet"
+      },
+      {
+        "label": "Mẹo",
+        "value": "Chiếu sáng đẹp vào ban đêm"
+      }
+    ]
+  },
+  "kojima_jeans_street": {
+    "name": "Phố Jeans Kojima",
+    "address": "Kojima Ajano, Kurashiki, Okayama",
+    "hours": "10:00 AM — 05:00 PM (Tùy cửa hàng)",
+    "short_intro": "Thánh địa của denim Nhật Bản, nổi bật với tay nghề thủ công đẳng cấp thế giới.",
+    "full_desc": "Nằm ở khu vực Kojima, con phố này nổi tiếng thế giới là nơi sinh ra denim 'Made in Japan'. Từng là một con phố mua sắm yên tĩnh, nay đã trở thành thiên đường denim với hơn 30 thương hiệu địa phương trưng bày sản phẩm. Khu vực này nổi bật với kỹ thuật nhuộm chàm chất lượng cao và dệt truyền thống. Ngay cả con phố cũng được trang trí bằng quần jeans treo trên đầu và đường phố sơn xanh, tạo nên một thế giới 'Denim Blue' độc đáo. Đây là nơi tốt nhất để tìm những chiếc quần jeans cao cấp, thủ công, bền bỉ theo thời gian.",
+    "activities": [
+      {
+        "title": "Mua Sắm Denim",
+        "desc": "Tìm những chiếc quần jeans độc đáo, chất lượng cao mà bạn không thể tìm thấy ở nơi nào khác trên thế giới."
+      },
+      {
+        "title": "Chụp Ảnh Phố",
+        "desc": "Chụp hình với những chiếc quần jeans treo biểu tượng dọc theo phố."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥15,000 - ¥40,000 (Cho quần jeans)"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "Momotaro Jeans & Big John"
+      },
+      {
+        "label": "Di Chuyển",
+        "value": "Đi 'Jeans Bus' từ ga Kojima"
+      },
+      {
+        "label": "Không Gian",
+        "value": "Phong cách, Tập trung vào thủ công, Nghệ thuật"
+      }
+    ]
+  },
+  "shopping_arcade": {
+    "name": "Khu Mua Sắm Kurashiki (Ebisu-dori)",
+    "address": "Achi, Kurashiki, Okayama",
+    "hours": "10:00 AM — 07:00 PM (Tùy cửa hàng)",
+    "short_intro": "Lối đi có mái che đầy hoài niệm nối ga với khu lịch sử.",
+    "full_desc": "Khu mua sắm Kurashiki, đặc biệt là Ebisu-dori, mang đến sự tương phản thú vị với Khu Lịch Sử Bikan. 'Shotengai' có mái che này là nơi cuộc sống địa phương hiện hữu, với sự kết hợp giữa các doanh nghiệp gia đình lâu đời và quán cà phê hiện đại. Nó mang không khí retro thời Showa, nơi bạn có thể tìm thấy mọi thứ từ trà và bánh truyền thống Nhật Bản đến các vật dụng hàng ngày. Đây là nơi lý tưởng để đi bộ vào những ngày mưa, cho bạn cái nhìn chân thực về đời sống hàng ngày của cư dân Kurashiki và cũng là lối vào các khu du lịch chính.",
+    "activities": [
+      {
+        "title": "Thử Món Ăn Vặt Địa Phương",
+        "desc": "Thưởng thức các món ăn vặt truyền thống như 'Muratsume' hoặc croquette địa phương khi đi dạo."
+      },
+      {
+        "title": "Tìm Quà Lưu Niệm",
+        "desc": "Duyệt qua các sản phẩm thủ công và vật dụng gia đình độc đáo với giá cả hợp lý."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Không Gian",
+        "value": "Retro, Địa phương, Sôi động"
+      },
+      {
+        "label": "Đặc Điểm",
+        "value": "Có mái che (Hoàn hảo cho ngày mưa)"
+      },
+      {
+        "label": "Cách Ứng Xử",
+        "value": "Chú ý xe đạp đi qua"
+      },
+      {
+        "label": "Thời Gian Tốt Nhất",
+        "value": "Cuối buổi sáng đến đầu giờ chiều"
+      }
+    ]
+  },
+  "momotaro_tshirt_shop": {
+    "name": "Cửa Hàng Áo Thun Momotaro (Kurashiki-ya)",
+    "address": "Khu Lịch Sử Bikan, Kurashiki",
+    "hours": "10:00 AM — 05:30 PM",
+    "short_intro": "Cửa hàng chuyên về các thiết kế độc đáo về anh hùng huyền thoại của Okayama.",
+    "full_desc": "Cửa hàng này tôn vinh anh hùng dân gian nổi tiếng nhất của Okayama, Momotaro (Cậu Bé Đào). Nằm giữa khu lịch sử, cửa hàng cung cấp nhiều loại áo thun, túi và phụ kiện độc quyền kết hợp các họa tiết Nhật truyền thống với thiết kế đồ họa hiện đại. Các nhân vật 'Momo-chan' và 'Momo-san' là phiên bản đáng yêu, được cách điệu của truyền thuyết, lý tưởng làm quà lưu niệm. Mỗi sản phẩm là một sự tôn vinh văn hóa địa phương, thường kết hợp yếu tố denim hoặc họa tiết truyền thống thể hiện 'Thành phố Nghệ thuật' Kurashiki.",
+    "activities": [
+      {
+        "title": "Mua Hàng Chủ Đề Nhân Vật",
+        "desc": "Chọn mua áo thun Momotaro độc đáo và túi vải 'Made in Japan'."
+      },
+      {
+        "title": "Ngắm Cửa Sổ Trưng Bày",
+        "desc": "Thưởng thức các trưng bày sáng tạo và áo thun kiểu Kimono trong cửa sổ."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥2,500 - ¥5,000 (Áo thun)"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "In 'Momo-chan' nguyên bản"
+      },
+      {
+        "label": "Ý Tưởng Quà Tặng",
+        "value": "Túi vải nhuộm chàm"
+      },
+      {
+        "label": "Chất Lượng",
+        "value": "Cotton chất lượng cao, Made in Japan"
+      }
+    ]
+  },
+  "coffee_ueda": {
+    "name": "Coffee Ueda (咖啡ウエダ)",
+    "address": "Khu Lịch Sử Bikan (Gần kênh đào)",
+    "hours": "09:00 AM — 06:00 PM",
+    "short_intro": "Một 'Kissaten' cổ điển nằm trong tòa nhà phong cách Tây độc đáo.",
+    "full_desc": "Nằm trong tòa nhà trắng đặc biệt với những vòm trang nhã và ban công retro, Coffee Ueda là 'Kissaten' (quán cà phê Nhật truyền thống) được yêu thích. Nó mang đến nơi tránh ồn ào của khu vực kênh đào. Nội thất đầy vẻ hoài niệm, phục vụ cà phê pha tay và các món ăn cổ điển. Quán nổi tiếng với thẩm mỹ retro cả trong lẫn ngoài, là điểm đến yêu thích của nghệ sĩ và nhiếp ảnh gia. Ngồi bên cửa sổ với tách cà phê đặc trưng giúp bạn quan sát thế giới Kurashiki trong một khung cảnh vượt thời gian.",
+    "activities": [
+      {
+        "title": "Giải Lao Cà Phê",
+        "desc": "Thư giãn với tách cà phê pha tay truyền thống và một lát bánh."
+      },
+      {
+        "title": "Thưởng Thức Kiến Trúc",
+        "desc": "Quan sát sự kết hợp độc đáo giữa kiến trúc Nhật và Tây của tòa nhà."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥500 - ¥1,000"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "Cà phê Blend nguyên bản Ueda"
+      },
+      {
+        "label": "Không Gian",
+        "value": "Yên tĩnh, Retro, Tinh tế"
+      },
+      {
+        "label": "Lưu Ý",
+        "value": "Điểm nghỉ tuyệt vời sau khi khám phá kênh đào"
+      }
+    ]
+  },
+  "tako_tamago": {
+    "name": "Tako Tamago (Bạch tuộc với Trứng Cút)",
+    "address": "Các quầy ăn đường phố ở Khu Bikan",
+    "hours": "10:00 AM — 05:00 PM (Tùy quầy)",
+    "short_intro": "Món ăn đường phố nổi tiếng, bắt mắt với bạch tuộc con nguyên con.",
+    "full_desc": "Tako Tamago là một trong những món ăn đường phố biểu tượng và 'Instagrammable' nhất ở Kurashiki. Bao gồm một con bạch tuộc con nguyên con được phủ sốt ngọt mặn từ xì dầu. 'Bất ngờ' nằm trong đầu bạch tuộc, chứa trứng cút luộc cứng. Sự kết hợp giữa kết cấu dai của bạch tuộc và vị béo của trứng tạo nên hương vị độc đáo. Phục vụ trên xiên, là món ăn lý tưởng khi dạo quanh các con phố lịch sử của Bikan.",
+    "activities": [
+      {
+        "title": "Thưởng Thức Ẩm Thực",
+        "desc": "Trải nghiệm sự kết hợp độc đáo giữa bạch tuộc phủ sốt và trứng cút."
+      },
+      {
+        "title": "Chụp Ảnh",
+        "desc": "Chụp hình món ăn độc đáo này trước khi thưởng thức!"
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Giá",
+        "value": "¥400 - ¥600 mỗi xiên"
+      },
+      {
+        "label": "Hương Vị",
+        "value": "Ngọt-mặn (Sốt xì dầu)"
+      },
+      {
+        "label": "Kết Cấu",
+        "value": "Dai và mềm"
+      },
+      {
+        "label": "Cách Ứng Xử",
+        "value": "Vứt xiên vào thùng rác của quầy"
+      }
+    ]
+  },
+  "restaurant_kiyutei": {
+    "name": "Nhà Hàng KIYUTEI (亀遊亭)",
+    "address": "1-2-20 Chuo, Kurashiki, Okayama (Bên trong Khu Lịch Sử Bikan)",
+    "hours": "11:00 AM — 03:00 PM / 05:00 PM — 09:00 PM",
+    "short_intro": "Nhà hàng phong cách Tây thanh lịch (Yoshoku) trong tòa nhà lịch sử thời Meiji.",
+    "full_desc": "Nằm trong tòa nhà Tây kiểu lớn xây năm 1911, Nhà Hàng KIYUTEI mang đến trải nghiệm ẩm thực tinh tế kết hợp hiếu khách Nhật Bản với món ăn phương Tây cổ điển. Ban đầu được xây làm hội trường nhà thờ, nội thất với trần cao và không gian nghệ thuật, bao gồm tác phẩm của nhà thư pháp nổi tiếng Shikou Munakata. Được quản lý bởi Kurashiki International Hotel, nhà hàng nổi tiếng với các món Yoshoku chính gốc như beef stew và cơm trứng omelette. Ăn ở đây như trở về thời Meiji, kết hợp kiến trúc đẹp với kỹ thuật nấu ăn cao cấp.",
+    "activities": [
+      {
+        "title": "Ăn Uống Di Sản",
+        "desc": "Thưởng thức bữa ăn tại một trong những tòa nhà Tây đẹp và có ý nghĩa lịch sử nhất Kurashiki."
+      },
+      {
+        "title": "Bữa Trưa Toàn Cảnh",
+        "desc": "Nếu ngồi tầng trên, thưởng thức tầm nhìn sông Kurashiki khi ăn."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Khoảng Giá",
+        "value": "¥2,000 - ¥5,000"
+      },
+      {
+        "label": "Món Yêu Thích",
+        "value": "Cà ri Bò & Cơm Hayashi"
+      },
+      {
+        "label": "Đặc Sản",
+        "value": "Thịt bò Wagyu Okayama Steak"
+      },
+      {
+        "label": "Lưu Ý",
+        "value": "Nên đặt bàn cho bữa tối hoặc nhóm lớn"
+      }
+    ]
+  },
+  "review": {
+    "subtitle": "Tiếng Nói Của Hành Trình",
+    "title": "Câu Chuyện Từ Những Du Khách Ý Thức",
+    "sub": "Trải nghiệm thực tế từ những người đã đi trên con đường lịch sử Kurashiki với sự tôn trọng và kinh ngạc.",
+    "more_stories": "Khám Phá Thêm Câu Chuyện"
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Milon",
+      "country": "Bangladesh",
+      "title": "Một Hành Trình Sinh Thái Không Thể Quên",
+      "excerpt": "Đi dọc các kênh lịch sử ở Kurashiki là trải nghiệm nhẹ nhàng cho tâm hồn mà tôi sẽ không bao giờ quên. Cách cộng đồng địa phương cân bằng du lịch hiện đại với truyền thống cổ xưa và ý thức sinh thái sâu sắc thực sự truyền cảm hứng. Mỗi góc của Khu Lịch Sử Bikan kể câu chuyện về bảo tồn và tôn trọng thiên nhiên, là điểm đến lý tưởng cho những du khách ý thức tìm kiếm bình yên và tính xác thực ở trung tâm Nhật Bản.",
+      "img": "./images/milon.jpg",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Hong Mo",
+      "country": "Vietnam",
+      "title": "Vẻ Đẹp Bền Vững",
+      "excerpt": "Du lịch mà không gây tác động đến môi trường có ý nghĩa sâu sắc với tôi, và Kurashiki vượt xa mọi mong đợi. Gặp gỡ các nghệ nhân địa phương, những người đã nhiều thế hệ hoàn thiện thủ công bền vững, từ denim hữu cơ đến vải dệt tay, là trải nghiệm độc đáo và mở mang tầm mắt. Từ các sáng kiến không nhựa đến ẩm thực theo mùa lấy từ địa phương, mọi khía cạnh của hành trình này đều có chủ đích và hòa hợp với cảnh quan Nhật Bản tuyệt đẹp.",
+      "img": "./images/mosan.jpg",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Myat Noe Nwe",
+      "country": "Myanmar",
+      "title": "Viên Ngọc Lịch Sử Ẩn Giấu",
+      "excerpt": "Kurashiki chắc chắn là một trong những nơi đẹp nhất, sạch sẽ nhất và giàu văn hóa mà tôi từng may mắn ghé thăm. Ẩm thực địa phương cực kỳ tươi ngon, thể hiện trọn vẹn nguyên liệu Nhật theo mùa, và lòng hiếu khách của người dân thật sự ấm áp. Đây là một viên ngọc ẩn hiếm hoi nơi bạn có thể thực sự rời xa thế giới số và kết nối lại với niềm vui đơn giản của cuộc sống bền vững chậm rãi giữa các kho tường trắng.",
+      "img": "./images/noe.jpg",
+      "rating": 4
+    }
+  ],
+  "nav": {
+    "hero": "Giới Thiệu",
+    "map": "Vị Trí",
+    "video": "Vlog Du Lịch",
+    "timeline": "Dòng Thời Gian",
+    "review": "Đánh Giá"
+  },
+  "trip": {
+    "title": "Giai Điệu Kurashiki",
+    "desc": "Nghệ thuật, Di sản và Âm vang của Kênh Đào.",
+    "filter": "Bộ lọc:",
+    "reserved": "Địa điểm đã đặt trước",
+    "step": "Bước",
+    "date": "Chọn Ngày Bắt Đầu",
+    "bird": "Early Bird: Giảm 10% khi đặt trước 30 ngày.",
+    "continue": "Tiếp tục",
+    "support": "Hỗ trợ",
+    "live": "Trực tiếp",
+    "adult": "Người lớn",
+    "child": "Trẻ em",
+    "family": "Gói Gia Đình",
+    "plan": "Kế Hoạch Gia Đình",
+    "upto": "Tối đa 4 Người • ",
+    "back": "Quay lại",
+    "summary": "Tóm tắt",
+    "booking": "Phí Đặt Chỗ",
+    "total": "Tổng cộng",
+    "private": "Hướng dẫn viên riêng",
+    "pass": "Đã đặt trước.",
+    "service": "Dịch vụ hướng dẫn",
+    "included": "Bao gồm",
+    "passage": "Hành trình của bạn đến Kurashiki đã được xác nhận cho",
+    "check": ". Kiểm tra phong bì kỹ thuật số của bạn.",
+    "new": "Đặt Chỗ Mới",
+    "checkList": "Danh sách đồ cần thiết",
+    "hour": "Giờ vàng",
+    "season": "Mẹo theo mùa",
+    "bloom": "Mùa hoa dự kiến: Cuối tháng 3",
+    "rainy": "Những ngày mưa ở Kurashiki mang đến những phản chiếu độc đáo trên đá lát ướt, hoàn hảo cho nhiếp ảnh nghệ thuật buồn man mác.",
+    "sections": {
+      "s1": {
+        "title": "Kế Hoạch Tiêu Biểu",
+        "subtitle": "Ba ngày đắm mình trong văn hóa, từ bờ kênh lịch sử đến các nghệ nhân dệt địa phương."
+      },
+      "s2": {
+        "title": "Di sản Ẩm thực",
+        "subtitle": "Trái cây tràn nắng của Okayama và những món đặc sản lịch sử Kurashiki."
+      },
+      "s3": {
+        "title": "Điều hướng & Di chuyển",
+        "subtitle": "Logistics liền mạch để khám phá Khu Lịch Sử Bikan."
+      }
+    },
+    "logistics": {
+      "shinkansen": "Di chuyển bằng Shinkansen",
+      "shinkansen_desc": "Từ Osaka hoặc Tokyo, đi Sanyo Shinkansen đến ga Okayama (15-50 phút), sau đó chuyển sang tuyến JR Sanyo địa phương đến Kurashiki (17 phút).",
+      "getting_around": "Di chuyển trong khu vực",
+      "getting_around_desc": "Khu Bikan cách ga 10 phút đi bộ. Thuê xe đạp tại Trung tâm Thông tin Du lịch (¥500/ngày) để khám phá các vùng ngoại ô như Ivy Square."
+    },
+    "review_form": {
+      "placeholder_name": "Tên của bạn",
+      "placeholder_text": "Chia sẻ trải nghiệm của bạn tại Kurashiki...",
+      "rating_label": "Đánh giá của bạn:",
+      "post_btn": "Đăng đánh giá"
+    },
+    "map_section": {
+      "title": "Bản đồ Tương tác",
+      "subtitle": "Tìm những con hẻm ẩn và quán cà phê."
+    },
+    "testimonial": {
+      "quote": "Buổi lễ trà riêng tư trong khu vườn ẩn là điểm nhấn của chuyến đi. Một lớp học về hiếu khách Nhật Bản và sự tĩnh lặng tuyệt đối.",
+      "user_name": "Eleanor Bennett",
+      "user_country": "Vương Quốc Anh"
+    },
+    "gallery": {
+      "title": "Thư viện Ảnh Chọn Lọc",
+      "subtitle": "Những khoảnh khắc được ghi lại trong giai điệu của kênh đào."
+    }
+  },
+  "dayPlan": {
+    "days": {
+      "day1": {
+        "s1": {
+          "title": "Đến Ga Kurashiki",
+          "desc": "Bước ra khỏi tàu vào thế giới nơi Nhật hiện đại gặp không khí thời Edo."
+        },
+        "s2": {
+          "title": "Tour Thuyền Truyền Thống",
+          "desc": "Thưởng thức hành trình yên bình 20 phút trên kênh dưới những cây liễu rủ."
+        },
+        "s3": {
+          "title": "Bữa trưa tại Khu Bikan",
+          "desc": "Mì Soba chính hiệu phục vụ trong kho hàng 100 năm tuổi được cải tạo đẹp mắt."
+        },
+        "s4": {
+          "title": "Bảo tàng Nghệ thuật Ohara",
+          "desc": "Bảo tàng tư nhân đầu tiên của Nhật Bản với những kiệt tác nghệ thuật phương Tây."
+        },
+        "s5": {
+          "title": "Chiếu sáng buổi tối",
+          "desc": "Trải nghiệm sự kiện thắp sáng 'Kurashiki Candle Night' như trong mơ."
+        }
+      },
+      "day2": {
+        "s1": {
+          "title": "Thuê Kimono",
+          "desc": "Mặc trang phục truyền thống tại 'Kurashiki Kimono Komachi' để dạo bộ đúng chất."
+        },
+        "s2": {
+          "title": "Thưởng thức ẩm thực đường phố",
+          "desc": "Thưởng thức các món ngọt từ đào trắng và nho muscat nổi tiếng của Okayama."
+        },
+        "s3": {
+          "title": "Kurashiki Ivy Square",
+          "desc": "Khám phá các bức tường gạch đỏ phủ cây thường xuân của nhà máy bông cũ nay thành khu văn hóa."
+        },
+        "s4": {
+          "title": "View Đền Achi",
+          "desc": "Ngắm hoàng hôn trên các mái ngói biểu tượng của khu lịch sử."
+        }
+      },
+      "day3": {
+        "s1": {
+          "title": "Chợ Trái Cây Địa Phương",
+          "desc": "Thưởng thức trái cây theo mùa tươi ngon trực tiếp từ nông dân địa phương."
+        },
+        "s2": {
+          "title": "Phố Denim",
+          "desc": "Khám phá nơi sinh ra denim Kojima và thử các món ăn vặt chủ đề 'xanh' độc đáo."
+        },
+        "s3": {
+          "title": "Trà & Zen",
+          "desc": "Trải nghiệm buổi lễ trà riêng tư nhìn ra khu vườn Zen ẩn."
+        },
+        "s4": {
+          "title": "Dạo cuối ngày",
+          "desc": "Mua các loại bánh kẹo Nhật truyền thống làm quà lưu niệm trước khi rời đi."
+        }
+      }
+    },
+    "tags": {
+      "arrival": "Đến nơi",
+      "history": "Lịch sử",
+      "signature": "Tiêu biểu",
+      "scenic": "Phong cảnh",
+      "gourmet": "Ẩm thực",
+      "art": "Nghệ thuật",
+      "seasonal": "Theo mùa",
+      "craft": "Thủ công",
+      "architecture": "Kiến trúc",
+      "local": "Địa phương",
+      "relax": "Thư giãn",
+      "farewell": "Chia tay"
+    },
+    "photo_spots": {
+      "spot1": {
+        "name": "Phản Chiếu Kênh Đào",
+        "desc": "Ánh sáng giờ xanh lý tưởng."
+      },
+      "spot2": {
+        "name": "Cầu thang Đền Achi",
+        "desc": "Ánh sáng buổi sáng chiếu lên cổng."
+      },
+      "spot3": {
+        "name": "Gạch Ivy Square",
+        "desc": "Ánh nắng trực tiếp làm nổi bật sắc đỏ sâu."
+      }
+    },
+    "foods": {
+      "f1": {
+        "name": "Parfait Đào Trắng",
+        "desc": "Đào 'Shimizu Hakuto' huyền thoại của Okayama."
+      },
+      "f2": {
+        "name": "Kibi-dango",
+        "desc": "Bánh bột kê truyền thống từ truyền thuyết Momotaro."
+      },
+      "f3": {
+        "name": "Bikan Soba",
+        "desc": "Mì kiều mạch làm thủ công trong không gian lịch sử."
+      }
+    },
+    "checklist": {
+      "item1": "Giày đi bộ thoải mái",
+      "item2": "Pin dự phòng di động",
+      "item3": "Khăn tay nhỏ",
+      "item4": "Mũ chống nắng / Ô"
+    }
+  }
+}

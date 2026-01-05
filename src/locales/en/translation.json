@@ -1,0 +1,2332 @@
+{
+  "navbar": {
+    "home": "Home",
+    "area": "Explore Area",
+    "trip_planner": "Trip Planner",
+    "must_visit": "Must Visit",
+    "travel_journal": "Travel Journal"
+  },
+  "hero": {
+    "subtitle": "Timeless Beauty, Sustainably Shared",
+    "title": "Beauty That Endures Through The Ages",
+    "subheading": "Discover the ancient heritage and natural serenity of Kurashiki",
+    "button": "Start Discovery",
+    "guide_text": "A conscious traveler’s guide to the beauty of Kurashiki"
+  },
+  "languages": {
+    "ja": "Japanese",
+    "en": "English",
+    "my": "Myanmar",
+    "vi": "Vietnamese",
+    "ko": "Korean"
+  },
+  "about": {
+    "canal_title": "Bikan Canal Area",
+    "canal_desc": "Experience the serene beauty of historic canals and willow-lined paths, preserved for centuries.",
+    "history_title": "Living History",
+    "history_desc": "Walk through the white-walled storehouses that tell the story of Japan's Edo period trade.",
+    "art_title": "Eco-Art Heritage",
+    "art_desc": "Home to the Ohara Museum of Art, blending global masterpieces with local sustainable values."
+  },
+  "attractions": {
+    "subtitle": "Essential Recommended Highlights",
+    "title": "Hand-picked Eco-conscious Locations",
+    "desc": "We believe in travel that gives back to the earth and the local Kurashiki community, preserving our beauty for generations to come"
+  },
+  "section": {
+    "title": "Must Visit Spots",
+    "subtitle": "Hand-picked Eco-conscious locations",
+    "quote": "We believe in travel that gives back to the earth and the local Kurashiki community.",
+    "details_btn": "View Spot Details"
+  },
+  "spot1": {
+    "title": "Kurashiki Bikan Historical Quarter",
+    "tag": "Heritage Site",
+    "desc": "A picturesque canal area famous for its preserved white-walled storehouses and willow trees.",
+    "longDesc": "The Kurashiki Bikan Historical Quarter is one of Japan's most stunningly preserved heritage districts, offering a serene journey back to the Edo period (1603-1867). The area's name, 'Bikan,' literally translates to 'Beautiful View,' and it lives up to this title with its iconic rows of white-walled 'Kura' storehouses (traditional granaries) adorned with black 'Namako' wall tiles. Historically, Kurashiki served as a vital hub for the rice trade, and the central canal was used by flat-bottomed boats to transport goods to the nearby port. \n\nToday, these meticulously preserved merchant houses and warehouses have been repurposed into world-class museums, such as the Ohara Museum of Art, as well as charming boutique cafes, traditional craft shops, and local sake breweries. As you walk along the stone-paved streets shaded by weeping willow trees, you can feel the deep merchant history of the region. The district is unique for its blend of traditional Japanese architecture and early 20th-century Western influences, reflecting Japan's rapid modernization. \n\nWhether you are exploring the narrow back alleys of Honmachi and Higashimachi, taking a tranquil boat ride down the canal, or simply enjoying the refined atmosphere of the tea houses, the Bikan Quarter offers an immersive cultural experience that is both peaceful and intellectually enriching. It is not just a tourist spot; it is a living museum where the pride of Kurashiki's history is preserved for future generations to admire.",
+    "fee": "Free Entry (Grounds)",
+    "avgDuration": "3 - 5 Hours",
+    "hours_weekdays": "24 Hours (Grounds/Shops: 09:00 AM — 05:30 PM)",
+    "hours_sat": "24 Hours (Grounds/Shops: 09:00 AM — 06:00 PM)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.454261730419!2d133.7680072763261!3d34.59267199026365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551564796385adb%3A0x11ce094116eb0dae!2sKurashiki%20Bikan%20Historical%20Quarter!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "A 10-15 minute walk from the South Exit of JR Kurashiki Station.",
+    "access_step2": "Pass through the Ebisu-dori covered shopping arcade for a scenic approach.",
+    "busDesc": "Kurashiki Loop Bus stops at the main Bikan entry point every 20-30 minutes.",
+    "walkDesc": "An easy, flat, and pleasant walk through the local shopping district.",
+    "highlight1": "Traditional wooden boat rides on the historic canal",
+    "highlight2": "Iconic white-walled storehouses with black tile patterns",
+    "highlight3": "The Ohara Museum of Art - Japan's first Western art museum",
+    "wisdomTip": "To avoid the crowds and capture the best photos, visit early in the morning (before 10:00 AM) or stay until the evening 'Kura-no-Akari' illumination. Don't forget to explore the backstreets of Honmachi for authentic local crafts away from the main canal!",
+    "openStatus": "Open for exploration"
+  },
+  "spot2": {
+    "title": "Ohara Museum of Art",
+    "tag": "Art & Heritage",
+    "desc": "Japan's first museum of Western art, featuring world-class masterpieces.",
+    "longDesc": "Established in 1930, this Neoclassical landmark houses an astonishing collection, including El Greco’s 'The Annunciation,' Claude Monet’s 'Water Lilies,' and works by Gauguin and Picasso. The museum complex beautifully blends Western masterpieces with Japanese architectural soul.",
+    "fee": "Adult: ¥2,000 | Student: ¥500",
+    "avgDuration": "2-4 Hours",
+    "hours_weekdays": "09:00 AM — 05:00 PM",
+    "hours_sat": "09:00 AM — 05:00 PM (Closed Mon)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.743128475249!2d133.76848417625973!3d34.59422008928424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355157ca00000001%3A0x8677f50a80e7225c!2sOhara%20Museum%20of%20Art!5e0!3m2!1sen!2smm!4v1710000000000",
+    "access_step1": "Located directly inside the Bikan Historical Quarter.",
+    "access_step2": "Look for the prominent Greek temple-style building near the main canal bridge.",
+    "busDesc": "Take any bus to 'Ohara Bijutsukan-mae' stop.",
+    "walkDesc": "A scenic 15-minute walk from the station.",
+    "highlight1": "Original masterpieces by El Greco, Monet, and Picasso",
+    "highlight2": "Iconic Neoclassical architecture",
+    "highlight3": "Serene Annex Garden and traditional craft galleries",
+    "wisdomTip": "The museum is most peaceful on weekday mornings. Don't miss the ivy-covered exterior.",
+    "openStatus": "Open for exploration"
+  },
+  "spot3": {
+    "title": "Kurashiki Ivy Square",
+    "tag": "Industrial Heritage",
+    "desc": "A beautiful red-brick complex revitalized from a historic spinning mill.",
+    "longDesc": "Built in 1889 as the first modern cotton mill in Japan, the site is now a cultural oasis. The signature red-brick walls are blanketed in lush green ivy, originally planted to regulate temperature. It houses a hotel, museums, and artisan workshops.",
+    "fee": "Free Entry (Museums separate)",
+    "avgDuration": "1-2 Hours",
+    "hours_weekdays": "24 Hours (Grounds)",
+    "hours_sat": "24 Hours (Grounds)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5042861218524!2d133.771243976326!3d34.59140359033108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515638428e2c0b%3A0x29f474bc3f0c0cfc!2sKurashiki%20Ivy%20Square!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "Situated at the eastern edge of the Bikan Historical Quarter.",
+    "access_step2": "Look for the massive red-brick walls and ivy-covered gate.",
+    "busDesc": "Alight at the 'Ivy Square South Gate' stop.",
+    "walkDesc": "A short 5-minute walk from the Kurashiki River canal area.",
+    "highlight1": "Iconic red-brick walls covered in seasonal ivy",
+    "highlight2": "Pottery and weaving workshops",
+    "highlight3": "Historical Kurabo Memorial Hall",
+    "wisdomTip": "Visit in autumn when the ivy leaves turn a vibrant, fiery red.",
+    "openStatus": "Open for exploration"
+  },
+  "spot4": {
+    "title": "Kurashiki Ivy Square",
+    "tag": "Heritage & Culture",
+    "desc": "A charming complex of brick buildings and ivy-covered walls, once Japan's first modern cotton mill.",
+    "longDesc": "Kurashiki Ivy Square is a landmark heritage site that beautifully preserves Japan's industrial revolution history. Originally built in 1889 as the Kurashiki Spinning Works (Kurabō), it was the country's first modern cotton mill. After its industrial life ended, the red-brick factory was thoughtfully repurposed into a multi-purpose cultural complex in 1974. \n\nThe architecture is a stunning example of Meiji-era design, characterized by its iconic red brickwork and the lush green ivy that scales the walls—planted originally to help regulate the temperature inside the factory floors. Today, this award-winning site houses the Kurabō Memorial Hall, which chronicles the local textile history, and the Kojima Torajiro Art Museum, showcasing Western-style paintings. \n\nVisitors can wander through the spacious 'Ivy Court' courtyard, participate in traditional pottery-making workshops at the Ivy Pottery, or stay at the boutique hotel integrated into the historic structure. It is a place where the rhythmic sounds of 19th-century weaving looms are replaced by the peaceful rustle of leaves, offering a unique blend of historical education, artistic inspiration, and serene relaxation right in the heart of the Bikan District.",
+    "fee": "Free Admission (Museums & Workshops have separate fees)",
+    "avgDuration": "1.5 - 2.5 Hours",
+    "hours_weekdays": "Open 24 Hours (Shops/Museums: 09:00 AM — 05:30 PM)",
+    "hours_sat": "Open 24 Hours (Shops/Museums: 09:00 AM — 06:00 PM)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5042861218524!2d133.771243976326!3d34.59140359033108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515638428e2c0b%3A0x29f474bc3f0c0cfc!2sKurashiki%20Ivy%20Square!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "Located just a 3-minute walk from the main Kurashiki Canal area.",
+    "access_step2": "Enter via the main brick gate; the complex is self-contained with multiple exits.",
+    "busDesc": "Take the Kurashiki Loop Bus to the 'Bikan Historical Quarter' stop.",
+    "walkDesc": "A scenic 15-minute walk from Kurashiki Station South Exit.",
+    "highlight1": "Award-winning repurposing of Meiji-era industrial architecture",
+    "highlight2": "Ivy-covered walls that change color with the seasons (Deep green to fiery red)",
+    "highlight3": "Cultural workshops including hand-made pottery and music box crafting",
+    "wisdomTip": "Don't miss the Night Illumination. After 6:00 PM, the soft yellow lights against the red bricks create a magical atmosphere that is much quieter than the daytime.",
+    "openStatus": "Open for exploration"
+  },
+  "spot5": {
+    "title": "Kurashiki Denim Street",
+    "tag": "Fashion & Culture",
+    "desc": "The vibrant birthplace of Japanese denim, offering world-class craftsmanship and quirky indigo-themed street food.",
+    "longDesc": "Kurashiki Denim Street is a celebration of the city's legacy as the 'Sacred Land of Denim.' The nearby Kojima district was the first place in Japan to produce domestic jeans in the 1960s, and this street brings that world-class craftsmanship into the heart of the Bikan Historical Quarter. Japanese denim is globally renowned among fashion enthusiasts for its superior quality, traditional shuttle-loom weaving, and natural indigo dyeing techniques that create unique aging patterns over time.\n\nAs you stroll down this stylish alley, you will find specialized boutiques showcasing everything from high-end 'selvedge' denim and rugged workwear to delicate indigo-dyed accessories and stationery. Beyond fashion, the street is famous for its playful 'Denim Blues' culinary creations. Visitors flock here to try the photogenic 'Denim Steam Buns' (filled with meat but colored a striking indigo blue), 'Denim Soft Serve Ice Cream' (a refreshing ramune and blueberry flavor), and even 'Denim Burgers.' \n\nWhether you are a die-hard denim collector looking for the perfect pair of handmade Japanese jeans or a casual traveler seeking a fun Instagram-worthy snack, Denim Street offers a perfect blend of Kurashiki’s industrial pride and modern creative spirit. The street is lined with denim-clad decorations and blue-themed storefronts, making it one of the most vibrant and trendy spots in the entire historic district.",
+    "fee": "Free Entry (Shopping & Food costs vary)",
+    "avgDuration": "1 - 1.5 Hours",
+    "hours_weekdays": "10:00 AM — 05:30 PM",
+    "hours_sat": "10:00 AM — 06:00 PM",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.475458032731!2d133.76882647632593!3d34.592134590292554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515640e03145c5%3A0x4f705d26ac59c4bb!2sKurashiki%20Denim%20Street!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "Located at the southern entrance of the Bikan Historical Quarter, near the canal's end.",
+    "access_step2": "Look for the distinctive denim-covered benches and large blue banners.",
+    "busDesc": "If you want to visit the actual factories, take the 'Jeans Bus' from Kurashiki Station to Kojima district (30-40 min).",
+    "walkDesc": "A 15-minute walk from Kurashiki Station South Exit.",
+    "highlight1": "World-class Japanese 'Selvedge' denim craftsmanship",
+    "highlight2": "The famous Indigo Blue Steam Buns and Soft Cream",
+    "highlight3": "Handmade denim accessories and indigo-dyed stationery",
+    "wisdomTip": "Many shops offer tax-free shopping for international tourists. Bring your passport to get a 10% discount on high-end jeans! Also, the 'Denim Soft Cream' is a must-try for its surprising blueberry-ramune taste.",
+    "openStatus": "Open for exploration"
+  },
+  "spot6": {
+    "title": "Kurashiki Bikan Night Light",
+    "tag": "Atmospheric Experience",
+    "desc": "A magical transformation of the historic district, where soft shadows and warm lights bring the Edo period back to life.",
+    "longDesc": "When the sun sets over the Kurashiki Bikan Historical Quarter, the area undergoes a breathtaking transformation known as the 'Kurashiki Night Landscape.' This world-class lighting design was orchestrated by the renowned lighting designer Motoko Ishii, aimed at accentuating the district's architectural beauty without overpowering it. Unlike typical vibrant illuminations, the lighting here is subtle and warm, featuring soft shadows that dance along the white-walled storehouses and reflect beautifully on the still waters of the Kurashiki River. \n\nThe lights are carefully placed to highlight the texture of the stone bridges, the silhouette of the weeping willow trees, and the traditional latticework of the historic buildings. This nocturnal ambiance creates a serene, cinematic atmosphere that feels like a journey back to the Edo period. Walking through the narrow alleys under the gentle glow of street lamps offers a completely different emotional experience compared to the daytime—quiet, romantic, and deeply peaceful. It is the perfect time for photographers to capture the 'mirror effect' on the canal or for couples to enjoy a tranquil stroll after the daytime crowds have dispersed.",
+    "fee": "Free Admission (Open Public Area)",
+    "avgDuration": "45 Minutes - 1.5 Hours",
+    "hours_weekdays": "Sunset — 09:00 PM (Oct-Mar) | Sunset — 10:00 PM (Apr-Sept)",
+    "hours_sat": "Sunset — 09:00 PM (Oct-Mar) | Sunset — 10:00 PM (Apr-Sept)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5042861218524!2d133.771243976326!3d34.59140359033108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515638428e2c0b%3A0x29f474bc3f0c0cfc!2sKurashiki%20Ivy%20Square!5e0!3m2!1sen!2sjp!4v1700000000000",
+    "access_step1": "The illumination covers the entire canal area and the Honmachi/Higashimachi streets.",
+    "access_step2": "Best viewed by starting from the Nakabashi Bridge and walking along the riverbanks.",
+    "busDesc": "Night buses are limited, but the area remains very accessible on foot.",
+    "walkDesc": "A peaceful 15-minute walk from Kurashiki Station South Exit.",
+    "highlight1": "Expertly designed warm-tone lighting by Motoko Ishii",
+    "highlight2": "Stunning 'Mirror Reflection' of white walls on the canal",
+    "highlight3": "Cinematic and romantic atmosphere with fewer crowds",
+    "wisdomTip": "The best 'Blue Hour' photos are taken about 15-20 minutes after sunset when the sky is deep blue and the warm lights have just turned on. Also, remember that most shops close by 6:00 PM, so this is purely for a scenic walk.",
+    "openStatus": "Beautifully lit tonight"
+  },
+  "seasonal": {
+    "subtitle": "Atmosphere",
+    "title": "Four Seasons of Kurashiki",
+    "spring_title": "SPRING",
+    "spring_date": "March - May",
+    "summer_title": "SUMMER",
+    "summer_date": "June - August",
+    "autumn_title": "AUTUMN",
+    "autumn_date": "Sept - Nov",
+    "nightlight": "NIGHT LIGHT",
+    "nightlight_date": "Illumination",
+    "spring_desc": "Experience the poetic beauty of cherry blossoms reflecting on the Kurashiki canal.",
+    "summer_desc": "Vibrant festivals and traditional lanterns lighting up the summer nights.",
+    "autumn_desc": "The historic white walls contrast beautifully with fiery red maple leaves.",
+    "night_desc": "The magical 'Kura-no-Akari' illumination transforms the canal into a golden dreamscape."
+  },
+  "concierge": {
+    "title": "Green Trip Concierge",
+    "desc": "Plan your sustainable journey with our curated travel essentials. We help you explore Kurashiki while minimizing your environmental footprint.",
+    "book_hotel": "Eco-Friendly Stays",
+    "walking_map": "Digital Walking Guide",
+    "museum_pass": "Heritage Museum Pass",
+    "form_title": "Plan Your Visit",
+    "label_arrival": "Arrival Date",
+    "label_guests": "Number of Guests",
+    "submit_btn": "Get My Green Guide"
+  },
+  "sidebar": {
+    "explore": "Explore Menu",
+    "search": "Search Kurashiki...",
+    "language": "Select Language"
+  },
+  "footer": {
+    "title": "Experience the",
+    "greentitle": "Timeless Beauty",
+    "subtitle": "of Kurashiki",
+    "navigation_label": "Quick Links",
+    "desc": "Dedicated to preserving the historic charm and natural elegance of Kurashiki through sustainable and eco-conscious tourism.",
+    "contact_label": "Get In Touch",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "copyright": "© 2025 Kurashiki Eco-Tourism. All rights reserved.",
+    "email": "hello@kurashiki-eco.com",
+    "hours_label": "Service Hours",
+    "hours_value": "Mon – Fri, 9:00 – 17:00 JST",
+    "location": "Kurashiki, Okayama, Japan",
+    "badges": {
+      "eco_tourism": "Certified Eco-Tourism",
+      "sustainable_partner": "Sustainable Japan Partner",
+      "zero_waste": "Zero Waste Policy"
+    }
+  },
+  "menu": {
+    "quick_menu": "Quick Menu",
+    "search_destinations": "SEARCH DESTINATIONS",
+    "search_looking_for": "WHAT ARE YOU LOOKING FOR?",
+    "select_language": "Select Language"
+  },
+  "map": {
+    "label": "Cartography",
+    "title_main": "Explore the",
+    "title_italic": "Historical Heart.",
+    "description": "Use this map as your personal guide to navigate the scenic canal-side paths and discover the well-preserved traditional merchant houses.",
+    "legend": {
+      "riverside": "Riverside",
+      "museums": "Museums",
+      "teahouses": "Teahouses",
+      "kojima": "Kojima Jean"
+    },
+    "nav_label": "Live Navigation",
+    "nav_action": "Open Google Maps"
+  },
+  "weather": {
+    "clear": "clear",
+    "clouds": "clouds",
+    "rain": "rain",
+    "loading": "loading"
+  },
+  "gallery": {
+    "canalView": "Canal View",
+    "traditional": "Traditional Storehouses",
+    "streetView": "Street View",
+    "museumFront": "Museum Exterior",
+    "westernArt": "Western Art Collection",
+    "denimShop": "Denim Shop",
+    "indigoProcess": "Indigo Dyeing Process",
+    "localFood": "Local Delicacies",
+    "cafeInterior": "Cafe Interior",
+    "ivyTunnel": "Ivy Tunnel",
+    "gardenView": "Garden View",
+    "mountainView": "Mountain View",
+    "shrineSteps": "Shrine Entrance Steps"
+  },
+  "common": {
+    "back": "Back",
+    "search": "Search ...",
+    "free_entry": "Free Entry",
+    "navigate": "NAVIGATE",
+    "more": "Explore More",
+    "free": "Free Admission",
+    "closed": "Closed",
+    "last": "History, culture, and nature flow together beautifully.",
+    "status_open": "Open for exploration",
+    "reviews": {
+      "r1": {
+        "role": "Photographer",
+        "comment": "The 5 AM mist is pure poetry. Sarah captured the soul of Kurashiki perfectly."
+      },
+      "r2": {
+        "role": "Foodie",
+        "comment": "Best Baran Sushi recommendation! Must try the shop near the stone bridge."
+      },
+      "r3": {
+        "role": "Explorer",
+        "comment": "I just visited the Bikan district based on this! Incredible."
+      }
+    },
+    "tags": {
+      "food": "Food",
+      "heritage": "Heritage",
+      "eco": "Eco-Tour",
+      "nature": "Nature",
+      "art": "Art",
+      "drink": "Drink",
+      "lifestyle": "Lifestyle",
+      "culture": "Culture"
+    },
+    "tabs": {
+      "food": "Food",
+      "heritage": "Heritage",
+      "life_style": "Lifestyle",
+      "night_view": "Night View",
+      "art": "Art",
+      "cultural": "Cultural",
+      "local_craft": "Local Craft"
+    }
+  },
+  "experience": {
+    "top": "Top Destination",
+    "subtitle": "Curated Collection",
+    "title": "Kurashiki’s",
+    "greentitle": " Living Spirit",
+    "kurashiki_denim_street": "Kurashiki Denim Street",
+    "ohara_museum": "Ohara Museum",
+    "greco": "EL GRECO Cafe",
+    "cafe": "Ohte manju cafe",
+    "white_house_street": "White House Street",
+    "bikan_night": "Bikan Night Light",
+    "western_japanese_menu": "Western Japanese Menu",
+    "coffee_ueda": "Coffee Ueda",
+    "tako_tamago": "Tako Tamago",
+    "tea_house": "Cat Noren / Tea House",
+    "stick_tempura": "Stick Tempura",
+    "soft_serve": "Soft Serve Ice Cream",
+    "street_food_combo": "Takoyaki & Karaage",
+    "gyoza": "Gyoza",
+    "ramen": "Ramen",
+    "canal": "Swans in Canal",
+    "momotaro_tshirt_shop": "Momotaro Tshirt",
+    "desserts": "Warabi Mochi & Kuzu-mochi",
+    "restaurant_kiyutei": "Restaurant KIYUTEI",
+    "banana_smoothie": "Banana Smoothie",
+    "snacks": "Senbei",
+    "tsukemono_shop": "Tsukemono shop",
+    "peach_curry": "Peach Curry",
+    "miffy_bakery": "Miffy bakery",
+    "kojima_jeans_street": "Kojima Jeans Street",
+    "ivy_square": "Ivy Square",
+    "romance_of_kurashiki": "Romance of Kurashiki",
+    "kurashiki_momoko": "Kurashiki Momoko",
+    "shopping_arcade": "Shopping Arcade",
+    "achi_shrine": "Achi Shrine",
+    "description": "From the quiet ripple of the canals to the artisanal soul of local kitchens and world-class galleries—discover a curated journey through Kurashiki’s timeless heritage, seasonal flavors, and natural serenity.",
+    "uptitle": "Recommended 6 Places",
+    "downtitle": "Happy Memory For You !",
+    "join_btn": "Join Experience",
+    "explore_more": "Explore More >>> ",
+    "pratical": "Practical Information",
+    "discover": "Discover the beauty of Kurashiki ",
+    "filter_label": "Filter",
+    "no_results": "No experiences found in this category.",
+    "page_title_1": "Our",
+    "page_title_accent": "Experiences",
+    "page_description": "Discover the hidden gems of Kurashiki. From traditional crafts to sustainable eco-tours, explore our curated collection.",
+    "tabs": {
+      "all": "All",
+      "heritage": "Heritage",
+      "eco": "Eco-Tour",
+      "art": "Craft & Art",
+      "food": "Food",
+      "drink": "Drink",
+      "lifestyle": "Lifestyle"
+    }
+  },
+  "details": {
+    "journal": "TRAVEL JOURNAL",
+    "discovering": "Discovering",
+    "locationAccess": "Location & Access",
+    "openMaps": "Open in Google Maps",
+    "step1Title": "Arrival at Station",
+    "step2Title": "Short Scenic Walk",
+    "walkingTip": "The area is mostly pedestrian-friendly. We recommend comfortable walking shoes to enjoy the historic stone paths.",
+    "curationNote": "CURATION NOTE",
+    "essentialGuide": "Essential Guide",
+    "entryFee": "Entry Fee",
+    "timeRequired": "Time Required",
+    "openingHours": "Opening Hours",
+    "weekdays": "Weekdays & Holidays",
+    "saturday": "Sundays / Special Events",
+    "keyExperience": "Key Experiences",
+    "localWisdom": "Local Wisdom",
+    "openStatus": "Open Today",
+    "galleryTitle": "Visual Memories",
+    "transport": "Transportation",
+    "gettingThere": "Getting There",
+    "transportSubtitle": "Convenient ways to reach this destination from Kurashiki Station.",
+    "publicBus": "Public Bus",
+    "walking": "Scenic Walk",
+    "busTime": "Approx. 10 mins",
+    "walkTime": "15-20 min walk",
+    "curatedSelection": "Curated Selection",
+    "continueJourney": "Continue Your Journey",
+    "continueJourneySubtitle": "Explore other nearby gems in the Bikan Historical Quarter.",
+    "nextStops": "Next Stops",
+    "attractionsCount": "Attractions"
+  },
+  "mission": {
+    "hero_sub": "Est. 1600s Heritage",
+    "hero_title_1": "soulful",
+    "hero_title_2": "Soulful",
+    "hero_title_3": "Travel.",
+    "hero_tracking": "TRACKING TRADING 0.9",
+    "hero_desc_1": "Experience Kurashiki not just as a tourist, but as a",
+    "hero_desc_highlight_1": "guardian",
+    "hero_desc_2": "of its",
+    "hero_desc_highlight_2": "400-year-old",
+    "hero_desc_3": "soul.",
+    "cta_button": "Start Exploring",
+    "vision_label": "Our Vision",
+    "vision_title_1": "Travel with",
+    "vision_title_highlight": "Intention",
+    "brand_name": "Kurashiki.Eco",
+    "location_name": "Kurashiki",
+    "vision_p1_part1": "At",
+    "vision_p1_part2": ", we are more than a travel guide; we are a collective dedicated to preserving the 400-year-old soul of the Bikan Historical Quarter. Our mission is to safeguard Edo-period heritage while pioneering low-carbon eco-tourism that honors our environment.",
+    "vision_p2_part1": "By empowering local artisans and supporting heritage restoration, we ensure",
+    "vision_p2_part2": "remains a living, breathing city rather than a static museum. We believe every journey should leave a positive footprint—balancing the whispers of the past with a sustainable promise for the future.",
+    "pill_heritage": "Heritage",
+    "pill_eco": "Eco-Travel",
+    "pill_community": "Community",
+    "pill_waste": "Zero Waste",
+    "team_label": "The Collective",
+    "team_title": "Meet Our Guardians",
+    "team_kenji_name": "Kenji Sato",
+    "team_kenji_role": "Heritage Specialist",
+    "team_aoi_name": "Aoi Tanaka",
+    "team_aoi_role": "Eco-Traveler",
+    "team_hiroshi_name": "Hiroshi Mori",
+    "team_hiroshi_role": "Community Lead",
+    "team_yuki_name": "Yuki Kato",
+    "team_yuki_role": "Green Expert",
+    "tips_title": "How to be a Wise Traveler.",
+    "tips_subtitle": "Help us preserve the magic through small, impactful choices.",
+    "tip_1_title": "Choose Local",
+    "tip_1_desc": "Support family-owned shops instead of global chains.",
+    "tip_2_title": "BYOB",
+    "tip_2_desc": "Bring your own water bottle. Use our refill stations.",
+    "tip_3_title": "Honor the Silence",
+    "tip_3_desc": "Keep voices low in residential zones.",
+    "tip_4_title": "Mindful Photos",
+    "tip_4_desc": "Respect photography bans in sacred areas."
+  },
+  "mustVisit": {
+    "side_title": "Famous Places In Kurashiki",
+    "hero_sub": "Curated Selection",
+    "hero_title": "Must Visit",
+    "hero_title_accent": "Spots.",
+    "hero_desc": "Experience the timeless beauty of Kurashiki through these carefully selected destinations, where history meets modern sustainability.",
+    "spots_title": "Iconic Destinations",
+    "spots_subtitle": "Selected Heritage Sites",
+    "navigate": "Navigate",
+    "fee": "Free",
+    "start": "Start Exploring",
+    "nature": "Pristine Nature",
+    "explore_story": "Explore Full Story",
+    "tabs": {
+      "all": "All",
+      "eco": "Eco-Tour",
+      "art": "Craft & Art",
+      "food": "Food"
+    }
+  },
+  "experience_detail": {
+    "back": "Back",
+    "not_found": "Experience not found.",
+    "duration": "3 Hours",
+    "expect_title": "What to expect",
+    "expect_items": {
+      "guides": "Guided by local artisans",
+      "sustainable": "Sustainable & eco-friendly materials",
+      "traditional": "Traditional techniques and history",
+      "intimate": "Small group intimate setting"
+    },
+    "intro_text": "Immerse yourself in the authentic soul of Kurashiki. This curated experience is designed for mindful travelers who seek a deeper connection with local traditions, craftsmanship, and sustainable living.",
+    "inquiry_desc": "Interested in this experience? Contact us for availability and eco-tour bookings.",
+    "book_btn": "Book Now",
+    "hours_title": "Opening Hours",
+    "location": "Kurashiki, Okayama",
+    "inquiry_title": "Bespoke Inquiry"
+  },
+  "eco": {
+    "title": "The Essence of Kurashiki.Eco",
+    "subtitle": "Beyond sightseeing, we invite you to experience a harmonious balance between ancient traditions and modern sustainability.",
+    "preserve_title": "Preserved Legacies",
+    "preserve_para": "Our 400-year-old canal system isn't just a relic of the past. It is a living infrastructure maintained through eco-conscious traditional methods, ensuring the water remains a source of life for generations.",
+    "architecture_title": "Architecture of Reuse",
+    "architecture_para": "Sustainability is built into our walls. Instead of new construction, we breathe new life into historic Kura storehouses, repurposing them into world-class museums, artisan workshops, and zero-waste cafes.",
+    "conscious_title": "Conscious Connection",
+    "conscious_para": "Every step you take in Kurashiki is an opportunity to connect with local craftspeople. Our mission is to foster travel that respects the environment while empowering the community through cultural exchange.",
+    "learn_more": "Learn more about our mission"
+  },
+  "practical": {
+    "label": "Essential Guide",
+    "title_part1": "Practical",
+    "title_part2": "Travel Information",
+    "access_title": "How to Get There",
+    "access_desc": "From Okayama Station: Take the JR Sanyo Line to Kurashiki Station (approx. 15-20 mins). The Bikan Quarter is a scenic 10-minute walk from the South Exit.",
+    "time_title": "Best Time to Visit",
+    "time_desc": "April for cherry blossoms along the canal, or November for vibrant autumn leaves and mild walking temperatures.",
+    "tip_label": "Pro Tip",
+    "tip_text": "Rent a traditional boat early in the morning to enjoy the canal's reflection without the afternoon crowds.",
+    "explore": "Explore More Details",
+    "travelled": "+1.2K TRAVELLED"
+  },
+  "planner": {
+    "title": "Prepare Your Visit",
+    "discovery": {
+      "label": "1. Discovery",
+      "desc": "Kurashiki is best explored on foot. Focus on the Bikan Historical Area for the iconic canal views."
+    },
+    "essentials": {
+      "label": "2. Essentials",
+      "desc": "Pack comfortable shoes and bring cash; many traditional shops do not accept digital payments yet."
+    },
+    "booking": {
+      "label": "3. Booking",
+      "desc": "Reserve your canal boat ride tickets immediately upon arrival as they sell out by midday."
+    },
+    "cta": "Go to Trip Planner"
+  },
+  "insights": {
+    "badge": "Insider Archives",
+    "title_main": "Beyond the",
+    "title_highlight": "Surface.",
+    "denim": {
+      "title": "The Indigo Heritage",
+      "desc": "Kurashiki is Japan's denim heartland. Beyond shopping, look for boutiques in the Kojima area where you can witness the traditional \"rope dyeing\" process that gives Japanese denim its unique character."
+    },
+    "night": {
+      "title": "Evening Illumination",
+      "desc": "As dusk falls, the crowds disperse. The canal transforms into a quiet sanctuary under the soft glow of stone lanterns, highlighting the stark contrast of the white-walled storehouses against the dark water."
+    },
+    "tea": {
+      "title": "Hidden Tea Rituals",
+      "desc": "Venture into the narrow alleys of Honmachi-dori to find centuries-old merchant houses. Many have private inner gardens (Tsuboniwa) where you can enjoy Matcha in total silence."
+    }
+  },
+  "explorer": {
+    "nav_label": "Navigation",
+    "title_main": "Kurashiki",
+    "title_sub": "Guide",
+    "search_placeholder": "Search any place in Japan...",
+    "no_result": "Press \"Open in Maps\" to find",
+    "cta_directions": "Get Directions",
+    "map_view": "Map View",
+    "satellite_view": "Satellite",
+    "live_marker": "Live Marker",
+    "target_label": "Target Location",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Kurashiki Bikan Historical Quarter",
+        "type": "Cultural Area",
+        "icon": "🛶"
+      },
+      {
+        "id": 2,
+        "name": "Ohara Museum of Art",
+        "type": "Art Museum",
+        "icon": "🖼️"
+      },
+      {
+        "id": 3,
+        "name": "Kurashiki Ivy Square",
+        "type": "Historical Landmark",
+        "icon": "🌿"
+      },
+      {
+        "id": 4,
+        "name": "Achi Shrine",
+        "type": "Shinto Shrine",
+        "icon": "⛩️"
+      },
+      {
+        "id": 5,
+        "name": "Mt. Shuriuzan Park",
+        "type": "Park & Viewpoint",
+        "icon": "⛰️"
+      },
+      {
+        "id": 6,
+        "name": "Kurashiki Archaeological Museum",
+        "type": "Museum",
+        "icon": "🏺"
+      },
+      {
+        "id": 7,
+        "name": "Japan Rural Toy Museum",
+        "type": "Specialty Museum",
+        "icon": "🎎"
+      },
+      {
+        "id": 8,
+        "name": "Tsurugata-yama Park",
+        "type": "City Park",
+        "icon": "🌸"
+      },
+      {
+        "id": 9,
+        "name": "Museum of Folkcraft",
+        "type": "Art Museum",
+        "icon": "🎨"
+      },
+      {
+        "id": 10,
+        "name": "Jeans Street Kojima",
+        "type": "Shopping Street",
+        "icon": "👖"
+      },
+      {
+        "id": 11,
+        "name": "Washuzan Highland",
+        "type": "Amusement Park",
+        "icon": "🎡"
+      },
+      {
+        "id": 12,
+        "name": "Great Seto Bridge Viewpoint",
+        "type": "Observation Deck",
+        "icon": "🌉"
+      },
+      {
+        "id": 13,
+        "name": "Kanmachi Street",
+        "type": "Historical Street",
+        "icon": "🏮"
+      },
+      {
+        "id": 14,
+        "name": "Yurinso Villa",
+        "type": "Historic Residence",
+        "icon": "🏡"
+      },
+      {
+        "id": 15,
+        "name": "Kurashiki City Art Museum",
+        "type": "Art Gallery",
+        "icon": "🏛️"
+      },
+      {
+        "id": 16,
+        "name": "Shinkaisansho Shrine",
+        "type": "Quiet Shrine",
+        "icon": "🕊️"
+      },
+      {
+        "id": 17,
+        "name": "Betty Smith Jeans Museum",
+        "type": "History Museum",
+        "icon": "🧵"
+      },
+      {
+        "id": 18,
+        "name": "Mizuushima Coastal Industrial Zone",
+        "type": "Night View",
+        "icon": "🏭"
+      },
+      {
+        "id": 19,
+        "name": "Kurashiki Central Hospital Garden",
+        "type": "Scenic Garden",
+        "icon": "🏥"
+      },
+      {
+        "id": 20,
+        "name": "Mitsui Outlet Park Kurashiki",
+        "type": "Shopping Mall",
+        "icon": "🛍️"
+      },
+      {
+        "id": 21,
+        "name": "Kurashiki Kokusai Hotel",
+        "type": "Luxury Hotel",
+        "icon": "🏨"
+      },
+      {
+        "id": 22,
+        "name": "Royal Park Hotel Kurashiki",
+        "type": "Modern Stay",
+        "icon": "🛌"
+      },
+      {
+        "id": 23,
+        "name": "Hotel Nikko Kurashiki",
+        "type": "Premium Hotel",
+        "icon": "✨"
+      },
+      {
+        "id": 24,
+        "name": "Ryokan Kurashiki",
+        "type": "Traditional Japanese Inn",
+        "icon": "👘"
+      },
+      {
+        "id": 25,
+        "name": "Dormy Inn Kurashiki Natural Hot Spring",
+        "type": "Onsen Hotel",
+        "icon": "♨️"
+      },
+      {
+        "id": 26,
+        "name": "The OneFive Kurashiki",
+        "type": "Boutique Hotel",
+        "icon": "💎"
+      },
+      {
+        "id": 27,
+        "name": "Kurashiki Ivy Square Hotel",
+        "type": "Heritage Stay",
+        "icon": "🧱"
+      },
+      {
+        "id": 28,
+        "name": "Tsurugata Ryokan",
+        "type": "Traditional Ryokan",
+        "icon": "🍵"
+      },
+      {
+        "id": 29,
+        "name": "Green Rich Hotel Kurashiki Ekimae",
+        "type": "Business Hotel",
+        "icon": "🚉"
+      },
+      {
+        "id": 30,
+        "name": "Hostel Cuore Kurashiki",
+        "type": "Design Hostel",
+        "icon": "🎒"
+      }
+    ]
+  },
+  "journal": {
+    "review": {
+      "name": "Your name ... ",
+      "occupation": "Enter your occupation (e.g. Student, Traveller)",
+      "reflection": "Tell us your story...",
+      "button": "Publish Reflection",
+      "fullname": "Full Name",
+      "occu": "Occupation",
+      "refl": "Your Reflection",
+      "recent": "Recent Reflections",
+      "view": "4.2k Views"
+    },
+    "hero": {
+      "subtitle": "A Peaceful Journey Through Time",
+      "title_main": "Kurashiki",
+      "title_sub": "History & Waterways",
+      "label_location": "Location",
+      "location_value": "Kurashiki, Okayama",
+      "label_date": "Date",
+      "date_value": "December 2025"
+    },
+    "author": {
+      "name": "Milon",
+      "role": "Travel Storyteller"
+    },
+    "mapping": {
+      "expedition_label": "Cultural Expedition",
+      "title": "Mapping the Bikan District",
+      "description": "Click on the cards below to center the map on the specific landmarks I explored.",
+      "locations": {
+        "ohara": {
+          "name": "Ohara Museum",
+          "desc": "Japan's first museum of Western art, housed in a neoclassical building."
+        },
+        "bikan": {
+          "name": "Bikan Canal",
+          "desc": "The central waterway lined with willows and white-walled storehouses."
+        },
+        "ivy": {
+          "name": "Ivy Square",
+          "desc": "A red-brick complex built on the site of the first modern cotton mill."
+        },
+        "kojima": {
+          "name": "Kojima Jeans",
+          "desc": "The birthplace of Japanese denim and custom indigo workshops."
+        },
+        "shop": {
+          "name": "Achi Shrine",
+          "desc": "A historic hilltop shrine offering panoramic views of the old district."
+        }
+      }
+    },
+    "content": {
+      "intro_text": "Last week, I visited Kurashiki, and the trip was truly amazing. The calm atmosphere, historical scenery, and slow pace of life made the journey deeply relaxing. One of the most memorable moments was riding a traditional boat along the Kurashiki Bikan Historical Canal, which allowed me to experience the town from a unique and peaceful viewpoint.",
+      "body_header": "A Brief History of Kurashiki",
+      "body_text": "Kurashiki flourished during the Edo period (1603–1868) as a key rice distribution and trade center under the direct control of the Tokugawa Shogunate. Wealthy merchants built elegant white-walled warehouses (kura), many of which still stand today. These buildings tell the story of Kurashiki’s prosperity and its important role in Japan’s economic history.",
+      "culture": "Culture and Townscape",
+      "culture_text": "The heart of Kurashiki lies in the Bikan Historical Quarter. Traditional houses, stone bridges, willow-lined canals, and narrow streets create a nostalgic and photogenic landscape. Art and culture are also central to the town’s identity, represented by the Ohara Museum of Art, Japan’s first museum dedicated to Western art.",
+      "experience": "My Experience : Boat Ride On the Canal",
+      "experience_text": "The boat ride was the highlight of my trip. As the boat moved slowly through the canal, I could see historic buildings reflected on the water. The quiet environment, gentle movement, and soft sound of the water made the experience calming and almost meditative. It felt like stepping into the past while fully enjoying the present moment.",
+      "video_label": "Atmospheric Film",
+      "slow_life_title": "The Slow Life by the Canal",
+      "slow_life_desc": "We spent hours watching the boatmen steer their flat-bottomed wooden boats through the calm waters. There’s no rush here. In Kurashiki, the past isn't just a museum; it's a living, breathing part of the community.",
+      "caption_evening": "— Evening light on white walls",
+      "caption_autumn": "— Autumn leaves by the canal"
+    },
+    "sidebar": {
+      "index": "Journal Index",
+      "progress": "Progress",
+      "cta_title": "Embrace the Slow Pace",
+      "cta_desc": "Kurashiki is not just a destination; it's a place where history, culture, and nature flow together beautifully.",
+      "cta_button": "Plan Your Visit",
+      "live_context": "Real-time Local Info",
+      "weather_feels": "Feels like",
+      "craftsmanship": {
+        "label": "Traditional Craft",
+        "indigo_title": "The Art of Indigo",
+        "indigo_desc": "Kurashiki and the nearby Kojima district are world-famous for denim and traditional indigo dyeing.",
+        "learn_more": "Explore Kojima Denim"
+      },
+      "subscribe": {
+        "title": "Join the Journey",
+        "subtitle": "Get travel stories in your inbox",
+        "placeholder": "Your email address",
+        "button": "Subscribe",
+        "success_title": "Welcome Aboard",
+        "success_msg": "Thank you for joining our travel community."
+      }
+    },
+    "community": {
+      "title_main": "Community",
+      "title_sub": "Voices",
+      "desc": "Share your own stories and experiences from the Kurashiki Bikan District.",
+      "form": {
+        "label_name": "Full Name",
+        "label_role": "Occupation",
+        "label_msg": "Your Reflection",
+        "placeholder_name": "Your name...",
+        "placeholder_role": "Traveler",
+        "placeholder_msg": "Tell us your story...",
+        "button": "Publish Reflection"
+      },
+      "stats": {
+        "recent": "Recent Reflections",
+        "views": "4.2k Views"
+      }
+    },
+    "reviews": {
+      "title_main": "Community",
+      "title_sub": "Voices",
+      "description": "Share your own stories and experiences from the Kurashiki Bikan District.",
+      "form": {
+        "label_name": "Full Name",
+        "placeholder_name": "Your name ...",
+        "label_role": "Occupation",
+        "placeholder_role": "Traveler",
+        "label_comment": "Your Reflection",
+        "placeholder_comment": "Tell us your story...",
+        "button": "Publish Reflection"
+      },
+      "list": {
+        "title": "Recent Reflections",
+        "views": "4.2k Views"
+      }
+    },
+    "gallery": {
+      "title": "Fragments of Time",
+      "subtitle": "A traveler's digital collection",
+      "vol": "VOL_2025 // KURASHIKI",
+      "location_tag": "Okayama, Kurashiki, JP / 2025",
+      "camera_settings": {
+        "iso": "ISO 400",
+        "aperture": "f/2.8",
+        "shutter": "1/1000s"
+      }
+    },
+    "conclusion_section": {
+      "today_label": "Present Day",
+      "today_title": "Kurashiki Today",
+      "today_desc": "Modern Kurashiki blends tradition with contemporary life. While preserving its historical landscape, the town welcomes visitors from around the world. Stylish cafés, craft shops, museums, and cultural spaces exist in harmony with centuries-old buildings, making Kurashiki a strong example of sustainable and cultural tourism.",
+      "closing_title": "Final Reflections",
+      "closing_desc": "My trip to Kurashiki was peaceful, inspiring, and memorable. The boat ride, history, culture, and food all came together to create an unforgettable experience. Kurashiki is not just a destination—it is a place where history, culture, and nature flow together beautifully.",
+      "signature": "Traveler's Note",
+      "live": "Live Landscape"
+    }
+  },
+  "itinerary": {
+    "label": "The Journey Log",
+    "title_top": "Three Days in",
+    "title_bottom": "The White-Walled City",
+    "quote": "A curated path through history and flavor.",
+    "edition": "Winter Edition 2025",
+    "highlights": "Daily Highlights",
+    "day": "Day",
+    "stats": {
+      "distance_label": "Distance Explored",
+      "distance_val": "12.4 km",
+      "transport_label": "Travel Mode",
+      "transport_val": "Walking & Boat",
+      "button": "View Kurashiki Map"
+    },
+    "days": [
+      {
+        "d": "01",
+        "t": "Arrival & Canalside",
+        "loc": "Bikan Canal District",
+        "s": "Setting the mood in the Bikan Historical Quarter.",
+        "temp": "22°C",
+        "activities": [
+          "Canal Boat Ride",
+          "Kura Warehouses",
+          "Willow Paths"
+        ]
+      },
+      {
+        "d": "02",
+        "t": "Art & Heritage",
+        "loc": "Kojima & Ohara Museum",
+        "s": "Exploring Japan's first Western art museum.",
+        "temp": "19°C",
+        "activities": [
+          "Ohara Museum",
+          "Ivy Square",
+          "Local Teahouses"
+        ]
+      },
+      {
+        "d": "03",
+        "t": "Local Flavors",
+        "loc": "Shopping Street & Cafes",
+        "s": "A culinary deep dive into Okayama's finest.",
+        "temp": "20°C",
+        "activities": [
+          "Barazushi Tasting",
+          "Indigo Craft Shop",
+          "Sunset Walk"
+        ]
+      }
+    ]
+  },
+  "experience_details": {
+    "location_guide": "Explore the Kurashiki's Area",
+    "subtitle": " Timeless Reflections of Old Japan ",
+    "activity": "Activity",
+    "policy": "Policy",
+    "nature": "Nature",
+    "hours": "Hours",
+    "eco_walk": "Eco Walk",
+    "zero_waste": "Zero Waste",
+    "protected": "Protected",
+    "story": "Our Story",
+    "top_exp": "Top Experiences",
+    "respect": "Respectful Visitation",
+    "sub_desc": "To preserve the beauty of Kurashiki, we encourage all travelers to visit with respect for local traditions and environmental balance.",
+    "guide": "Conscious Traveler's Guide",
+    "act": "Small acts, Big impact",
+    "transit": "GREENER TRANSIT",
+    "opt": "Opt for the JR train or rental bicycles available near Kurashiki Station to keep the air pure.",
+    "shop": "SHOP ETHICALLY",
+    "beauty": "PRESERVE BEAUTY",
+    "choose": "Choose Kurashiki-made denim or canvas. Your purchase directly supports local artisan families.",
+    "admire": "Admire the white-walled storehouses with your eyes. Avoid touching fragile historical structures.",
+    "clean": "CLEAN LEGACY",
+    "leave": "The 'Leave No Trace' rule applies. Please take your waste back to your hotel or use designated bins.",
+    "invite": "Invite others to the journey",
+    "foot": "Leave Only Footprints",
+    "discover": "Discover the Heritage Collection",
+    "district": "Kurashiki Bikan District"
+  },
+  "cafe": {
+    "name": "Ohte Manju Cafe",
+    "address": "1-4-7 Chuo, Kurashiki, Okayama",
+    "hours": "11:00 AM — 05:00 PM (Closed: Tue)",
+    "short_intro": "A taste of Bizen tradition, reimagined for the modern traveler.",
+    "full_desc": "Ohte Manju is one of Japan’s most celebrated traditional sweets, with a history spanning over 180 years. In this cafe, the interior seamlessly blends the warehouse aesthetic of Kurashiki with contemporary minimalist design...",
+    "activities": [
+      {
+        "title": "The Steamed Set",
+        "desc": "Enjoy freshly steamed Ohte Manju served warm with locally sourced Matcha."
+      },
+      {
+        "title": "Architectural Photography",
+        "desc": "Capture the stunning interplay of light and shadow in the minimalist courtyard."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price Range",
+        "value": "¥500 — ¥1,500"
+      },
+      {
+        "label": "Signature Item",
+        "value": "Ohte Manju Steamed Set"
+      },
+      {
+        "label": "Photography",
+        "value": "Interior photography welcome"
+      },
+      {
+        "label": "Reservation",
+        "value": "No reservations (Walk-in only)"
+      },
+      {
+        "label": "WiFi",
+        "value": "Free Guest Access Available"
+      }
+    ]
+  },
+  "greco": {
+    "name": "Cafe El Greco",
+    "address": "1-1-11 Chuo, Kurashiki, Okayama 710-0046",
+    "hours": "10:00 AM — 05:00 PM (Closed: Mondays)",
+    "short_intro": "An ivy-covered sanctuary of classical music and fine coffee.",
+    "full_desc": "Established in 1959, Cafe El Greco is housed in a former administrative building of the Ohara family, located immediately adjacent to the world-renowned Ohara Museum of Art. The cafe is legendary for its exterior walls, which are completely blanketed in thick green ivy that transforms into brilliant shades of red and orange during the autumn months. Inside, the high-vaulted ceilings and heavy wooden beams create an atmosphere of post-war Japanese sophistication mixed with European elegance. It serves as a cultural haven where visitors can escape the bustle of the canal and enjoy a meticulously brewed cup of coffee while listening to timeless classical symphonies, making it an essential pilgrimage for art lovers and coffee connoisseurs alike.",
+    "activities": [
+      {
+        "title": "Classical Coffee Ritual",
+        "desc": "Experience a moment of peace with their signature blend coffee, served in vintage porcelain while surrounded by historical architecture."
+      },
+      {
+        "title": "Seasonal Ivy Wall Photography",
+        "desc": "Capture the iconic emerald-green or autumn-red facade, which has become a symbol of Kurashiki’s artistic heritage."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price Range",
+        "value": "¥600 — ¥1,200"
+      },
+      {
+        "label": "Signature Item",
+        "value": "El Greco Special Blend Coffee"
+      },
+      {
+        "label": "History",
+        "value": "Converted Office Building (est. 1959)"
+      },
+      {
+        "label": "Reservation",
+        "value": "Not required (Walk-in only)"
+      },
+      {
+        "label": "Atmosphere",
+        "value": "Classical Music & Quiet Study"
+      }
+    ]
+  },
+  "ohara_museum": {
+    "name": "Ohara Museum of Art",
+    "address": "1-1-15 Chuo, Kurashiki, Okayama 710-8575",
+    "hours": "09:00 AM — 05:00 PM (Closed: Mondays)",
+    "short_intro": "The first private museum of Western art in Japan, a masterpiece of neoclassical design.",
+    "full_desc": "Founded in 1930 by entrepreneur Magosaburo Ohara to honor his friend, the painter Kojima Torajiro, the Ohara Museum of Art stands as a monumental landmark in Japanese cultural history. Its striking facade, defined by massive stone Greek columns, brings a touch of Mediterranean majesty to the traditional Japanese white-walled district. The collection is staggering for a private institution, featuring 'The Annunciation' by El Greco alongside masterpieces by Monet, Matisse, Renoir, and Picasso. Beyond the Main Gallery, the museum complex includes the Craft Art Gallery and the Asian Art Gallery, all set within beautifully manicured grounds that bridge the aesthetic gap between Western modernism and Eastern tradition.",
+    "activities": [
+      {
+        "title": "Western Masterpiece Tour",
+        "desc": "Walk through galleries containing original works by European masters that rarely leave their home countries."
+      },
+      {
+        "title": "Architectural Appreciation",
+        "desc": "Study the juxtaposition of the Greek-inspired temple architecture against the backdrop of Japan’s traditional willow-lined canals."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Admission",
+        "value": "¥2,000 (Adults)"
+      },
+      {
+        "label": "Photography",
+        "value": "Forbidden inside galleries"
+      },
+      {
+        "label": "Notable Work",
+        "value": "El Greco's 'The Annunciation'"
+      },
+      {
+        "label": "Facilities",
+        "value": "Museum Shop & Restroom available"
+      },
+      {
+        "label": "Language",
+        "value": "English audio guides available"
+      }
+    ]
+  },
+  "samurai": {
+    "name": "Antique Shop: Samurai Heritage",
+    "address": "Honmachi Street, Kurashiki Bikan District",
+    "hours": "10:00 AM — 06:00 PM",
+    "short_intro": "A hidden treasury of authentic Edo-period artifacts and local denim crafts.",
+    "full_desc": "Located on the historic Honmachi Street, this specialized antique and craft shop offers a rare glimpse into the feudal soul of Japan. The shop window is a mesmerizing display of authentic Edo-period Samurai armor (Yoroi) and razor-sharp Katana swords, maintained with meticulous care by local experts. However, the shop also pays homage to Kurashiki’s modern identity as the 'birthplace of Japanese denim.' Inside, you will find a curated selection of artisanal denim products and indigo-dyed fabrics that utilize the same high-level craftsmanship once reserved for warrior garments. It is a space where the weight of history and the innovation of modern textile design exist in perfect harmony.",
+    "activities": [
+      {
+        "title": "Feudal Artifact Study",
+        "desc": "Examine the intricate metalwork and silk braiding of genuine Samurai armor and ancient Japanese weaponry."
+      },
+      {
+        "title": "Denim & Indigo Crafting",
+        "desc": "Shop for exclusive locally-made denim goods that are only available in the Okayama region."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Specialty",
+        "value": "Authentic Samurai Armor & Katana"
+      },
+      {
+        "label": "Local Craft",
+        "value": "Kojima Premium Denim"
+      },
+      {
+        "label": "Shipping",
+        "value": "International shipping for antiques"
+      },
+      {
+        "label": "Entrance",
+        "value": "Free to browse"
+      },
+      {
+        "label": "Photography",
+        "value": "Allowed with staff permission"
+      }
+    ]
+  },
+  "stick_tempura": {
+    "name": "Sano-ya: The Master of Fried Fish Crafts",
+    "address": "1-1-1 Honmachi, Kurashiki, Okayama 710-0054 (Located on the main Bikan shopping street)",
+    "hours": "09:00 AM — 05:30 PM (Daily)",
+    "short_intro": "Authentic Japanese 'Satsuma-age' fish cakes, freshly fried and served on a skewer for the perfect street-food stroll.",
+    "full_desc": "Sano-ya is a beloved institution in the Bikan District, famous for its red banners and the irresistible aroma of fried fish. Unlike the vegetable tempura most westerners know, this is 'Satsuma-age'—a traditional Japanese craft where high-quality white fish paste is blended with fresh ingredients like squid, ginger, or cheese, then deep-fried until golden. Sano-ya's 'Stick Tempura' has become a symbol of Kurashiki street food because it is specifically designed to be eaten while walking. The texture is 'mochi-mochi' (springy and chewy), and each stick is prepared throughout the day to ensure you get a warm, juicy bite every time. It’s the perfect savory balance to the many sweet treats found nearby.",
+    "activities": [
+      {
+        "title": "Gourmet Skewer Tasting",
+        "desc": "Choose from over 10 different flavors. The 'Tako-Shiso' (Octopus and Perilla leaf) offers a refreshing herbal hit, while the 'Cheese-maki' is a gooey, comforting favorite."
+      },
+      {
+        "title": "Bikan Street Strolling",
+        "desc": "Grab a warm stick and head toward the canal; it’s the quintessential Kurashiki experience to enjoy a savory snack while watching the boats pass by."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Top Pick",
+        "value": "Tako-negi (Octopus & Green Onion) ¥450"
+      },
+      {
+        "label": "Vegetarian Option",
+        "value": "Burdock Root or Edamame flavor"
+      },
+      {
+        "label": "Convenience",
+        "value": "Easy-to-hold stick with grease-proof paper"
+      },
+      {
+        "label": "Eating Manner",
+        "value": "Small seating area available inside, or eat while walking"
+      },
+      {
+        "label": "Payment",
+        "value": "Cash and major IC cards (Suica/Pasmo) accepted"
+      }
+    ]
+  },
+  "soft_serve": {
+    "name": "Hokkaido & Okayama Fusion Creamery",
+    "address": "Bikan Central Square, Kurashiki",
+    "hours": "09:30 AM — 06:00 PM",
+    "short_intro": "A colorful wonderland of soft-serve ice cream featuring over 15 unique Japanese flavors.",
+    "full_desc": "No trip to a Japanese historical district is complete without a soft-serve cone. This parlor is a visual delight, with a menu that reads like a map of Japanese flavors. They use premium Hokkaido milk as a base, ensuring a rich and creamy mouthfeel. Travelers can choose from traditional 'Uji Matcha' and 'Hokkaido Vanilla' to more adventurous regional flavors like 'Shine Muscat' grape and 'White Peach.' The shop is also famous for its 'Warabi Mochi' cups—soft, jelly-like dumplings dusted in fine matcha powder. It is a vibrant, happy place where every cone is a photo-ready masterpiece, perfect for sharing on social media.",
+    "activities": [
+      {
+        "title": "Seasonal Flavor Hunt",
+        "desc": "Check the 'NEW' signs for limited-edition flavors like 'Sweet Potato' in autumn or 'Sakura' in spring."
+      },
+      {
+        "title": "Matcha Dusting",
+        "desc": "Order the Warabi Mochi cup and watch as they generously coat the mochi in high-grade green tea powder."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥400 - ¥450 per cone"
+      },
+      {
+        "label": "Popular Choice",
+        "value": "Premium Uji Matcha"
+      },
+      {
+        "label": "Alternative",
+        "value": "Dairy-free fruit sorbets available"
+      },
+      {
+        "label": "Manner",
+        "value": "Please finish your ice cream before entering nearby boutiques"
+      }
+    ]
+  },
+  "ramen": {
+    "name": "Ikumen-ya: Authentic Kurashiki Tonkotsu",
+    "address": "Bikan Historical Quarter Entrance, Kurashiki",
+    "hours": "11:00 AM — 08:00 PM (Closed on Tuesdays)",
+    "short_intro": "A local favorite serving rich, creamy pork bone broth with perfectly aged noodles.",
+    "full_desc": "Stepping into Ikumen-ya feels like entering a classic Japanese ramen den. Their signature dish is a deeply flavorful Tonkotsu (pork bone) broth that has been simmered for hours to achieve a milky, collagen-rich consistency. For travelers, this bowl offers a comforting warmth, topped with a melt-in-your-mouth Chashu pork slice, crunchy wood-ear mushrooms, and a perfectly seasoned soft-boiled egg. The red bowl is iconic to this shop, symbolizing the passion they put into every serving. It's the perfect fuel-up spot after a long morning of walking through the canal district.",
+    "activities": [
+      {
+        "title": "Custom Broth Selection",
+        "desc": "Choose your preference for soup richness and noodle firmness to match your personal palate."
+      },
+      {
+        "title": "Local Condiment Tasting",
+        "desc": "Enhance your ramen with freshly crushed garlic or spicy pickled mustard greens (Takana) found at your table."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Signature Dish",
+        "value": "Special Tonkotsu Ramen"
+      },
+      {
+        "label": "Price Range",
+        "value": "¥800 - ¥1,200"
+      },
+      {
+        "label": "Vibe",
+        "value": "Casual & Fast-paced"
+      },
+      {
+        "label": "Dietary",
+        "value": "Pork-based (Non-Halal)"
+      }
+    ]
+  },
+  "canal": {
+    "name": "Kurashiki River: The Swan Serenade",
+    "address": "Central Kurashiki Bikan Historical Quarter",
+    "hours": "Accessible 24 hours (Best views during daylight)",
+    "short_intro": "The peaceful heart of the district where white swans glide through history.",
+    "full_desc": "The Kurashiki River canal is the soul of the Bikan District. Once a bustling trade route for rice and cotton during the Edo period, it is now a serene waterway lined with weeping willow trees and traditional white-walled storehouses (Kura). The highlight for many visitors is the pair of graceful white swans that call this river home. Watching them glide under the historic stone bridges while traditional wooden flat-bottom boats (Tenryu-maru) pass by creates a living postcard experience. It is the most photographed spot in the city, offering a tranquil atmosphere that feels like traveling 300 years back in time.",
+    "activities": [
+      {
+        "title": "Traditional Boat Tour",
+        "desc": "Take a 20-minute guided boat ride to see the historical buildings from the water level."
+      },
+      {
+        "title": "Evening Illumination",
+        "desc": "Return at dusk to see the canal lit by soft lanterns, creating a romantic and mysterious glow."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Highlight",
+        "value": "Resident White Swans"
+      },
+      {
+        "label": "Best Time",
+        "value": "Early morning or Sunset"
+      },
+      {
+        "label": "Boat Fare",
+        "value": "¥500 per adult"
+      },
+      {
+        "label": "Nature",
+        "value": "Seasonal Willow leaves (Spring/Summer)"
+      }
+    ]
+  },
+  "bikan_night": {
+    "name": "Bikan Night Illumination",
+    "address": "Bikan Historical Quarter",
+    "hours": "Sunset to 10:00 PM",
+    "short_intro": "A magical transformation of the canal district under soft lantern light.",
+    "full_desc": "As the sun sets, the Bikan Historical Quarter undergoes a quiet transformation. The architectural lighting, designed by world-renowned designers, accentuates the white-walled storehouses and the weeping willows along the canal. The atmosphere is significantly quieter than the daytime, offering a romantic and meditative experience that highlights the timeless beauty of the Edo-period structures.",
+    "activities": [
+      {
+        "title": "Night Canal Stroll",
+        "desc": "Walk along the water to see the buildings reflected perfectly in the still river surface."
+      },
+      {
+        "title": "Long Exposure Photography",
+        "desc": "Capture the soft glow of the lanterns against the dark blue twilight sky."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Cost",
+        "value": "Free to wander"
+      },
+      {
+        "label": "Vibe",
+        "value": "Quiet, Romantic, Peaceful"
+      },
+      {
+        "label": "Best Time",
+        "value": "Immediately after blue hour"
+      }
+    ]
+  },
+  "white_house_street": {
+    "name": "White-Walled Streets: The Path of Tradition",
+    "address": "Honmachi & Higashimachi, Kurashiki Bikan District",
+    "hours": "Accessible 24 hours (Shops typically 10:00 AM — 05:00 PM)",
+    "short_intro": "Step into a living scroll of Edo-period architecture and merchant heritage.",
+    "full_desc": "Beyond the famous canal lies the true heart of Kurashiki's merchant history—the white-walled streets of Honmachi and Higashimachi. These narrow, winding lanes are lined with 'Kura' (traditional storehouses) featuring the iconic 'Kurashiki-mado' windows and 'Namako-kabe' (lattice-patterned plaster walls). Once the center of the city's commerce, these buildings have been meticulously preserved and repurposed into chic galleries, traditional teahouses, and artisanal workshops. Walking through this area feels like a journey through time, where the contrast between the pristine white plaster and the dark wooden frames creates a stunning visual rhythm unique to Japanese heritage.",
+    "activities": [
+      {
+        "title": "Heritage Architecture Walk",
+        "desc": "Observe the intricate Namako-kabe wall patterns and traditional lattice doors that define Kurashiki's unique architectural style."
+      },
+      {
+        "title": "Teahouse Immersion",
+        "desc": "Stop at a converted storehouse teahouse to experience a quiet moment with local sweets and traditional green tea."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Vibe",
+        "value": "Historical, Authentic, Photographic"
+      },
+      {
+        "label": "Key Feature",
+        "value": "Namako-kabe (Plaster Walls)"
+      },
+      {
+        "label": "Photography",
+        "value": "Best in early morning light"
+      },
+      {
+        "label": "Accessibility",
+        "value": "Pedestrian-friendly narrow lanes"
+      },
+      {
+        "label": "Local Craft",
+        "value": "Home to many Bizen pottery galleries"
+      }
+    ]
+  },
+  "snacks": {
+    "name": "Sanado-ya: The Artisan Snack Window",
+    "address": "Honmachi Street, Kurashiki Bikan District",
+    "hours": "09:30 AM — 05:30 PM",
+    "short_intro": "A nostalgic corner shop offering freshly grilled rice crackers and savory fish-cake skewers.",
+    "full_desc": "Located on the charming Honmachi Street, Sanado-ya is a 'window-shopping' paradise for foodies. The shop is famous for its 'Senbei' (grilled rice crackers) displayed in glass cases, ranging from classic soy sauce to spicy wasabi and sea salt flavors. Just next to it, you can find 'Satsuma-age' (fried fish cakes) served on sticks for easy walking. These skewers are stuffed with local ingredients like burdock root, octopus, and ginger. The aroma of toasted rice and grilled fish fills the air, inviting travelers to try a variety of authentic Japanese street flavors that have been loved for generations.",
+    "activities": [
+      {
+        "title": "Fresh Grill Tasting",
+        "desc": "Try a warm 'Nure-senbei' (moist rice cracker) which has a unique soft-yet-chewy texture."
+      },
+      {
+        "title": "Souvenir Shopping",
+        "desc": "Pick up beautifully packaged assortments of crackers that make for long-lasting travel gifts."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Must Try",
+        "value": "Tako-negi (Octopus & Green Onion) Stick"
+      },
+      {
+        "label": "Average Price",
+        "value": "¥200 - ¥500 per item"
+      },
+      {
+        "label": "Payment",
+        "value": "Cash preferred for small items"
+      },
+      {
+        "label": "Eating Manner",
+        "value": "Trash bins provided at the shop"
+      }
+    ]
+  },
+  "desserts": {
+    "name": "Kurashiki Sweet Parlor: Matcha & Fruit Heaven",
+    "address": "Near Ohara Museum of Art, Bikan District",
+    "hours": "10:00 AM — 05:00 PM",
+    "short_intro": "A delightful stop for regional fruit smoothies and premium Uji Matcha desserts.",
+    "full_desc": "Okayama prefecture is known as the 'Fruit Kingdom' of Japan, and this shop brings that reputation to life. Their menu features vibrant soft-serve ice cream made with Hokkaido milk and local flavors like White Peach and Kyoho Grape. For those seeking a deeper cultural taste, the 'Matcha Warabi Mochi' (bracken starch dumplings coated in green tea powder) offers a silky, cooling sensation. The shop also features a high-end Banana Smoothie made from rare Okayama-grown bananas. It’s the ultimate pit-stop for anyone with a sweet tooth looking for a refreshing break between museum visits.",
+    "activities": [
+      {
+        "title": "Flavor Sampling",
+        "desc": "Try the seasonal 'New' flavors which often feature limited-edition local harvests."
+      },
+      {
+        "title": "Warabi Mochi Demonstration",
+        "desc": "Watch the staff expertly cut and coat the soft mochi in vibrant green matcha powder."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Signature Item",
+        "value": "Premium Uji Matcha Soft Serve"
+      },
+      {
+        "label": "Specialty",
+        "value": "Okayama Banana Smoothie (¥700)"
+      },
+      {
+        "label": "Seating",
+        "value": "Small outdoor benches available"
+      },
+      {
+        "label": "English Menu",
+        "value": "Available with pictures"
+      }
+    ]
+  },
+  "gyoza": {
+    "name": "Hanetsuki Gyoza: The Crispy Wing House",
+    "address": "Gourmet Alley, Kurashiki Bikan District",
+    "hours": "11:30 AM — 09:00 PM",
+    "short_intro": "Famous for its 'Winged Gyoza' that offers a perfect crunch in every bite.",
+    "full_desc": "If you are looking for the ultimate side dish to your ramen, this is it. These dumplings are prepared 'Hanetsuki' style, meaning they are fried with a thin flour slurry that creates a crispy, lace-like 'wing' connecting the dumplings. Travelers love the contrast between the shatteringly crisp bottom and the juicy, tender pork and chive filling inside. Each plate is served fresh from the iron griddle, glistening with a hint of sesame oil. It’s a sensory experience—the sound of the crunch and the burst of savory umami make it an unforgettable part of the Kurashiki food scene.",
+    "activities": [
+      {
+        "title": "Dipping Sauce Alchemy",
+        "desc": "Create your own perfect dip using the soy sauce, rice vinegar, and 'Ra-yu' (chili oil) provided at each table."
+      },
+      {
+        "title": "Open Kitchen Watch",
+        "desc": "Sit at the counter to see the chefs skillfully flip the gyoza pans to reveal the golden-brown crust."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Must Try",
+        "value": "Pork and Ginger Gyoza"
+      },
+      {
+        "label": "Price Range",
+        "value": "¥450 - ¥600 per plate"
+      },
+      {
+        "label": "Pairing",
+        "value": "Goes perfectly with cold Japanese draft beer"
+      },
+      {
+        "label": "Takeout",
+        "value": "Available in specialized boxes"
+      }
+    ]
+  },
+  "street_food_combo": {
+    "name": "Takoyaki & Karaage",
+    "address": "Riverside Food Stalls, Kurashiki",
+    "hours": "10:00 AM — 06:00 PM",
+    "short_intro": "A heavy-hitting duo of Japan's most beloved street snacks: Octopus balls and Fried Chicken.",
+    "full_desc": "For a traveler on the go, this combination plate represents the pinnacle of Japanese soul food. On top, you have Takoyaki—molten, savory batter balls with a chunk of octopus inside, drizzled with sweet-savory sauce and seaweed flakes. Below is a generous serving of Karaage—Japanese-style fried chicken marinated in ginger, garlic, and soy sauce, then fried to a golden perfection. The addition of spicy Kimchi on the side is a modern Kurashiki twist, providing a refreshing acidity that cuts through the rich, fried flavors. It’s the perfect snack to share while sitting on the stone steps by the canal.",
+    "activities": [
+      {
+        "title": "The Heat Challenge",
+        "desc": "Be careful! Takoyaki is famously hot on the inside. Experience the 'huff-and-puff' eating style like a local."
+      },
+      {
+        "title": "Lemon Sprinkling",
+        "desc": "Squeeze the fresh lemon wedge over the Karaage to enhance the savory spices with a citrus zing."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Combo Price",
+        "value": "¥800 - ¥1,000"
+      },
+      {
+        "label": "Vibe",
+        "value": "Festival-style Street Food"
+      },
+      {
+        "label": "Side Dish",
+        "value": "Spicy Cabbage Kimchi included"
+      },
+      {
+        "label": "Best For",
+        "value": "A quick, filling lunch"
+      }
+    ]
+  },
+  "tea_house": {
+    "name": "Neko-no-Yume: The Cat-Lover's Tea Nook",
+    "address": "Hidden Lane, Honmachi, Kurashiki",
+    "hours": "10:00 AM — 05:00 PM",
+    "short_intro": "A whimsical, cozy resting spot identified by its charming 'Cats in London' fabric dividers.",
+    "full_desc": "Tucked away from the main canal path, this small establishment welcomes visitors with a quirky 'Noren' (entrance curtain) featuring colorful cats. This shop captures the 'Zakka' (cute lifestyle goods) culture of Japan perfectly. Inside, travelers can find a quiet escape from the crowds, often served by friendly local residents who embody the 'Omotenashi' (selfless hospitality) of the region. Whether they are selling handmade crafts or serving a simple cup of tea, the atmosphere is intimately connected to the daily life of Kurashiki. It’s a place where the decor tells a story of global inspiration mixed with traditional Japanese wooden architecture.",
+    "activities": [
+      {
+        "title": "Photography Spot",
+        "desc": "The entrance with its cat-themed Noren and seasonal decorations is a favorite for Instagram-savvy travelers."
+      },
+      {
+        "title": "Craft Discovery",
+        "desc": "Browse the small shelves inside for unique cat-themed souvenirs and local handmade textiles."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Theme",
+        "value": "Feline-inspired Art & Rest"
+      },
+      {
+        "label": "Ambience",
+        "value": "Quiet, Local, and Homely"
+      },
+      {
+        "label": "Find it",
+        "value": "Look for the 'Cats in London' curtain"
+      },
+      {
+        "label": "Tip",
+        "value": "Great for a short break away from tourist crowds"
+      }
+    ]
+  },
+  "banana_smoothie": {
+    "name": "Okayama Banana Lab: The Rare Peel-to-Pulp Experience",
+    "address": "Kurashiki Riverside Walk, Bikan District",
+    "hours": "10:00 AM — 06:00 PM",
+    "short_intro": "A luxurious smoothie shop showcasing the world-famous, ultra-sweet Okayama bananas.",
+    "full_desc": "In Japan, Okayama is legendary for its fruit, but its bananas are truly special. This shop serves the 'Mongee Banana' smoothie, a variety so rare and pure that its skin is actually edible! The smoothie itself is a thick, velvety blend of sun-ripened bananas, offering a natural sweetness that no artificial syrup can match. For travelers, it is more than just a drink; it is a taste of Okayama’s agricultural innovation. The shop also features a collaboration with 'Cold Stone Creamery,' offering fruit-studded ice cream bars that look like edible art pieces. It is the most refreshing way to cool down while exploring the sun-drenched streets of the canal district.",
+    "activities": [
+      {
+        "title": "Gourmet Smoothie Tasting",
+        "desc": "Experience the rich, creamy texture of bananas grown using the 'Freeze-Thaw Awakening' method, unique to this region."
+      },
+      {
+        "title": "Cold Stone Bar Selection",
+        "desc": "Choose from a variety of aesthetically stunning ice cream bars decorated with real frozen strawberries, mangoes, and muscat grapes."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Signature Drink",
+        "value": "Okayama Banana Smoothie (¥700)"
+      },
+      {
+        "label": "Specialty",
+        "value": "Edible-peel Banana varieties"
+      },
+      {
+        "label": "Fruit Source",
+        "value": "100% Locally grown in Okayama"
+      },
+      {
+        "label": "Photo Opp",
+        "value": "The vibrant yellow banana-themed storefront"
+      }
+    ]
+  },
+  "tsukemono_shop": {
+    "name": "Local Tsukemono & Preserved Foods",
+    "address": "Kurashiki Bikan Historical Quarter",
+    "hours": "10:00 AM — 05:30 PM",
+    "short_intro": "A quiet corner offering handmade pickles crafted from seasonal local produce.",
+    "full_desc": "Nestled along the historic streets of Kurashiki, this humble shop celebrates the art of traditional food preservation. Using vegetables sourced from nearby farms, the pickles are prepared with minimal processing and time-honored techniques. Wooden shelves, natural baskets, and handwritten labels reflect a lifestyle that values sustainability, patience, and respect for nature. Each item tells a story of local climate, soil, and seasonal rhythms.",
+    "activities": [
+      {
+        "title": "Seasonal Tasting",
+        "desc": "Discover how flavors change naturally with the seasons."
+      },
+      {
+        "title": "Mindful Souvenir",
+        "desc": "Choose eco-friendly packaged foods that support local producers."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥300 - ¥800"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Lotus Root Kinpira"
+      },
+      {
+        "label": "Eco Note",
+        "value": "Locally sourced vegetables"
+      },
+      {
+        "label": "Manner",
+        "value": "Respect the calm atmosphere"
+      }
+    ]
+  },
+  "peach_curry": {
+    "name": "Okayama White Peach Curry",
+    "address": "Kurashiki Bikan Area",
+    "hours": "11:00 AM — 08:00 PM",
+    "short_intro": "A gentle fusion of fruit and spice inspired by regional harvests.",
+    "full_desc": "This dish reflects Okayama’s deep connection to its land, blending sweet white peaches with carefully balanced spices. Rather than overpowering heat, the curry offers a soft warmth that highlights natural sweetness. Ingredients are selected with care, emphasizing regional identity and seasonal produce. It is a slow-food experience that invites travelers to taste the landscape itself.",
+    "activities": [
+      {
+        "title": "Local Flavor Experience",
+        "desc": "Taste how fruit and spice coexist naturally."
+      },
+      {
+        "title": "Sustainable Dining",
+        "desc": "Support regional agriculture through cuisine."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥1,200 - ¥2,000"
+      },
+      {
+        "label": "Best Choice",
+        "value": "Standard Peach Curry"
+      },
+      {
+        "label": "Spice Level",
+        "value": "Mild and balanced"
+      },
+      {
+        "label": "Manner",
+        "value": "Enjoy slowly and mindfully"
+      }
+    ]
+  },
+  "western_japanese_menu": {
+    "name": "Japanese Western-style Comfort Meals",
+    "address": "Kurashiki City",
+    "hours": "11:30 AM — 09:00 PM",
+    "short_intro": "Thoughtfully prepared comfort food using quality local ingredients.",
+    "full_desc": "These Western-inspired dishes are adapted to Japanese values of balance and care. From Hamburg steak to fried prawns and Wagyu beef, each meal is served in moderate portions with soup and seasonal vegetables. The focus is not excess, but harmony—between taste, nourishment, and the environment. Dining here feels calm, warm, and unhurried.",
+    "activities": [
+      {
+        "title": "Slow Dining",
+        "desc": "Take time to appreciate texture, flavor, and presentation."
+      },
+      {
+        "title": "Responsible Choice",
+        "desc": "Select dishes that emphasize quality over quantity."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥1,950 - ¥4,400"
+      },
+      {
+        "label": "Popular Dish",
+        "value": "Hamburg Steak Demi-glace"
+      },
+      {
+        "label": "Premium Option",
+        "value": "Wagyu Beef Steak"
+      },
+      {
+        "label": "Manner",
+        "value": "Quiet, respectful dining encouraged"
+      }
+    ]
+  },
+  "kurashiki_momoko": {
+    "name": "Kurashiki Momoko (くらしき桃子)",
+    "address": "Kurashiki Bikan Historical Quarter",
+    "hours": "10:00 AM — 06:00 PM",
+    "short_intro": "A premium fruit parlor famous for its seasonal Japanese fruit parfaits.",
+    "full_desc": "Located in a beautifully restored traditional storehouse, Kurashiki Momoko is a dream destination for dessert lovers. This shop specializes in parfaits made with Okayama's world-renowned fruits, such as White Peaches and Muscat of Alexandria grapes. The elegant presentation and the fusion of fresh fruit with high-quality cream and gelato offer a luxurious taste of Japan's 'Fruit Kingdom'.",
+    "activities": [
+      {
+        "title": "Seasonal Parfait Tasting",
+        "desc": "Enjoy a masterpiece dessert featuring the freshest fruit of the current season."
+      },
+      {
+        "title": "Gift Shopping",
+        "desc": "Pick up high-quality fruit jellies and jams as a premium souvenir."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥1,500 - ¥3,000"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Shine Muscat Parfait"
+      },
+      {
+        "label": "Vibe",
+        "value": "Elegant and Instagrammable"
+      },
+      {
+        "label": "Wait Time",
+        "value": "Often busy on weekends"
+      }
+    ]
+  },
+  "kurashiki_denim_street": {
+    "name": "Kurashiki Denim Street",
+    "address": "1-10-11 Chuo, Kurashiki, Okayama",
+    "hours": "10:00 AM — 05:00 PM",
+    "short_intro": "The birthplace of Japanese denim, offering unique blue-themed street food.",
+    "full_desc": "Kurashiki is the heart of Japan's denim industry. This vibrant area showcases everything denim—from high-end jeans to quirky accessories. It is most famous for its 'Denim Blue' street food, including the iconic blue steamed buns (Denim-man) and blue soft-serve ice cream, all colored with natural gardenia to match the indigo dye of classic denim.",
+    "activities": [
+      {
+        "title": "Denim Food Challenge",
+        "desc": "Try the surprisingly delicious blue-colored steamed buns and ice cream."
+      },
+      {
+        "title": "Craftsmanship Tour",
+        "desc": "Explore local boutiques for authentic 'Made in Kojima' denim products."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥400 - ¥600 (Snacks)"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Denim Soft Serve"
+      },
+      {
+        "label": "Specialty",
+        "value": "Indigo-colored aesthetics"
+      },
+      {
+        "label": "Fun Fact",
+        "value": "Even the lemonade is blue!"
+      }
+    ]
+  },
+  "achi_shrine": {
+    "name": "Achi Shrine (阿智神社)",
+    "address": "12-1 Honmachi, Kurashiki (Top of Tsurugata Mountain)",
+    "hours": "Always Open (Shrine Office: 08:30 AM — 05:00 PM)",
+    "short_intro": "An ancient shrine offering a panoramic view of the Bikan Historical Quarter.",
+    "full_desc": "Perched atop Mt. Tsurugata, Achi Shrine has watched over Kurashiki for over 1,700 years. After climbing the stone steps through the iconic Torii gate, visitors are rewarded with a peaceful atmosphere and a stunning bird's-eye view of the white-walled town below. It is home to the 'Akebono-fuji', one of the oldest and largest wisteria trees in Japan.",
+    "activities": [
+      {
+        "title": "Town Viewpoint",
+        "desc": "Take in the best panoramic view of the historic district from the shrine grounds."
+      },
+      {
+        "title": "Spiritual Prayer",
+        "desc": "Experience a traditional Shinto prayer for safety and prosperity."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "Free Entry"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Floral Omamori (Amulets)"
+      },
+      {
+        "label": "Physicality",
+        "value": "Requires climbing several stairs"
+      },
+      {
+        "label": "Nature Note",
+        "value": "Beautiful wisteria in late April"
+      }
+    ]
+  },
+  "miffy_bakery": {
+    "name": "Miffy Sakura Bakery",
+    "address": "Kurashiki Bikan Historical Quarter",
+    "hours": "10:00 AM — 05:30 PM",
+    "short_intro": "A charming bakery themed after the beloved Dutch rabbit, Miffy.",
+    "full_desc": "Combining Japanese 'Kawaii' culture with traditional baking, this shop is a favorite for families and fans of Miffy. The bakery offers a variety of bread shaped like Miffy and her friends, often using Japanese flavors like matcha, red bean, and sakura. The interior is filled with Miffy-themed decor and exclusive Kurashiki-edition merchandise.",
+    "activities": [
+      {
+        "title": "Character Bread Selection",
+        "desc": "Choose from freshly baked buns shaped like Miffy characters."
+      },
+      {
+        "title": "Exclusive Goods Shop",
+        "desc": "Buy Miffy kitchenware and plushies available only in Kurashiki."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥300 - ¥500 per bun"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Miffy Anpan (Red Bean Bun)"
+      },
+      {
+        "label": "Vibe",
+        "value": "Cute and family-friendly"
+      },
+      {
+        "label": "Tip",
+        "value": "Popular items sell out by afternoon"
+      }
+    ]
+  },
+  "romance_of_kurashiki": {
+    "name": "Romance of Kurashiki (倉敷の浪漫)",
+    "address": "1-1-11 Chuo, Kurashiki, Okayama",
+    "hours": "09:30 AM — 05:30 PM",
+    "short_intro": "An enchanting shop specializing in Kurashiki glass and kaleidoscopic crafts.",
+    "full_desc": "True to its name, this shop captures the romantic essence of the Taisho-era. It features a stunning collection of 'Kurashiki Glass', known for its distinct blue hue and sturdy, hand-blown quality. From intricate kaleidoscopes to delicate glass jewelry, every piece reflects the artistic spirit of the town. The building itself is a beautiful example of Kurashiki’s traditional architecture.",
+    "activities": [
+      {
+        "title": "Artisanal Discovery",
+        "desc": "View the intricate details of handmade kaleidoscopes and glass ornaments."
+      },
+      {
+        "title": "Timeless Souvenirs",
+        "desc": "Purchase a piece of authentic Kurashiki glassware to take home."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥1,000 - ¥10,000+"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Blue Glass Tumblers"
+      },
+      {
+        "label": "Aesthetic",
+        "value": "Traditional and Artistic"
+      },
+      {
+        "label": "Manner",
+        "value": "Fragile items—handle with care"
+      }
+    ]
+  },
+  "ivy_square": {
+    "name": "Kurashiki Ivy Square",
+    "address": "7-2 Honmachi, Kurashiki, Okayama",
+    "hours": "Open 24 hours (Individual facilities vary)",
+    "short_intro": "A historical red-brick complex covered in ivy, reflecting Japan’s industrial heritage.",
+    "full_desc": "Built on the site of the first modern cotton mill in Japan, Ivy Square is a stunning multi-purpose complex that blends European industrial architecture with Japanese aesthetics. The iconic red-brick walls are famously draped in lush green ivy, which was originally planted to regulate the temperature inside the mill. Today, it houses a hotel, museums, workshops, and beautiful courtyards. It is a symbol of Kurashiki’s transformation from a merchant town to an industrial hub, offering a nostalgic and romantic atmosphere that is perfect for a leisurely stroll.",
+    "activities": [
+      {
+        "title": "Historical Walk",
+        "desc": "Explore the ivy-covered courtyards and take photos of the unique red-brick architecture."
+      },
+      {
+        "title": "Hands-on Workshops",
+        "desc": "Try your hand at pottery or weaving in the various craft studios on-site."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Entry",
+        "value": "Free to the grounds"
+      },
+      {
+        "label": "Vibe",
+        "value": "Historic, Calm, and Romantic"
+      },
+      {
+        "label": "Must-See",
+        "value": "The Water Lily pond inspired by Monet"
+      },
+      {
+        "label": "Tip",
+        "value": "Beautifully illuminated at night"
+      }
+    ]
+  },
+  "kojima_jeans_street": {
+    "name": "Kojima Jeans Street",
+    "address": "Kojima Ajano, Kurashiki, Okayama",
+    "hours": "10:00 AM — 05:00 PM (Varies by shop)",
+    "short_intro": "The holy land of Japanese denim, featuring world-class craftsmanship.",
+    "full_desc": "Located in the Kojima district, this street is world-renowned as the birthplace of 'Made in Japan' denim. Once a quiet shopping street, it has been revitalized into a denim paradise where over 30 local brands showcase their products. The area is famous for its high-quality indigo dyeing and traditional weaving techniques. Even the street itself is decorated with jeans hanging overhead and blue-painted roads, creating a unique 'Denim Blue' world. It is the best place to find premium, artisan-made jeans that last a lifetime.",
+    "activities": [
+      {
+        "title": "Denim Shopping",
+        "desc": "Find unique, high-quality jeans that you won't find anywhere else in the world."
+      },
+      {
+        "title": "Street Photography",
+        "desc": "Take photos with the iconic hanging jeans that line the street."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥15,000 - ¥40,000 (For Jeans)"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Momotaro Jeans & Big John"
+      },
+      {
+        "label": "Access",
+        "value": "Take the 'Jeans Bus' from Kojima Station"
+      },
+      {
+        "label": "Vibe",
+        "value": "Cool, Craft-focused, and Artistic"
+      }
+    ]
+  },
+  "shopping_arcade": {
+    "name": "Kurashiki Shopping Arcade (Ebisu-dori)",
+    "address": "Achi, Kurashiki, Okayama",
+    "hours": "10:00 AM — 07:00 PM (Varies by shop)",
+    "short_intro": "A nostalgic covered walkway connecting the station to the historic district.",
+    "full_desc": "The Kurashiki Shopping Arcade, specifically Ebisu-dori, offers a delightful contrast to the Bikan Historical Quarter. This covered 'Shotengai' is where the local life breathes, featuring a mix of long-established family businesses and modern cafes. It provides a retro Showa-era atmosphere where you can find everything from traditional Japanese tea and sweets to daily necessities. It is an ideal place to walk on a rainy day, offering a authentic glimpse into the daily lives of Kurashiki residents while serving as a gateway to the main tourist areas.",
+    "activities": [
+      {
+        "title": "Local Snack Crawl",
+        "desc": "Taste traditional snacks like 'Muratsume' or local croquettes while walking."
+      },
+      {
+        "title": "Souvenir Hunting",
+        "desc": "Browse unique local crafts and household items at affordable prices."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Vibe",
+        "value": "Retro, Local, and Lively"
+      },
+      {
+        "label": "Feature",
+        "value": "Covered roof (Perfect for rainy days)"
+      },
+      {
+        "label": "Manner",
+        "value": "Be mindful of bicycles passing through"
+      },
+      {
+        "label": "Best Time",
+        "value": "Late morning to early afternoon"
+      }
+    ]
+  },
+  "momotaro_tshirt_shop": {
+    "name": "Momotaro T-Shirt Shop (Kurashiki-ya)",
+    "address": "Kurashiki Bikan Historical Quarter",
+    "hours": "10:00 AM — 05:30 PM",
+    "short_intro": "A specialty shop featuring original designs of Okayama's legendary hero.",
+    "full_desc": "This shop celebrates Okayama's most famous folklore hero, Momotaro (the Peach Boy). Located in the heart of the historic district, it offers a wide range of original T-shirts, bags, and accessories that blend traditional Japanese motifs with modern graphic design. The 'Momo-chan' and 'Momo-san' characters are cute, stylized versions of the legend, making them perfect souvenirs. Every item is a tribute to the local culture, often incorporating denim elements or traditional patterns that represent the 'Art City' of Kurashiki.",
+    "activities": [
+      {
+        "title": "Character Merch Shopping",
+        "desc": "Pick up unique Momotaro-themed T-shirts and 'Made in Japan' canvas bags."
+      },
+      {
+        "title": "Window Shopping",
+        "desc": "Enjoy the creative displays and Kimono-styled T-shirts in the shop window."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥2,500 - ¥5,000 (T-shirts)"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Original 'Momo-chan' Print"
+      },
+      {
+        "label": "Gift Idea",
+        "value": "Canvas tote bags with indigo dye"
+      },
+      {
+        "label": "Quality",
+        "value": "High-quality cotton, Made in Japan"
+      }
+    ]
+  },
+  "coffee_ueda": {
+    "name": "Coffee Ueda (咖啡ウエダ)",
+    "address": "Bikan Historical Quarter (Near the canal)",
+    "hours": "09:00 AM — 06:00 PM",
+    "short_intro": "A classic 'Kissaten' housed in a unique Western-style building.",
+    "full_desc": "Housed in a distinctive white building with elegant arches and retro balconies, Coffee Ueda is a beloved 'Kissaten' (traditional Japanese coffee shop). It offers a peaceful escape from the busy canal area. The interior is filled with nostalgic charm, serving hand-dripped coffee and classic treats. The shop is famous for its retro aesthetic, both inside and out, making it a favorite spot for artists and photographers. Sitting by the window with a cup of their signature blend allows you to watch the world of Kurashiki go by in a timeless setting.",
+    "activities": [
+      {
+        "title": "Coffee Break",
+        "desc": "Relax with a cup of traditional hand-dripped coffee and a slice of cake."
+      },
+      {
+        "title": "Architecture Appreciation",
+        "desc": "Observe the unique fusion of Japanese and Western architecture of the building."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥500 - ¥1,000"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Ueda Original Blend Coffee"
+      },
+      {
+        "label": "Atmosphere",
+        "value": "Quiet, Retro, and Sophisticated"
+      },
+      {
+        "label": "Note",
+        "value": "A great spot to rest after exploring the canal"
+      }
+    ]
+  },
+  "tako_tamago": {
+    "name": "Tako Tamago (Octopus with Quail Egg)",
+    "address": "Street food stalls in Bikan District",
+    "hours": "10:00 AM — 05:00 PM (Depends on stall)",
+    "short_intro": "A famous and visually striking street snack featuring a whole baby octopus.",
+    "full_desc": "Tako Tamago is one of the most iconic and 'Instagrammable' street foods in Kurashiki. It consists of a small, whole baby octopus that has been glazed in a sweet and savory soy-based sauce. The 'surprise' is inside the head of the octopus, which is stuffed with a hard-boiled quail egg. The combination of the chewy texture of the octopus and the richness of the egg creates a unique flavor profile. Served on a skewer, it is the perfect snack to enjoy while exploring the historic streets of the Bikan Quarter.",
+    "activities": [
+      {
+        "title": "Gourmet Tasting",
+        "desc": "Experience the unique combination of glazed octopus and quail egg."
+      },
+      {
+        "title": "Photo Op",
+        "desc": "Take a photo of this unique-looking snack before you take a bite!"
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price",
+        "value": "¥400 - ¥600 per skewer"
+      },
+      {
+        "label": "Flavor",
+        "value": "Sweet-savory (Soy sauce glaze)"
+      },
+      {
+        "label": "Texture",
+        "value": "Chewy and tender"
+      },
+      {
+        "label": "Manner",
+        "value": "Dispose of your skewer at the stall's bin"
+      }
+    ]
+  },
+  "restaurant_kiyutei": {
+    "name": "Restaurant KIYUTEI (亀遊亭)",
+    "address": "1-2-20 Chuo, Kurashiki, Okayama (Inside Bikan Historical Quarter)",
+    "hours": "11:00 AM — 03:00 PM / 05:00 PM — 09:00 PM",
+    "short_intro": "An elegant Western-style restaurant (Yoshoku) set in a historic Meiji-era building.",
+    "full_desc": "Housed in a grand Western-style building constructed in 1911, Restaurant KIYUTEI offers a refined dining experience that blends Japanese hospitality with classic Western cuisine. Originally built as a church hall, the interior features high ceilings and an artistic atmosphere, including works by the famous calligrapher Shikou Munakata. Operated by the prestigious Kurashiki International Hotel, the restaurant is celebrated for its authentic 'Yoshoku' dishes, such as their signature beef stew and omelette rice. Dining here feels like a journey back to the Meiji era, combining architectural beauty with high-end culinary craftsmanship.",
+    "activities": [
+      {
+        "title": "Heritage Dining",
+        "desc": "Enjoy a meal in one of Kurashiki's most beautiful and historically significant Western buildings."
+      },
+      {
+        "title": "Panoramic View Lunch",
+        "desc": "If seated on the upper floors, enjoy views of the Kurashiki River while you dine."
+      }
+    ],
+    "practical_info": [
+      {
+        "label": "Price Range",
+        "value": "¥2,000 - ¥5,000"
+      },
+      {
+        "label": "Local Favorite",
+        "value": "Beef Curry & Hayashi Rice"
+      },
+      {
+        "label": "Specialty",
+        "value": "Okayama Wagyu Beef Steak"
+      },
+      {
+        "label": "Note",
+        "value": "Reservation recommended for dinner or large groups"
+      }
+    ]
+  },
+  "review": {
+    "subtitle": "Voices of the Journey",
+    "title": "Stories from our Conscious Travelers",
+    "sub": "Real experiences from those who have walked the historic paths of Kurashiki with respect and wonder.",
+    "more_stories": "Discover More Stories"
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Milon",
+      "country": "Bangladesh",
+      "title": "An Unforgettable Eco-Journey",
+      "excerpt": "Walking along the historic canals of Kurashiki was a soul-soothing experience that I will never forget. The way the local community balances modern tourism with ancient tradition while staying deeply eco-conscious is truly inspiring. Every corner of the Bikan Historical Quarter tells a story of preservation and respect for nature, making it a perfect destination for any conscious traveler looking for peace and authenticity in the heart of Japan.",
+      "img": "./images/milon.jpg",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Hong Mo",
+      "country": "Vietnum",
+      "title": "Sustainable Beauty",
+      "excerpt": "Traveling without impacting the environment is deeply meaningful to me, and Kurashiki exceeded all my expectations. Meeting the local artisans who have spent generations perfecting their sustainable crafts, from organic denim to hand-woven textiles, was a unique and eye-opening experience. From the plastic-free initiatives to the locally sourced seasonal cuisine, every aspect of this journey felt intentional and harmonious with the beautiful Japanese landscape.",
+      "img": "./images/mosan.jpg",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Myat Noe Nwe",
+      "country": "Myanmar",
+      "title": "Historical Hidden Gem",
+      "excerpt": "Kurashiki is undoubtedly one of the most beautiful, meticulously clean, and culturally rich places I have ever had the pleasure of visiting. The local food was incredibly fresh, showcasing the best of seasonal Japanese ingredients, and the hospitality of the people was simply heart-warming. It is a rare hidden gem where you can truly disconnect from the digital world and reconnect with the simple joys of slow, sustainable living amidst white-walled storehouses.",
+      "img": "./images/noe.jpg",
+      "rating": 4
+    }
+  ],
+  "nav": {
+    "hero": "Intro",
+    "map": "Location",
+    "video": "Travel Vlogs",
+    "timeline": "Timeline",
+    "review": "Reviews"
+  },
+  "trip": {
+    "title": "Kurashiki Resonance",
+    "desc": "Art, Heritage, and the Echo of the Canal.",
+    "filter": "Filter:",
+    "reserved": "Reserved Place",
+    "step": "Step",
+    "date": "Select Start Date",
+    "bird": "Early Bird: 10% reduction available 30 days in advance.",
+    "continue": "Continue",
+    "support": "Support",
+    "live": "Live",
+    "adult": "Adult",
+    "child": "Child",
+    "family": "Family Bundle",
+    "plan": "Family Plan",
+    "upto": "Up to 4 Persons • ",
+    "back": "Back",
+    "summary": "Summary",
+    "booking": "Booking Fee",
+    "total": "Total",
+    "private": "Private Concierge Guide",
+    "pass": "Reserved.",
+    "service": "Concierge Service",
+    "included": "Included",
+    "passage": "Your passage to Kurashiki is confirmed for",
+    "check": ". Check your digital envelope.",
+    "new": "New Booking",
+    "checkList": "Essentials Checklist",
+    "hour": "Golden Hour",
+    "season": "Seasonal Tip",
+    "bloom": "Expected Bloom: Late March",
+    "rainy": "Rainy days in Kurashiki offer unique reflections on the wet cobblestones, perfect for melancholic art photography.",
+    "sections": {
+      "s1": {
+        "title": "The Signature Plan",
+        "subtitle": "Three days of immersive culture, from historic canal banks to local textile masters."
+      },
+      "s2": {
+        "title": "Gastronomic Heritage",
+        "subtitle": "Okayama's sun-kissed fruits and Kurashiki's historic delicacies."
+      },
+      "s3": {
+        "title": "Navigation & Access",
+        "subtitle": "Seamless logistics for exploring the Bikan Historical Quarter."
+      }
+    },
+    "logistics": {
+      "shinkansen": "Shinkansen Access",
+      "shinkansen_desc": "From Osaka or Tokyo, take the Sanyo Shinkansen to Okayama Station (15-50 mins), then switch to the Local JR Sanyo Line to Kurashiki (17 mins).",
+      "getting_around": "Getting Around",
+      "getting_around_desc": "The Bikan area is a 10-minute walk from the station. Rent a bicycle at the Tourist Info Center (¥500/day) for exploring the outskirts like Ivy Square."
+    },
+    "review_form": {
+      "placeholder_name": "Your Name",
+      "placeholder_text": "Tell us about your Kurashiki experience...",
+      "rating_label": "Your Rating:",
+      "post_btn": "Post Review"
+    },
+    "map_section": {
+      "title": "Interactive Map",
+      "subtitle": "Find hidden alleyways and cafe spots."
+    },
+    "testimonial": {
+      "quote": "The private tea ceremony in the hidden garden was the highlight of our trip. A masterclass in Japanese hospitality and pure silence.",
+      "user_name": "Eleanor Bennett",
+      "user_country": "United Kingdom"
+    },
+    "gallery": {
+      "title": "Curated Gallery",
+      "subtitle": "Moments captured within the resonance of the canal."
+    }
+  },
+  "dayPlan": {
+    "days": {
+      "day1": {
+        "s1": {
+          "title": "Arrive at Kurashiki Station",
+          "desc": "Step off the train into a world where modern Japan meets the atmosphere of the Edo period.",
+          "tags": [
+            "Arrival",
+            "History"
+          ]
+        },
+        "s2": {
+          "title": "Traditional Boat Tour",
+          "desc": "Enjoy a tranquil 20-minute journey on the canal under the weeping willow trees.",
+          "tags": [
+            "Art",
+            "Scenic"
+          ]
+        },
+        "s3": {
+          "title": "Bikan District Lunch",
+          "desc": "Authentic Soba noodles served in a beautifully renovated 100-year-old storehouse.",
+          "tags": [
+            "Gourmet"
+          ]
+        },
+        "s4": {
+          "title": "Ohara Museum of Art",
+          "desc": "Japan's first private museum featuring masterpieces of Western art.",
+          "tags": [
+            "Art",
+            "History"
+          ]
+        },
+        "s5": {
+          "title": "Evening Illuminations",
+          "desc": "Experience the dreamlike 'Kurashiki Candle Night' light-up event.",
+          "tags": [
+            "Seasonal",
+            "Scenic"
+          ]
+        }
+      },
+      "day2": {
+        "s1": {
+          "title": "Kimono Rental",
+          "desc": "Dress in traditional attire at 'Kurashiki Kimono Komachi' for an authentic stroll.",
+          "tags": [
+            "Craft",
+            "Art"
+          ]
+        },
+        "s2": {
+          "title": "Gourmet Street Food",
+          "desc": "Indulge in sweets made from Okayama's famous white peaches and muscat grapes.",
+          "tags": [
+            "Gourmet",
+            "Seasonal"
+          ]
+        },
+        "s3": {
+          "title": "Kurashiki Ivy Square",
+          "desc": "Explore the ivy-covered red brick walls of this former cotton mill turned cultural complex.",
+          "tags": [
+            "History",
+            "Architecture"
+          ]
+        },
+        "s4": {
+          "title": "Achi Shrine View",
+          "desc": "Watch the sunset over the iconic tiled rooftops of the historic district.",
+          "tags": [
+            "Scenic",
+            "History"
+          ]
+        }
+      },
+      "day3": {
+        "s1": {
+          "title": "Local Fruit Market",
+          "desc": "Taste the freshest seasonal fruits directly from local farmers.",
+          "tags": [
+            "Gourmet",
+            "Seasonal"
+          ]
+        },
+        "s2": {
+          "title": "Denim Street",
+          "desc": "Discover the birthplace of Kojima denim and try unique 'blue' themed snacks.",
+          "tags": [
+            "Craft",
+            "Gourmet"
+          ]
+        },
+        "s3": {
+          "title": "Tea & Zen",
+          "desc": "A private tea ceremony experience overlooking a hidden Zen garden.",
+          "tags": [
+            "Art",
+            "Relax"
+          ]
+        },
+        "s4": {
+          "title": "Final Stroll",
+          "desc": "Purchase traditional Japanese confections as souvenirs before your departure.",
+          "tags": [
+            "Craft",
+            "Gourmet"
+          ]
+        }
+      }
+    },
+    "tags": {
+      "arrival": "Arrival",
+      "history": "History",
+      "signature": "Signature",
+      "scenic": "Scenic",
+      "gourmet": "Gourmet",
+      "art": "Art",
+      "seasonal": "Seasonal",
+      "craft": "Craft",
+      "architecture": "Architecture",
+      "local": "Local",
+      "relax": "Relax",
+      "farewell": "Farewell"
+    },
+    "photo_spots": {
+      "spot1": {
+        "name": "Canal Reflection",
+        "desc": "Ideal blue hour lighting."
+      },
+      "spot2": {
+        "name": "Achi Shrine Staircase",
+        "desc": "Morning sun hits the gate."
+      },
+      "spot3": {
+        "name": "Ivy Square Bricks",
+        "desc": "Direct sun brings out deep reds."
+      }
+    },
+    "foods": {
+      "f1": {
+        "name": "White Peach Parfait",
+        "desc": "Okayama's legendary 'Shimizu Hakuto' peaches."
+      },
+      "f2": {
+        "name": "Kibi-dango",
+        "desc": "Traditional millet dumplings from the Momotaro legend."
+      },
+      "f3": {
+        "name": "Bikan Soba",
+        "desc": "Hand-made buckwheat noodles in a historic setting."
+      }
+    },
+    "checklist": {
+      "item1": "Comfortable Walking Shoes",
+      "item2": "Portable Power Bank",
+      "item3": "Small Towel",
+      "item4": "Sun Hat / Umbrella"
+    }
+  }
+}
