@@ -61,7 +61,7 @@ const Navbar = ({ forceDark = false }) => {
               <Leaf size={22} />
             </div>
             <span className={`text-2xl font-serif font-black tracking-tighter uppercase ${isSolid ? 'text-stone-900' : 'text-white'}`}>
-              KURASHIKI<span className="text-green-700 italic font-light">.eco</span>
+              KURASHIKI BIKAN<span className="text-green-700 italic font-light">.eco</span>
             </span>
           </Link>
 
