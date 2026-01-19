@@ -34,35 +34,35 @@ const ITINERARY_DAYS = {
       title: "dayPlan.days.day1.s1.title",
       desc: "dayPlan.days.day1.s1.desc",
       icon: Train,
-      tags: ["dayPlan.tags.arrival", "dayPlan.tags.history"]
+      tags: ["arrival", "history"]
     },
     {
       time: "11:00 AM",
       title: "dayPlan.days.day1.s2.title",
       desc: "dayPlan.days.day1.s2.desc",
       icon: Anchor,
-      tags: ["dayPlan.tags.signature", "dayPlan.tags.scenic"]
+      tags: ["signature", "scenic"]
     },
     {
       time: "01:30 PM",
       title: "dayPlan.days.day1.s3.title",
       desc: "dayPlan.days.day1.s3.desc",
       icon: Utensils,
-      tags: ["dayPlan.tags.gourmet"]
+      tags: ["gourmet"]
     },
     {
       time: "03:30 PM",
       title: "dayPlan.days.day1.s4.title",
       desc: "dayPlan.days.day1.s4.desc",
       icon: Camera,
-      tags: ["dayPlan.tags.art"]
+      tags: ["art"]
     },
     {
       time: "06:00 PM",
       title: "dayPlan.days.day1.s5.title",
       desc: "dayPlan.days.day1.s5.desc",
       icon: Sparkles,
-      tags: ["dayPlan.tags.seasonal"]
+      tags: ["tags.seasonal"]
     }
   ],
   2: [
@@ -71,28 +71,28 @@ const ITINERARY_DAYS = {
       title: "dayPlan.days.day2.s1.title",
       desc: "dayPlan.days.day2.s1.desc",
       icon: Scissors,
-      tags: ["dayPlan.tags.craft"]
+      tags: ["craft"]
     },
     {
       time: "12:30 PM",
       title: "dayPlan.days.day2.s2.title",
       desc: "dayPlan.days.day2.s2.desc",
       icon: Utensils,
-      tags: ["dayPlan.tags.gourmet"]
+      tags: ["gourmet"]
     },
     {
       time: "02:00 PM",
       title: "dayPlan.days.day2.s3.title",
       desc: "dayPlan.days.day2.s3.desc",
       icon: Home,
-      tags: ["dayPlan.tags.architecture", "dayPlan.tags.history"]
+      tags: ["architecture", "history"]
     },
     {
       time: "05:30 PM",
       title: "dayPlan.days.day2.s4.title",
       desc: "dayPlan.days.day2.s4.desc",
       icon: Navigation,
-      tags: ["dayPlan.tags.scenic"]
+      tags: ["scenic"]
     }
   ],
   3: [
@@ -101,28 +101,28 @@ const ITINERARY_DAYS = {
       title: "dayPlan.days.day3.s1.title",
       desc: "dayPlan.days.day3.s1.desc",
       icon: ShoppingBag,
-      tags: ["dayPlan.tags.local", "dayPlan.tags.gourmet"]
+      tags: ["local", "gourmet"]
     },
     {
       time: "11:00 AM",
       title: "dayPlan.days.day3.s2.title",
       desc: "dayPlan.days.day3.s2.desc",
       icon: Scissors,
-      tags: ["dayPlan.tags.craft"]
+      tags: ["craft"]
     },
     {
       time: "01:00 PM",
       title: "dayPlan.days.day3.s3.title",
       desc: "dayPlan.days.day3.s3.desc",
       icon: Coffee,
-      tags: ["dayPlan.tags.relax", "dayPlan.tags.history"]
+      tags: ["relax", "history"]
     },
     {
       time: "04:00 PM",
       title: "dayPlan.days.day3.s4.title",
       desc: "dayPlan.days.day3.s4.desc",
       icon: MapPin,
-      tags: ["dayPlan.tags.farewell"]
+      tags: ["farewell"]
     }
   ]
 };
@@ -546,7 +546,7 @@ const TripPlannerPage = () => {
                         {...item}
                         title={t(item.title)}
                         desc={t(item.desc)}
-                        tags={item.tags?.map(tag => t(`dayPlan.tags.${tag.toLowerCase()}`))}
+                        tags={item.tags?.map(tag => t(`${tag.toLowerCase()}`))}
                       />
                     ))
                   ) : (

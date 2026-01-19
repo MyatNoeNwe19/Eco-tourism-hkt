@@ -19,11 +19,11 @@ const MissionPage = () => {
 
   // Team data keys for translation
   const teamMembers = [
-    { key: "Hoang Trung Hieu", img: "./images/mission2.jpg" },
-    { key: "Pham Hong Mo", img: "./images/mosan.jpg" },
-    { key: "Milon Miadul Islam", img: "./images/milon.jpg" },
-    { key: "Myat Noe Nwe", img: "./images/noesan.jpg" },
-    { key: "Duong Cong Cuong", img: "./images/mission1.jpg" }
+    { key: "hieu", img: "./images/mission2.jpg" },
+    { key: "mo", img: "./images/mosan.jpg" },
+    { key: "milon", img: "./images/milon.jpg" },
+    { key: "noe", img: "./images/noesan.jpg" },
+    { key: "cuong", img: "./images/mission1.jpg" }
   ];
 
   return (
