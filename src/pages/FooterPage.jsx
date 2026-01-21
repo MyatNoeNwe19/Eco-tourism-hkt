@@ -7,11 +7,11 @@ const FooterPage = () => {
   const { t } = useTranslation();
 
   const quickLinks = [
-    { key: 'home', text: t('navbar.home') || 'Home', href: '/#home' },
-    { key: 'area', text: t('navbar.area') || 'Area', href: '/#area' },
-    { key: 'trip_planner', text: t('navbar.trip_planner') || 'Trip Planner', href: '/#plan-trip' },
+    { key: 'home', text: t('navbar.home') || 'Home', href: '/home' },
+    { key: 'area', text: t('navbar.area') || 'Area', href: '/area' },
+    { key: 'trip_planner', text: t('navbar.trip_planner') || 'Trip Planner', href: '/trip-planner' },
     { key: 'must_visit', text: t('navbar.must_visit') || 'Must Visit', href: '/must-visit' },
-    { key: 'travel_journal', text: t('navbar.travel_journal') || 'Travel Journal', href: '/#experiences' },
+    { key: 'travel_journal', text: t('navbar.travel_journal') || 'Travel Journal', href: '/‌all-experiences' },
   ];
 
   return (

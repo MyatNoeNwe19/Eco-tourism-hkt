@@ -556,7 +556,7 @@ const TravelJournalDetail = () => {
             <div className="bg-stone-900 p-12 text-white rounded-sm shadow-2xl space-y-10 relative overflow-hidden group">
               <h3 className="text-4xl font-serif italic">{t('journal.sidebar.cta_title')}</h3>
               <p className="text-stone-400 text-sm font-light leading-relaxed">{t('journal.sidebar.cta_desc')}</p>
-              <button className="w-full py-5 bg-white text-stone-900 text-[11px] font-black uppercase tracking-[0.4em] transition-all flex items-center justify-center gap-2 hover:bg-stone-200">
+              <button onClick={() => navigate('/trip-planner')} className="w-full py-5 bg-white text-stone-900 text-[11px] font-black uppercase tracking-[0.4em] transition-all flex items-center justify-center gap-2 hover:bg-stone-200">
                 {t('journal.sidebar.cta_button')} <ChevronRight size={14} />
               </button>
             </div>
@@ -675,6 +675,78 @@ const TravelJournalDetail = () => {
             </div>
 
           </aside>
+        </div>
+      </section>
+
+      {/* interview videos section */}
+      <section className="py-20 px-6 max-w-7xl mx-auto space-y-12">
+        <div className="space-y-4">
+          <h3 className="font-serif text-4xl italic text-stone-900">
+            {t('journal.interview.title')}
+          </h3>
+          <div className="h-px w-20 bg-stone-900"></div>
+        </div>
+
+        {/* Video Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {/* Video Card 1 */}
+          <div className="space-y-4 group">
+            <div className="aspect-video w-full overflow-hidden rounded-sm bg-stone-100 shadow-lg">
+              <video
+                className="w-full h-full object-cover"
+                controls
+                muted
+                playsInline
+              >
+                <source src="/images/interview1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div className="space-y-1">
+              <h5 className="font-serif text-lg italic group-hover:text-stone-600 transition-colors">
+                {t('journal.interview.vd1')}
+              </h5>
+            </div>
+          </div>
+
+          {/* Video Card 2 */}
+          <div className="space-y-4 group">
+            <div className="aspect-video w-full overflow-hidden rounded-sm bg-stone-100 shadow-lg">
+              <video
+                className="w-full h-full object-cover"
+                controls
+                muted
+                playsInline
+              >
+                <source src="/images/interview2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div className="space-y-1">
+              <h5 className="font-serif text-lg italic group-hover:text-stone-600 transition-colors">
+                {t('journal.interview.vd2')}
+              </h5>
+            </div>
+          </div>
+
+          {/* Video Card 3 */}
+          <div className="space-y-4 group">
+            <div className="aspect-video w-full overflow-hidden rounded-sm bg-stone-100 shadow-lg">
+              <video
+                className="w-full h-full object-cover"
+                controls
+                muted
+                playsInline
+              >
+                <source src="/images/interview3.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div className="space-y-1">
+              <h5 className="font-serif text-lg italic group-hover:text-stone-600 transition-colors">
+                {t('journal.interview.vd3')}
+              </h5>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -1065,7 +1137,7 @@ const TravelJournalDetail = () => {
                 <div className="absolute -bottom-10 -right-10 bg-white p-8 shadow-xl border border-stone-100 hidden md:block max-w-[280px]">
                   <Quote className="text-stone-200 mb-4" size={40} />
                   <p className="font-serif italic text-stone-600 text-lg">
-                   {t('common.last')}
+                    {t('common.last')}
                   </p>
                 </div>
               </motion.div>
