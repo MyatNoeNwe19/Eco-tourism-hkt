@@ -3,8 +3,8 @@ const experiences = [
   { id: 2, img: "/images/food17.jpg", titleKey: 'experience.kurashiki_denim_street', category: 'food', tags: ["food", "lifestyle"] }, // Denim foods
   { id: 3, img: "/images/bigBuilding1.jpg", titleKey: 'experience.ohara_museum', category: 'heritage', tags: ["heritage", "art"] }, // Ohara Museum
   { id: 4, img: "/images/greco cafe.jpg", titleKey: 'experience.greco', category: 'heritage', tags: ["food", "drink"] }, // Greco Cafe 
-  { id: 5, img: "/images/whiteHouseStreet.jpg", titleKey: 'experience.white_house_street', category: 'food', tags: ["food", "heritage"] }, // White House Street around bikan
-  { id: 6, img: "/images/whiteHouseBoatNight.jpg", titleKey: 'experience.bikan_night', category: 'eco', tags: ["heritage", "art"] }, // Bikan Night light
+  { id: 5, img: "/images/whstreetlight.jpg", titleKey: 'experience.white_house_street', category: 'food', tags: ["food", "heritage"] }, // White House Street around bikan
+  { id: 6, img: "/images/evening light.jpg", titleKey: 'experience.bikan_night', category: 'eco', tags: ["heritage", "art"] }, // Bikan Night light
   { id: 7, img: "/images/food21.jpg", titleKey: 'experience.western_japanese_menu', category: 'food', tags: ["food", "heritage"] }, // Western Japanese Menu
   { id: 8, img: "/images/whiteHouse8.jpg", titleKey: 'experience.coffee_ueda', category: 'food', tags: ["food", "drink"] }, // Coffee Ueda
 
@@ -31,8 +31,8 @@ const experiences = [
   { id: 23, img: "/images/food16.jpg", titleKey: 'experience.peach_curry', category: 'eco', tags: ["food", "heritage"] }, // Peach curry
   { id: 24, img: "/images/foodcute.jpg", titleKey: 'experience.miffy_bakery', category: 'food', tags: ["food", "heritage"] }, // Miffy bakery
   
-  { id: 25, img: "/images/kojima jean1.webp", titleKey: 'experience.kojima_jeans_street', category: 'art', tags: ["art", "lifestyle"] }, // Kojima Jeans Street
-  { id: 26, img: "/images/lvy square2.webp", titleKey: 'experience.ivy_square', category: 'heritage', tags: ["heritage", "art"] }, // Ivy Square
+  { id: 25, img: "/images/kojima jeanstreet.jpg", titleKey: 'experience.kojima_jeans_street', category: 'art', tags: ["art", "lifestyle"] }, // Kojima Jeans Street
+  { id: 26, img: "/images/ivynew2.jpg", titleKey: 'experience.ivy_square', category: 'heritage', tags: ["heritage", "art"] }, // Ivy Square
   { id: 27, img: "/images/romanceOfKurashiki.jpg", titleKey: 'experience.romance_of_kurashiki', category: 'art', tags: ["heritage", "art"] }, // Romance of Kurashiki
   { id: 28, img: "/images/shopfood.jpg", titleKey: 'experience.kurashiki_momoko', category: 'food', tags: ["food", "drink"] }, // Kurashiki Momoko
   { id: 29, img: "/images/street.jpg", titleKey: 'experience.shopping_arcade', category: 'heritage', tags: ["heritage", "lifestyle"] }, // Shopping Arcade

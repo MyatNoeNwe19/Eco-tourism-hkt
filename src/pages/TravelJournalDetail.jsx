@@ -206,11 +206,11 @@ const TravelJournalDetail = () => {
   // --- HERO SLIDER ---
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    "./images/banner1.jpg",
-    "./images/lvy square3.webp",
-    "./images/night light2.webp",
-    "./images/night view.jpg",
-    "./images/ohara.webp"];
+    "./images/shop2.jpg",
+    "./images/ivynew1.jpg",
+    "./images/kojima jeanstreet.jpg",
+    "./images/whiteHouse16.jpg",
+    "./images/ohara1.jpg"];
 
   useEffect(() => {
     const timer = setInterval(() => setCurrentSlide((prev) => (prev + 1) % slides.length), 6000);
@@ -227,7 +227,6 @@ const TravelJournalDetail = () => {
     const saved = localStorage.getItem('journal_reviews');
     if (saved) return JSON.parse(saved);
 
-    // memory ထဲမှာ မရှိသေးရင် ဒီ default list ကို သုံးမယ်
     return [
       { id: 1, name: "Julian Thorne", role: "common.reviews.r1.role", comment: "common.reviews.r1.comment", rating: 5, timestamp: Date.now() - 604800000 },
       { id: 2, name: "Elena Rossi", role: "common.reviews.r2.role", comment: "common.reviews.r2.comment", rating: 5, timestamp: Date.now() - 86400000 },
@@ -243,18 +242,16 @@ const TravelJournalDetail = () => {
   const handleAddReview = (e) => {
     e.preventDefault();
 
-    // Rating မရှိရင် Alert ပြပြီး ရပ်လိုက်မယ်
     if (rating === 0) {
-      alert("Please select a rating!"); // သို့မဟုတ် t('journal.review.select_rating')
+      alert("Please select a rating!"); 
       return;
     }
 
     if (newReview.name && newReview.comment) {
-      // Review အသစ်ကို list ထဲထည့်မယ်
       const reviewData = {
         id: Date.now(),
         name: newReview.name,
-        comment: newReview.comment, // User ရိုက်တဲ့စာသား (i18n key မဟုတ်ပါ)
+        comment: newReview.comment, 
         role: newReview.role || "Explorer",
         rating: rating,
         timestamp: Date.now()
@@ -262,7 +259,6 @@ const TravelJournalDetail = () => {
 
       setReviews([reviewData, ...reviews]);
 
-      // Form ကို ပြန်ရှင်းမယ်
       setNewReview({ name: '', comment: '', role: '' });
       setRating(0);
     }
@@ -275,7 +271,7 @@ const TravelJournalDetail = () => {
     }
   };
 
-  // Kojima Jeans ဆီသို့ သွားရန် Function
+
   const goToKojima = () => {
     const kojimaLoc = locations.find(l => l.id === 'kojima');
     if (kojimaLoc) {
@@ -544,7 +540,7 @@ const TravelJournalDetail = () => {
                       href={`#${item.toLowerCase()}`}
                       className="text-[11px] font-medium text-green-800 hover:text-stone-900 transition-colors uppercase tracking-widest block border-l-2 border-transparent hover:border-stone-900 pl-4"
                     >
-                      {/* nav path အောက်မှာ item နာမည်ကို lowercase ပြောင်းပြီး ရှာခိုင်းတာပါ */}
+                      
                       {t(`nav.${item.toLowerCase()}`)} 🌸
                     </a>
                   </li>
@@ -568,41 +564,41 @@ const TravelJournalDetail = () => {
                 <div className="space-y-1.5">
                   <div className="flex items-baseline">
                     <span className="text-6xl font-serif tracking-tighter text-stone-900 leading-none">
-                      {/* Weather temp က 4 ဆိုရင် 4 ပေါ်ပါမယ် */}
+                      
                       {weather.temp}
                     </span>
                     <span className="text-2xl font-light text-green-800 ml-2 italic">°</span>
                   </div>
                   <p className="text-[10px] font-black uppercase tracking-[0.25em] text-stone-400">
-                    {/* Condition က Clear/Clouds စသဖြင့် dynamic ပေါ်ပါမယ် */}
+                    
                     {weather.condition} • Kurashiki
                   </p>
                 </div>
 
                 <div className="w-14 h-14 bg-stone-50 rounded-full flex items-center justify-center text-3xl shadow-inner transition-transform duration-500 group-hover:scale-110">
-                  {/* Icon က Clear ဖြစ်ရင် ☀️/🌙၊ Clouds ဖြစ်ရင် ☁️ စသဖြင့် ပြောင်းပါမယ် */}
+                  
                   {getWeatherIcon(weather.condition)}
                 </div>
               </div>
 
-              {/* Bottom Section (Three-Tier Vertical Stack) */}
+             
               <div className="border-t border-green-200 pt-8 mt-4 space-y-6">
 
-                {/* ၁။ ပထမကြောင်း: Standard Time Label (ဘယ်ဘက်ကပ်) */}
+                
                 <div className="flex justify-start">
                   <p className="text-[8px] font-black uppercase tracking-[0.4em] text-stone-300 leading-none">
                     Standard Time / JST
                   </p>
                 </div>
 
-                {/* ၂။ ဒုတိယကြောင်း: အချိန် (အလယ်တည့်တည့်) */}
+                
                 <div className="flex justify-center">
                   <p className="text-3xl font-serif text-stone-900 tabular-nums leading-none italic tracking-tighter">
                     {japanTime || '00:00'}
                   </p>
                 </div>
 
-                {/* ၃။ တတိယကြောင်း: Okayama Live (ညာဘက်ကပ်) */}
+               
                 <div className="flex flex-col items-end space-y-2">
                   <p className="text-[11px] uppercase font-bold tracking-[0.25em] text-green-800 leading-none">
                     Okayama, Japan
@@ -648,7 +644,7 @@ const TravelJournalDetail = () => {
                   </div>
 
                   <form ref={formRef} onSubmit={sendEmail} className="space-y-5">
-                    {/* 'user_email' ဆိုတဲ့ name က EmailJS template ထဲက နာမည်နဲ့ တူရပါမယ် */}
+                    
                     <input
                       name="user_email"
                       type="email"
@@ -679,7 +675,7 @@ const TravelJournalDetail = () => {
       </section>
 
       {/* interview videos section */}
-      <section className="py-20 px-6 max-w-7xl mx-auto space-y-12">
+      <section className="py-10 px-6 max-w-7xl mx-auto space-y-10">
         <div className="space-y-4">
           <h3 className="font-serif text-4xl italic text-stone-900">
             {t('journal.interview.title')}
@@ -792,7 +788,7 @@ const TravelJournalDetail = () => {
                       </span>
                     </div>
 
-                    {/* ပြင်ရမည့်နေရာ- </h5> နဲ့ ပိတ်ရပါမယ် */}
+                    
                     <h5 className="font-serif text-3xl italic text-stone-900">
                       {t(`itinerary.days.${i}.t`)}
                     </h5>
@@ -803,7 +799,7 @@ const TravelJournalDetail = () => {
 
                     {/* Activities Section */}
                     <div className="flex flex-wrap gap-2 mt-6">
-                      {/* Array check လုပ်ပြီးမှ map ပတ်ပါမယ် */}
+                     
                       {Array.isArray(t(`itinerary.days.${i}.activities`, { returnObjects: true })) &&
                         t(`itinerary.days.${i}.activities`, { returnObjects: true }).map((act, idx) => (
                           <span key={idx} className="text-[9px] px-3 py-1.5 bg-stone-50 text-stone-600 rounded-full">
@@ -833,7 +829,7 @@ const TravelJournalDetail = () => {
             </div>
 
             <motion.button
-              onClick={() => navigate('/area')} // ဒီနေရာမှာ /area ကို သွားခိုင်းတာပါ
+              onClick={() => navigate('/area')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-stone-900 text-white text-[10px] font-black uppercase tracking-[0.4em] rounded-full shadow-xl hover:bg-stone-800 transition-all flex items-center gap-3"

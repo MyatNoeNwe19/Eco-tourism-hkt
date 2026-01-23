@@ -215,7 +215,7 @@ const HomePage = () => {
       {/* --- HERO --- */}
       <section id="home" className="relative min-h-screen md:h-[110vh] flex items-center justify-center overflow-hidden bg-stone-900">
         <motion.div initial={{ scale: 1.15 }} animate={{ scale: 1 }} transition={{ duration: 2 }} className="absolute inset-0">
-          <img src="/images/banner1.jpg" className="w-full h-full object-cover brightness-[0.55]" alt="Kurashiki" />
+          <img src="/images/banner.png" className="w-full h-full object-cover brightness-[0.55]" alt="Kurashiki" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-green-900/80"></div>
         </motion.div>
 
@@ -565,8 +565,8 @@ const HomePage = () => {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-5 py-1.5 rounded-full text-[8px] font-black uppercase tracking-widest transition-all border ${activeTab === tab.id
-                    ? 'bg-stone-900 border-stone-900 text-white'
-                    : 'bg-transparent border-stone-200 text-stone-500 hover:border-stone-400'
+                  ? 'bg-stone-900 border-stone-900 text-white'
+                  : 'bg-transparent border-stone-200 text-stone-500 hover:border-stone-400'
                   }`}
               >
                 {t(tab.label)}
@@ -836,7 +836,7 @@ const HomePage = () => {
               <div className="relative w-full aspect-[1.1/1] h-[350px] md:h-auto group/img">
                 <div className="absolute inset-0 rounded-[2rem] rounded-tr-[8rem] overflow-hidden shadow-2xl transition-all duration-700 group-hover/img:rounded-tr-[2rem] group-hover/img:rounded-bl-[8rem]">
                   <img
-                    src="/images/cherry blossoms 1.webp"
+                    src="/images/canalRef.jpg"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover/img:scale-110"
                     alt="Kurashiki Aesthetic"
                   />
@@ -955,13 +955,14 @@ const HomePage = () => {
             {/* Insight 1: Denim Heritage */}
             <div className="group cursor-default">
               <div className="mb-6 overflow-hidden rounded-[32px] aspect-[4/5]">
-                <img
-                  src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=1000"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  alt="Indigo Fabric"
-                />
-              </div>
+                  <img
+                    src="/public/images/kojima jeanstreet.jpg"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    alt="Indigo Fabric"
+                  />
+                </div>
               <div className="flex items-center gap-3 mb-4">
+                
                 <FaFingerprint className="text-emerald-600" size={14} />
                 <h4 className="text-[11px] font-bold uppercase tracking-widest text-stone-900">
                   {t('insights.denim.title')}
@@ -975,13 +976,14 @@ const HomePage = () => {
             {/* Insight 2: Night View */}
             <div className="group cursor-default">
               <div className="mb-6 overflow-hidden rounded-[32px] aspect-[4/5]">
-                <img
-                  src="./images/night illumination.jpg"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  alt="Japanese Night Street"
-                />
-              </div>
+                  <img
+                    src="/public/images/night view.jpg"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    alt="Indigo Fabric"
+                  />
+                </div>
               <div className="flex items-center gap-3 mb-4">
+                
                 <FaMoon className="text-emerald-600" size={14} />
                 <h4 className="text-[11px] font-bold uppercase tracking-widest text-stone-900">
                   {t('insights.night.title')}
@@ -995,13 +997,14 @@ const HomePage = () => {
             {/* Insight 3: Tea Houses */}
             <div className="group cursor-default">
               <div className="mb-6 overflow-hidden rounded-[32px] aspect-[4/5]">
-                <img
-                  src="./images/tea house1.jpg"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  alt="Zen Garden Tea House"
-                />
-              </div>
+                  <img
+                    src="/public/images/whstreetlight.jpg"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    alt="Indigo Fabric"
+                  />
+                </div>
               <div className="flex items-center gap-3 mb-4">
+                
                 <FaLightbulb className="text-emerald-600" size={14} />
                 <h4 className="text-[11px] font-bold uppercase tracking-widest text-stone-900">
                   {t('insights.tea.title')}

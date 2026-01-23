@@ -9,13 +9,14 @@ import {
   CloudRain, Languages, PhoneCall, Heart,
   Star, Calendar, Users, CreditCard, CheckCircle2,
   Navigation, Eye, Music, Ticket, Zap, Scissors, Home, Sparkles, Plus, Minus,
-  Globe, Award, Bookmark, Share2, Instagram, Facebook, Twitter, ShieldAlert,
+  Globe, Award, Bookmark, Share2, Instagram, QrCode, Smartphone, ShieldAlert,
   Bike, Briefcase, MessageSquare, Trash2, Image as ImageIcon
 } from 'lucide-react';
 import Navbar from './NavbarPage';
 import FooterPage from './FooterPage';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const PRICES = {
   ADULT: 15000,
@@ -220,13 +221,16 @@ const TripPlannerPage = () => {
   const [userRating, setUserRating] = useState(); // Default 5 stars
   const [userName, setUserName] = useState("");
   const [t, i18n] = useTranslation();
-
+  const [isProcessing, setIsProcessing] = useState(false);
 
   const [newReview, setNewReview] = useState("");
 
+  const [paymentMethod, setPaymentMethod] = useState('card');
+  const [receipt, setReceipt] = useState(null);
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const { isLoggedIn, user } = useAuth();
   const navigate = useNavigate();
 
   const formatPrice = (amount) => {
@@ -304,11 +308,61 @@ const TripPlannerPage = () => {
     });
   }, [activeDay, vibe]);
 
+const handleBookingAction = () => {
+  if (!isLoggedIn) {
+    navigate('/login');
+    return;
+  }
+
+  // Step 1 နဲ့ 2 မှာဆိုရင် ရှေ့ဆက်သွားမယ်
+  if (bookingStep < 3) {
+    setBookingStep(s => s + 1);
+    return;
+  }
+
+  // Step 3 (Payment) မှာဆိုရင်
+  setIsProcessing(true);
+
+  // API ခေါ်သလိုမျိုး ခဏစောင့်မယ်
+  setTimeout(() => {
+    const bookingId = `BK-${Math.random().toString(36).substr(2, 9).toUpperCase()}`;
+    
+    const newBooking = {
+      id: bookingId,
+      date: bookingDate,
+      total: calculateTotal(),
+      currency: currency,
+      method: paymentMethod,
+      status: paymentMethod === 'kpay' ? 'Pending Approval' : 'Confirmed', // Kpay ဆိုရင် စစ်ဆေးဆဲလို့ပြမယ်
+      timestamp: new Date().toISOString()
+    };
+
+    // ၁။ LocalStorage ထဲမှာ သိမ်းမယ် (ဒါက သင့်ရဲ့ Database အစားသုံးတာပါ)
+    const existingBookings = JSON.parse(localStorage.getItem('user_bookings') || '[]');
+    localStorage.setItem('user_bookings', JSON.stringify([newBooking, ...existingBookings]));
+
+    // ၂။ Profile မှာ ပြဖို့ Noti သိမ်းမယ်
+    const noti = {
+      id: Date.now(),
+      title: "Booking Received!",
+      message: paymentMethod === 'kpay' 
+        ? "We're verifying your KPay screenshot. Usually takes 30 mins." 
+        : "Your trip is confirmed! Check your email for ticket.",
+      type: "success",
+      read: false
+    };
+    const existingNotis = JSON.parse(localStorage.getItem('user_notis') || '[]');
+    localStorage.setItem('user_notis', JSON.stringify([noti, ...existingNotis]));
+
+    setIsProcessing(false);
+    setIsSuccess(true);
+  }, 2500);
+};
 
   return (
     <div className="bg-[#F1F5F9] min-h-screen text-stone-900 selection:bg-stone-900 selection:text-white relative">
       <Navbar />
-      
+
       {/* HERO SECTION */}
       <section ref={heroRef} className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-stone-900 relative">
         <motion.div style={{ y: heroY }} className="absolute inset-0 opacity-60">
@@ -380,35 +434,116 @@ const TripPlannerPage = () => {
                     )}
 
                     {bookingStep === 3 && (
-                      <div className="space-y-6">
-                        <div className="bg-stone-900 text-white p-8 rounded-[40px] space-y-4 shadow-xl">
-                          <div className="flex justify-between text-xs opacity-50 uppercase font-bold tracking-tighter"><span>{t('trip.continue')}</span><span>{bookingDate}</span></div>
-                          <div className="h-[1px] bg-white/10" />
-                          <div className="space-y-2 text-xs font-light">
-                            {counts.family > 0 ? <div className="flex justify-between"><span>{t('trip.plan')}</span><span>{formatPrice(PRICES.FAMILY_BASE)}</span></div> :
-                              <><div className="flex justify-between"><span>{t('trip.adult')} x{counts.adult}</span><span>{formatPrice(counts.adult * PRICES.ADULT)}</span></div>
-                                {counts.child > 0 && <div className="flex justify-between"><span>{t('trip.child')} x{counts.child}</span><span>{formatPrice(counts.child * PRICES.CHILD)}</span></div>}</>}
-                            {isPremium && <div className="flex justify-between text-emerald-400 font-bold"><span>{t('trip.service')}</span><span>{t('trip.included')}</span></div>}
-                            <div className="flex justify-between text-stone-500 italic"><span>{t('trip.booking')}</span><span>{formatPrice(PRICES.BOOKING_FEE)}</span></div>
-                          </div>
-                          <div className="flex justify-between text-2xl font-serif italic pt-4 border-t border-white/10"><span>{t('trip.total')}</span><span>{formatPrice(calculateTotal())}</span></div>
+                      <div className="space-y-6 animate-in fade-in duration-500">
+                        {/* PAYMENT METHOD SELECTOR */}
+                        <div className="flex gap-3 mb-6">
+                          <button
+                            onClick={() => setPaymentMethod('card')}
+                            className={`flex-1 py-3 rounded-2xl text-[9px] font-black uppercase tracking-tighter transition-all flex items-center justify-center gap-2 border-2 ${paymentMethod === 'card' ? 'border-stone-900 bg-stone-50' : 'border-stone-100 opacity-50'}`}
+                          >
+                            <CreditCard size={14} /> Stripe / Card
+                          </button>
+                          <button
+                            onClick={() => setPaymentMethod('kpay')}
+                            className={`flex-1 py-3 rounded-2xl text-[9px] font-black uppercase tracking-tighter transition-all flex items-center justify-center gap-2 border-2 ${paymentMethod === 'kpay' ? 'border-blue-600 bg-blue-50 text-blue-600' : 'border-stone-100 opacity-50'}`}
+                          >
+                            <Smartphone size={14} /> KBZ Pay
+                          </button>
                         </div>
-                        <div className="flex items-center justify-between p-4 border rounded-3xl bg-white hover:border-emerald-500 transition-colors cursor-pointer" onClick={() => setIsPremium(!isPremium)}>
-                          <div className="flex items-center gap-3">
-                            <ShieldCheck size={20} className={isPremium ? "text-emerald-600" : "text-stone-300"} />
-                            <span className="text-xs font-bold italic text-stone-600">{t('trip.private')}</span>
+
+                        {paymentMethod === 'card' ? (
+                          <div className="space-y-4">
+                            {/* Total Summary for Card */}
+                            <div className="bg-stone-900 text-white p-6 rounded-[35px] relative overflow-hidden">
+                              <div className="absolute top-0 right-0 p-4 opacity-10"><CreditCard size={60} /></div>
+                              <p className="text-[10px] opacity-40 font-bold uppercase mb-1">Payable Amount</p>
+                              <h4 className="text-3xl font-serif italic">{formatPrice(calculateTotal())}</h4>
+                            </div>
+
+                            {/* Card Input Fields */}
+                            <div className="bg-white border border-stone-100 rounded-[30px] p-5 space-y-3 shadow-sm">
+                              <input type="text" placeholder="CARDHOLDER NAME" className="w-full p-4 bg-stone-50 rounded-2xl text-[10px] font-bold outline-none border border-transparent focus:border-stone-200 uppercase" />
+                              <div className="relative">
+                                <input type="text" placeholder="CARD NUMBER" className="w-full p-4 bg-stone-50 rounded-2xl text-[10px] font-bold outline-none border border-transparent focus:border-stone-200" />
+                                <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-1 opacity-40">
+                                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" className="h-3" alt="visa" />
+                                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" className="h-3" alt="master" />
+                                </div>
+                              </div>
+                              <div className="grid grid-cols-2 gap-3">
+                                <input type="text" placeholder="MM/YY" className="p-4 bg-stone-50 rounded-2xl text-[10px] font-bold text-center border border-transparent focus:border-stone-200" />
+                                <input type="password" placeholder="CVV" className="p-4 bg-stone-50 rounded-2xl text-[10px] font-bold text-center border border-transparent focus:border-stone-200" />
+                              </div>
+                            </div>
                           </div>
-                          <div className={`w-10 h-5 rounded-full transition-colors ${isPremium ? 'bg-emerald-600' : 'bg-stone-200'}`}>
-                            <div className={`w-3 h-3 bg-white rounded-full mt-1 transition-all ${isPremium ? 'ml-6' : 'ml-1'}`} />
+                        ) : (
+                          <div className="space-y-4">
+                            {/* KPay QR Section */}
+                            <div className="bg-blue-600 text-white p-6 rounded-[35px] flex flex-col items-center text-center">
+                              <div className="bg-white p-2 rounded-2xl mb-4 shadow-lg">
+                                <QrCode size={120} className="text-blue-600" />
+                              </div>
+                              <p className="text-[10px] font-black uppercase opacity-70 tracking-widest">Scan & Transfer to</p>
+                              <h4 className="text-lg font-bold">Noe Noe</h4>
+                              <p className="text-xs font-mono opacity-80">09 960 308 176</p>
+                              <div className="mt-4 px-4 py-1 bg-white/20 rounded-full text-[10px] font-bold italic">
+                                Total: {formatPrice(calculateTotal())}
+                              </div>
+                            </div>
+
+                            {/* Screenshot Upload Field */}
+                            <div className="space-y-2">
+                              <label className="text-[9px] font-black text-stone-400 ml-2 uppercase tracking-widest">Upload Screenshot</label>
+                              <div className="relative h-32 border-2 border-dashed border-blue-100 rounded-[30px] flex flex-col items-center justify-center bg-blue-50/30 overflow-hidden group">
+                                {receipt ? (
+                                  <img src={receipt} className="w-full h-full object-cover" alt="receipt" />
+                                ) : (
+                                  <>
+                                    <ImageIcon size={24} className="text-blue-200 mb-1" />
+                                    <p className="text-[9px] font-bold text-blue-300 uppercase">Tap to Select Image</p>
+                                  </>
+                                )}
+                                <input
+                                  type="file"
+                                  accept="image/*"
+                                  onChange={(e) => {
+                                    const file = e.target.files[0];
+                                    if (file) setReceipt(URL.createObjectURL(file));
+                                  }}
+                                  className="absolute inset-0 opacity-0 cursor-pointer"
+                                />
+                              </div>
+                            </div>
                           </div>
+                        )}
+
+                        {/* Security Note */}
+                        <div className="flex items-center justify-center gap-2 opacity-40 py-2">
+                          <ShieldCheck size={14} className="text-emerald-600" />
+                          <span className="text-[8px] font-black uppercase tracking-widest">256-bit Secure Gateway</span>
                         </div>
                       </div>
                     )}
 
+                    {/* DYNAMIC ACTION BUTTON */}
                     <div className="mt-8 flex gap-3">
-                      {bookingStep > 1 && <button onClick={() => setBookingStep(s => s - 1)} className="px-6 py-4 border border-stone-200 rounded-full text-[10px] font-bold uppercase hover:bg-stone-50 transition-all">{t('trip.back')}</button>}
-                      <button onClick={() => bookingStep === 3 ? setIsSuccess(true) : setBookingStep(s => s + 1)} disabled={calculateTotal() === 0} className="flex-1 bg-stone-900 text-white py-4 rounded-full text-[10px] font-bold uppercase disabled:opacity-20 hover:bg-emerald-800 transition-all shadow-lg">
-                        {bookingStep === 3 ? "Confirm Reservation" : t('trip.continue')}
+                      {bookingStep > 1 && (
+                        <button onClick={() => setBookingStep(s => s - 1)} className="px-6 py-4 border border-stone-200 rounded-full text-[10px] font-bold uppercase hover:bg-stone-50 transition-all">
+                          {t('trip.back')}
+                        </button>
+                      )}
+
+                      <button
+                        onClick={handleBookingAction}
+                        disabled={calculateTotal() === 0}
+                        className={`flex-1 py-4 rounded-full text-[10px] font-bold uppercase transition-all shadow-lg ${!isLoggedIn
+                          ? 'bg-amber-500 text-white hover:bg-amber-600 animate-pulse'
+                          : 'bg-stone-900 text-white hover:bg-emerald-800'
+                          }`}
+                      >
+                        {!isLoggedIn
+                          ? "🔒 Login to Reserve"
+                          : bookingStep === 3 ? "Confirm & Pay Now" : t('trip.continue')}
                       </button>
                     </div>
                   </motion.div>
@@ -709,7 +844,7 @@ const TripPlannerPage = () => {
               <span className="absolute top-6 left-6 text-5xl text-stone-500 opacity-10 font-serif">“</span>
               {t('trip.testimonial.quote')}
               <div className="mt-8 flex items-center gap-4 not-italic">
-                <div className="w-10 h-10 rounded-full bg-stone-200 overflow-hidden"><img src="https://i.pravatar.cc/100?img=32" alt="Avatar" /></div>
+                <div className="w-10 h-10 rounded-full bg-stone-200 overflow-hidden"><img src="/public/images/profile3.jpg" alt="Avatar" /></div>
                 <div>
                   <p className="text-[10px] font-bold text-stone-900">{t('trip.testimonial.user_name')}</p>
                   <p className="text-[9px] text-stone-400">{t('trip.testimonial.user_country')}</p>
@@ -728,7 +863,7 @@ const TripPlannerPage = () => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 h-[600px]">
                 <div className="rounded-[30px] overflow-hidden shadow-lg group relative">
                   <img
-                    src="./images/ohara.webp"
+                    src="./images/bigBuilding1.jpg"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                     alt={t('trip.gallery.title')}
                   />
@@ -737,7 +872,7 @@ const TripPlannerPage = () => {
 
                 <div className="rounded-[30px] overflow-hidden md:col-span-2 shadow-lg group relative">
                   <img
-                    src="./images/kojima jean1.webp"
+                    src="./images/kojima jeanstreet.jpg"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                     alt={t('trip.gallery.title')}
                   />
@@ -746,7 +881,7 @@ const TripPlannerPage = () => {
 
                 <div className="rounded-[30px] overflow-hidden md:col-span-2 shadow-lg group relative">
                   <img
-                    src="./images/night light.webp"
+                    src="./images/wh2.jpg"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                     alt={t('trip.gallery.title')}
                   />
@@ -755,7 +890,7 @@ const TripPlannerPage = () => {
 
                 <div className="rounded-[30px] overflow-hidden shadow-lg group relative">
                   <img
-                    src="./images/lvy square5.webp"
+                    src="./images/ivynew3.jpg"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                     alt={t('trip.gallery.title')}
                   />

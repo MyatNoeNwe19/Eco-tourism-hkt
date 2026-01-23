@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@stripe/stripe-js": "^8.6.4",
     "@tailwindcss/vite": "^4.1.18",
     "framer-motion": "^12.23.26",
     "i18next": "^25.7.3",

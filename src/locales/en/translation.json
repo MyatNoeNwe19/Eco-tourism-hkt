@@ -80,7 +80,7 @@
     "openStatus": "Open for exploration"
   },
   "spot3": {
-    "title": "Kurashiki Ivy Square",
+    "title": "White House Street",
     "tag": "Industrial Heritage",
     "desc": "A beautiful red-brick complex revitalized from a historic spinning mill.",
     "longDesc": "Built in 1889 as the first modern cotton mill in Japan, the site is now a cultural oasis. The signature red-brick walls are blanketed in lush green ivy, originally planted to regulate temperature. It houses a hotel, museums, and artisan workshops.",
@@ -140,25 +140,24 @@
     "openStatus": "Open for exploration"
   },
   "spot6": {
-    "title": "Kurashiki Bikan Night Light",
-    "tag": "Atmospheric Experience",
-    "desc": "A magical transformation of the historic district, where soft shadows and warm lights bring the Edo period back to life.",
-    "longDesc": "When the sun sets over the Kurashiki Bikan Historical Quarter, the area undergoes a breathtaking transformation known as the 'Kurashiki Night Landscape.' This world-class lighting design was orchestrated by the renowned lighting designer Motoko Ishii, aimed at accentuating the district's architectural beauty without overpowering it. Unlike typical vibrant illuminations, the lighting here is subtle and warm, featuring soft shadows that dance along the white-walled storehouses and reflect beautifully on the still waters of the Kurashiki River. \n\nThe lights are carefully placed to highlight the texture of the stone bridges, the silhouette of the weeping willow trees, and the traditional latticework of the historic buildings. This nocturnal ambiance creates a serene, cinematic atmosphere that feels like a journey back to the Edo period. Walking through the narrow alleys under the gentle glow of street lamps offers a completely different emotional experience compared to the daytime—quiet, romantic, and deeply peaceful. It is the perfect time for photographers to capture the 'mirror effect' on the canal or for couples to enjoy a tranquil stroll after the daytime crowds have dispersed.",
-    "fee": "Free Admission (Open Public Area)",
-    "avgDuration": "45 Minutes - 1.5 Hours",
-    "hours_weekdays": "Sunset — 09:00 PM (Oct-Mar) | Sunset — 10:00 PM (Apr-Sept)",
-    "hours_sat": "Sunset — 09:00 PM (Oct-Mar) | Sunset — 10:00 PM (Apr-Sept)",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5042861218524!2d133.771243976326!3d34.59140359033108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515638428e2c0b%3A0x29f474bc3f0c0cfc!2sKurashiki%20Ivy%20Square!5e0!3m2!1sen!2sjp!4v1700000000000",
-    "access_step1": "The illumination covers the entire canal area and the Honmachi/Higashimachi streets.",
-    "access_step2": "Best viewed by starting from the Nakabashi Bridge and walking along the riverbanks.",
-    "busDesc": "Night buses are limited, but the area remains very accessible on foot.",
-    "walkDesc": "A peaceful 15-minute walk from Kurashiki Station South Exit.",
-    "highlight1": "Expertly designed warm-tone lighting by Motoko Ishii",
-    "highlight2": "Stunning 'Mirror Reflection' of white walls on the canal",
-    "highlight3": "Cinematic and romantic atmosphere with fewer crowds",
-    "wisdomTip": "The best 'Blue Hour' photos are taken about 15-20 minutes after sunset when the sky is deep blue and the warm lights have just turned on. Also, remember that most shops close by 6:00 PM, so this is purely for a scenic walk.",
-    "openStatus": "Beautifully lit tonight"
-  },
+    "title": "Achi Shrine",
+    "tag": "Spiritual Landmark",
+    "desc": "An ancient shrine overlooking the Kurashiki Bikan district, offering protection and a panoramic view of the historic city.",
+    "longDesc": "Perched atop Mt. Tsurugata at the northern edge of the Bikan Historical Quarter, Achi Shrine is a site of deep spiritual significance with over 1,700 years of history. It serves as the guardian shrine for the city of Kurashiki. Visitors climbing the stone steps are rewarded with a breathtaking view of the tiled roofs of the merchant district below. The shrine is famous for the 'Akebono-fuji,' a massive Wisteria tree estimated to be 300 to 500 years old, designated as a natural monument. The atmosphere is serene and timeless, featuring traditional Shinto architecture and sacred stone gardens.",
+    "fee": "Free Admission",
+    "avgDuration": "30 - 60 Minutes",
+    "hours_weekdays": "06:00 AM — 05:00 PM (Shrine Office)",
+    "hours_sat": "06:00 AM — 05:00 PM (Shrine Office)",
+    "access_step1": "Located on the hill at the northern end of the Bikan Historical Quarter.",
+    "access_step2": "Climb the stone steps leading up from the Honmachi street area.",
+    "busDesc": "Easily accessible by foot from anywhere in the canal district.",
+    "walkDesc": "A 15-minute walk from Kurashiki Station South Exit.",
+    "highlight1": "Panoramic views of the historic district",
+    "highlight2": "The ancient 'Akebono-fuji' Wisteria tree",
+    "highlight3": "Authentic Shinto atmosphere and architecture",
+    "wisdomTip": "The climb involves many steps; take the 'upper path' for a gradual incline or the main stairs for a workout. Visit during late April to see the Wisteria in bloom!",
+    "openStatus": "Open Daily"
+},
   "seasonal": {
     "subtitle": "Atmosphere",
     "title": "Four Seasons of Kurashiki",
@@ -290,8 +289,10 @@
       "food": "Food",
       "heritage": "Heritage",
       "life_style": "Lifestyle",
-      "night_view": "Night View",
+      "top_view": "Cultural Landmark",
       "art": "Art",
+      "eco": "Eco-Tour",
+     
       "cultural": "Cultural",
       "local_craft": "Local Craft"
     }
@@ -350,6 +351,7 @@
       "art": "Craft & Art",
       "food": "Food",
       "drink": "Drink",
+       "nature": "Nature",
       "lifestyle": "Lifestyle"
     }
   },
@@ -723,6 +725,12 @@
     ]
   },
   "journal": {
+    "interview":{
+      "title": "Local Voices & Global Perspectives",
+      "vd1": " Heritage & Life: Conversations with Kurashiki Locals",
+      " vd2": " Hospitality at White House Street: A Staff's Story",
+      "vd3": "From France to Kurashiki: A Traveler's Experience "
+    },
     "review": {
       "name": "Your name ... ",
       "occupation": "Enter your occupation (e.g. Student, Traveller)",

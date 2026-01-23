@@ -1,0 +1,108 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Leaf, Mail, Lock, ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useAuth } from '../context/AuthContext'; // Path ကို သင့် project အတိုင်းချိန်ပါ
+import Navbar from './NavbarPage';
+
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { login } = useAuth();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email && password) {
+      // Logic: Context ထဲက login function ကို လှမ်းခေါ်တယ်
+      login(email, password);
+    } else {
+      alert("Please enter both email and password");
+    }
+  };
+
+  return (
+    <div>
+      <Navbar forceDark={true} />
+      <div className="min-h-screen pt-20 w-full flex items-center justify-center bg-[#fcfcfc] p-4">
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="max-w-[1000px] w-full bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border border-stone-100"
+        >
+          {/* Left Side: Image & Branding */}
+          <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1760&auto=format&fit=crop"
+              alt="Nature"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-green-900/40 backdrop-blur-[2px] flex flex-col justify-end p-12 text-white">
+              <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6">
+                <Leaf className="text-white" size={28} />
+              </div>
+              <h2 className="text-4xl font-serif italic font-bold mb-4 leading-tight">Welcome Back to Kurashiki.</h2>
+              <p className="text-white/80 text-sm font-medium tracking-wide">Explore the hidden gems of Japan with a sustainable touch.</p>
+            </div>
+          </div>
+
+          {/* Right Side: Login Form */}
+          <div className="md:w-1/2 p-8 md:p-16 flex flex-col justify-center">
+            <div className="mb-10">
+              <h3 className="text-3xl font-serif font-bold text-stone-800 mb-2">Sign In</h3>
+              <p className="text-stone-400 text-sm font-medium">Enter your details to continue your journey.</p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="space-y-2">
+                <label className="text-[11px] font-black uppercase tracking-widest text-stone-400 ml-1">Email Address</label>
+                <div className="relative group">
+                  <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-300 group-focus-within:text-green-600 transition-colors" size={18} />
+                  <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="name@example.com"
+                    className="w-full bg-stone-50 border-none rounded-2xl py-4 pl-12 pr-4 text-sm focus:ring-2 focus:ring-green-600/10 transition-all outline-none font-medium"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <div className="flex justify-between items-center">
+                  <label className="text-[11px] font-black uppercase tracking-widest text-stone-400 ml-1">Password</label>
+                  <button type="button" className="text-[10px] font-bold text-green-700 hover:underline">Forgot?</button>
+                </div>
+                <div className="relative group">
+                  <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-300 group-focus-within:text-green-600 transition-colors" size={18} />
+                  <input
+                    type="password"
+                    required
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="••••••••"
+                    className="w-full bg-stone-50 border-none rounded-2xl py-4 pl-12 pr-4 text-sm focus:ring-2 focus:ring-green-600/10 transition-all outline-none font-medium"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" className="w-full bg-stone-900 text-white py-4 rounded-2xl font-bold uppercase tracking-[0.2em] text-[11px] shadow-xl shadow-stone-900/20 hover:bg-green-700 transition-all active:scale-[0.98] flex items-center justify-center gap-3">
+                Sign In <ArrowRight size={16} />
+              </button>
+            </form>
+
+            <div className="mt-12 pt-8 border-t border-stone-50 text-center">
+              <p className="text-stone-400 text-sm">
+                Don't have an account?{' '}
+                <Link to="/register" className="text-green-700 font-bold hover:underline underline-offset-4">Create Account</Link>
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default Login;

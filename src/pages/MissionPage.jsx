@@ -19,7 +19,7 @@ const MissionPage = () => {
 
   // Team data keys for translation
   const teamMembers = [
-    { key: "hieu", img: "./images/mission2.jpg" },
+    { key: "hieu", img: "./images/hieu.jpg" },
     { key: "mo", img: "./images/mosan.jpg" },
     { key: "milon", img: "./images/milon.jpg" },
     { key: "noe", img: "./images/noesan.jpg" },
@@ -49,7 +49,7 @@ const MissionPage = () => {
 
             <h1 className="text-white text-7xl md:text-[110px] font-serif leading-[0.8] mb-8 tracking-tighter">
               {t('mission.hero_title_1')} <br />
-              <span className="italic font-light">{t('mission.hero_title_2')}</span>{" "}
+              
               <span className="text-green-500 italic">{t('mission.hero_title_3')}</span>
             </h1>
 
