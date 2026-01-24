@@ -956,7 +956,7 @@ const HomePage = () => {
             <div className="group cursor-default">
               <div className="mb-6 overflow-hidden rounded-[32px] aspect-[4/5]">
                   <img
-                    src="/public/images/kojima jeanstreet.jpg"
+                    src="/images/kojima jeanstreet.jpg"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     alt="Indigo Fabric"
                   />
@@ -977,7 +977,7 @@ const HomePage = () => {
             <div className="group cursor-default">
               <div className="mb-6 overflow-hidden rounded-[32px] aspect-[4/5]">
                   <img
-                    src="/public/images/night view.jpg"
+                    src="/images/night view.jpg"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     alt="Indigo Fabric"
                   />
@@ -998,7 +998,7 @@ const HomePage = () => {
             <div className="group cursor-default">
               <div className="mb-6 overflow-hidden rounded-[32px] aspect-[4/5]">
                   <img
-                    src="/public/images/whstreetlight.jpg"
+                    src="/images/whstreetlight.jpg"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     alt="Indigo Fabric"
                   />
