@@ -33,7 +33,7 @@ const Login = () => {
           {/* Left Side: Image & Branding */}
           <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1760&auto=format&fit=crop"
+              src="/public/images/evening light.jpg"
               alt="Nature"
               className="absolute inset-0 w-full h-full object-cover"
             />

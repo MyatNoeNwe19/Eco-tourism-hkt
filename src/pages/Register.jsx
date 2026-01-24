@@ -47,7 +47,7 @@ const Register = () => {
                     {/* Right Side: Image Content */}
                     <div className="md:w-[45%] relative h-48 md:h-auto">
                         <img
-                            src="https://images.unsplash.com/photo-1528164344705-44754268799af?q=80&w=1770&auto=format&fit=crop"
+                            src="/public/images/whiteHouse2.jpg"
                             alt="Japan Architecture"
                             className="absolute inset-0 w-full h-full object-cover"
                         />
