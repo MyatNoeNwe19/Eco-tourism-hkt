@@ -157,7 +157,7 @@
     "highlight3": "Kiến trúc Thần đạo truyền thống và thanh bình",
     "wisdomTip": "Đường lên có nhiều bậc thang, hãy mang giày thoải mái. Nếu đi vào cuối tháng 4, bạn sẽ thấy hoa tử đằng nở rộ.",
     "openStatus": "Mở cửa hàng ngày"
-},
+  },
   "seasonal": {
     "subtitle": "Không khí",
     "title": "Bốn mùa ở Kurashiki",
@@ -283,7 +283,17 @@
       "art": "Nghệ thuật",
       "drink": "Đồ uống",
       "lifestyle": "Phong cách sống",
-      "culture": "Văn hóa"
+      "culture": "Văn hóa",
+      "kurashiki": "Khu Bikan Kurashiki",
+      "canal": "Kênh đào",
+      "cafe": "Quán cà phê",
+      "denim-street": "Phố Denim",
+      "ohara": "Bảo tàng Ohara",
+      "greco": "Quán Greco",
+      "white": "Ngôi nhà trắng",
+      "tea": "Tiệm trà",
+      "ice": "Kem",
+      "ramen": "Mì Ramen"
     },
     "tabs": {
       "food": "Ẩm thực",
@@ -724,11 +734,11 @@
   },
   "journal": {
     "interview": {
-  "title": "Tiếng nói Địa phương & Góc nhìn Toàn cầu",
-  "vd1": "Di sản & Cuộc sống: Trò chuyện cùng người dân Kurashiki",
-  "vd2": "Sự hiếu khách tại phố Nhà Trắng: Câu chuyện của một nhân viên",
-  "vd3": "Từ Pháp đến Kurashiki: Trải nghiệm của một lữ khách"
-},
+      "title": "Tiếng nói Địa phương & Góc nhìn Toàn cầu",
+      "vd1": "Di sản & Cuộc sống: Trò chuyện cùng người dân Kurashiki",
+      "vd2": "Sự hiếu khách tại phố Nhà Trắng: Câu chuyện của một nhân viên",
+      "vd3": "Từ Pháp đến Kurashiki: Trải nghiệm của một lữ khách"
+    },
     "review": {
       "name": "Tên của bạn ...",
       "occupation": "Nhập nghề nghiệp của bạn (ví dụ: Học sinh, Du khách)",
@@ -2285,5 +2295,21 @@
       "item3": "Khăn tay nhỏ",
       "item4": "Mũ chống nắng / Ô"
     }
+  },
+  "profile": {
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "login-title": "Hành trình đang chờ đón bạn",
+    "sub-title": "Đăng nhập để xem các chuyến đi dành riêng cho bạn.",
+    "my-profile": "Hồ sơ của tôi",
+    "fav-places": "Địa điểm yêu thích",
+    "my-bookings": "Đơn đặt chỗ của tôi",
+    "logout": "Đăng xuất",
+    "wel-back": "Chào mừng bạn đã quay lại",
+    "main-menu": "Menu chính",
+    "my-fav": "Hồ sơ & Yêu thích",
+    "setting": "Cài đặt vùng",
+    "journey": "Hành trình của tôi",
+    "search": "Điểm đến tiếp theo? (Ví dụ: Kurashiki, Ẩm thực...)"
   }
 }

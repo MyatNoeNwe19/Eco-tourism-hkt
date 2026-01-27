@@ -23,11 +23,7 @@ const Register = () => {
 
     const handleRegister = (e) => {
         e.preventDefault();
-
-        // Validation အနည်းငယ်ထည့်ပါမယ်
         if (formData.fullName && formData.email && formData.password) {
-            // Context ထဲက register function ကို လှမ်းခေါ်ပါမယ်
-            // register function ထဲမှာ navigate('/') ပါပြီးသားဆိုရင် ဒီမှာ ထပ်ရေးစရာမလိုပါဘူး
             register(formData.fullName, formData.email, formData.password);
         } else {
             alert("Please fill all required fields");

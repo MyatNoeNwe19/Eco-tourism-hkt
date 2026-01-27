@@ -27,7 +27,6 @@ const NotificationBadge = () => {
 const Navbar = ({ forceDark = false }) => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  // user data နဲ့ status ကို ယူသုံးထားပါတယ်
   const { user, logout, isLoggedIn } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -92,8 +91,8 @@ const Navbar = ({ forceDark = false }) => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden xl:flex items-center gap-8">
-            <div className="flex gap-6">
+          <div className="hidden xl:flex items-center gap-6">
+            <div className="flex gap-6 mr-4">
               {navLinks.map((link) => (
                 <Link key={link.key} to={link.href} className={`text-[12px] font-bold uppercase tracking-[0.15em] hover:text-green-700 transition-all ${isSolid ? 'text-stone-600' : 'text-white'}`}>
                   {link.text}
@@ -101,7 +100,6 @@ const Navbar = ({ forceDark = false }) => {
               ))}
             </div>
 
-            {/* Auth & Profile Section - ပြုပြင်ထားသောအပိုင်း */}
             <div className="flex items-center gap-4 border-l border-stone-200/20 pl-6" ref={menuRef}>
               {isLoggedIn ? (
                 <div className="relative">
@@ -110,7 +108,6 @@ const Navbar = ({ forceDark = false }) => {
                     className={`flex items-center gap-3 p-1 pr-4 rounded-full transition-all border group ${isSolid ? 'bg-stone-50 border-stone-200' : 'bg-white/10 border-white/20'}`}
                   >
                     <div className="w-8 h-8 rounded-full bg-green-700 flex items-center justify-center text-white shadow-inner font-bold text-xs overflow-hidden border-2 border-white/20 group-hover:scale-105 transition-transform">
-                      {/* profileImage (သို့) photoURL ရှိမရှိ စစ်မယ် */}
                       {user?.profileImage || user?.photoURL ? (
                         <img
                           src={user?.profileImage || user?.photoURL}
@@ -123,7 +120,6 @@ const Navbar = ({ forceDark = false }) => {
                     </div>
 
                     <span className={`text-[11px] font-black uppercase tracking-widest ${isSolid ? 'text-stone-800' : 'text-white'}`}>
-                      {/* fullName (သို့) name ကနေ နာမည်အရှေ့ဆုံးတစ်လုံးကို ယူမယ် */}
                       {(user?.fullName || user?.name)?.split(' ')[0]}
                     </span>
 
@@ -137,24 +133,24 @@ const Navbar = ({ forceDark = false }) => {
                         className="absolute right-0 mt-3 w-60 bg-white rounded-[1.5rem] shadow-2xl border border-stone-100 p-2 z-[110] overflow-hidden"
                       >
                         <div className="px-4 py-4 border-b border-stone-50 mb-1 bg-stone-50/50 rounded-t-[1.2rem]">
-                          <p className="text-[9px] text-stone-400 uppercase font-black tracking-widest mb-1">My Journey</p>
+                          <p className="text-[9px] text-stone-400 uppercase font-black tracking-widest mb-1">{t('profile.journey')}</p>
                           <p className="text-sm font-bold text-stone-800 truncate">{user?.name || "Traveler"}</p>
                           <p className="text-[10px] text-stone-500 truncate font-medium">{user?.email}</p>
                         </div>
                         <Link to="/profile" onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
-                          <User size={14} /> My Profile
+                          <User size={14} /> {t('profile.my-profile')}
                         </Link>
                         <Link to="/profile" onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
-                          <Bookmark size={14} /> Favorite Places
+                          <Bookmark size={14} /> {t('profile.fav-places')}
                         </Link>
                         <Link to="/booking-history" onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
-                          <History size={14} /> My Bookings
+                          <History size={14} /> {t('profile.my-bookings')}
                         </Link>
                         <button
                           onClick={() => { logout(); setShowUserMenu(false); }}
                           className="w-full flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-red-500 hover:bg-red-50 rounded-xl transition-all mt-1 border-t border-stone-50 pt-3"
                         >
-                          <LogOut size={14} /> Logout Account
+                          <LogOut size={14} /> {t('profile.logout')}
                         </button>
                       </motion.div>
                     )}
@@ -163,10 +159,10 @@ const Navbar = ({ forceDark = false }) => {
               ) : (
                 <div className="flex items-center gap-3">
                   <Link to="/login" className={`px-5 py-2.5 rounded-full font-bold text-[10px] uppercase tracking-widest transition-all shadow-sm ${isSolid ? 'bg-stone-900 text-white hover:bg-green-700 shadow-stone-900/10' : 'bg-white text-stone-900 hover:bg-stone-100'}`}>
-                    Login
+                    {t('profile.login')}
                   </Link>
                   <Link to="/register" className={`text-[10px] font-bold rounded-full px-5 py-2.5 uppercase tracking-widest transition-all border ${isSolid ? 'text-stone-600 border-stone-200 hover:bg-stone-50' : 'text-white border-white/20 hover:bg-white/10'}`}>
-                    Register
+                    {t('profile.register')}
                   </Link>
                 </div>
               )}
@@ -204,7 +200,7 @@ const Navbar = ({ forceDark = false }) => {
                 <div className="w-10 h-10 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 cursor-pointer shadow-sm" onClick={() => setIsOpen(false)}>
                   <FaTimes size={16} />
                 </div>
-                <span className="text-[9px] font-black uppercase tracking-[0.3em] text-stone-400">Main Menu</span>
+                <span className="text-[9px] font-black uppercase tracking-[0.3em] text-stone-400">{t('profile.main-menu')}</span>
               </div>
 
               {/* 1. User Section Card (Mobile Update) */}
@@ -216,7 +212,7 @@ const Navbar = ({ forceDark = false }) => {
                         {user?.name?.charAt(0)}
                       </div>
                       <div>
-                        <p className="text-[10px] text-stone-400 uppercase font-black tracking-widest mb-0.5 text-left">Welcome back</p>
+                        <p className="text-[10px] text-stone-400 uppercase font-black tracking-widest mb-0.5 text-left">{t('profile.wel-back')}</p>
                         <p className="text-xl font-serif italic font-bold text-stone-800 leading-none">{user?.name}</p>
                       </div>
                     </Link>
@@ -227,22 +223,21 @@ const Navbar = ({ forceDark = false }) => {
                 ) : (
                   <div className="space-y-5">
                     <div className="space-y-1 text-left">
-                      <h4 className="text-lg font-serif italic font-bold text-stone-800">Your Journey Awaits</h4>
-                      <p className="text-[13px] text-stone-500 leading-relaxed">Login to access your personalized trips.</p>
+                      <h4 className="text-lg font-serif italic font-bold text-stone-800">{t('profile.login-title')}</h4>
+                      <p className="text-[13px] text-stone-500 leading-relaxed">{t('profile.sub-title')}</p>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <Link to="/login" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-3 w-full py-4 bg-stone-900 text-white rounded-2xl font-bold uppercase tracking-[0.15em] text-[11px] shadow-xl shadow-stone-900/20 hover:bg-green-700 transition-all"><LogIn size={16} /> LOGIN</Link>
-                      <Link to="/register" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-3 w-full py-3.5 bg-white border border-stone-200 text-stone-800 rounded-2xl font-bold uppercase tracking-[0.15em] text-[11px] hover:bg-stone-50 transition-all"><UserPlus size={16} /> REGISTER</Link>
+                      <Link to="/login" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-3 w-full py-4 bg-stone-900 text-white rounded-2xl font-bold uppercase tracking-[0.15em] text-[11px] shadow-xl shadow-stone-900/20 hover:bg-green-700 transition-all"><LogIn size={16} /> {t('profile.login')}</Link>
+                      <Link to="/register" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-3 w-full py-3.5 bg-white border border-stone-200 text-stone-800 rounded-2xl font-bold uppercase tracking-[0.15em] text-[11px] hover:bg-stone-50 transition-all"><UserPlus size={16} /> {t('profile.register')}</Link>
                     </div>
                   </div>
                 )}
               </div>
 
-              {/* ... ကျန်တဲ့ Search bar နဲ့ Nav links တွေက မူရင်းအတိုင်းပဲ ဆက်ရှိနေပါမယ် ... */}
               <div className="flex flex-col flex-grow space-y-8">
                 <div className="pt-2">
                   <form onSubmit={handleInternalSearch} className="relative group text-left">
-                    <input type="text" placeholder="Where to next?..." className="w-full bg-stone-50 border-none rounded-2xl py-4 pl-5 pr-12 text-sm focus:ring-2 focus:ring-green-600/20 transition-all outline-none font-medium text-left" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+                    <input type="text" placeholder={t('profile.search')} className="w-full bg-stone-50 border-none rounded-2xl py-4 pl-5 pr-12 text-sm focus:ring-2 focus:ring-green-600/20 transition-all outline-none font-medium text-left" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
                     <button type="submit" className="absolute right-4 top-1/2 -translate-y-1/2 text-stone-300 group-focus-within:text-green-600 transition-colors"><FaSearch size={14} /></button>
                   </form>
                 </div>
@@ -262,13 +257,13 @@ const Navbar = ({ forceDark = false }) => {
                         <div className="w-10 h-10 bg-stone-50 group-hover:bg-green-50 rounded-xl flex items-center justify-center transition-colors">
                           <User size={18} className="text-stone-400 group-hover:text-green-600" />
                         </div>
-                        My Profile & Favorites
+                        {t('profile.my-fav')}
                       </Link>
                       <Link to="/booking-history" onClick={() => setIsOpen(false)} className="flex text-lg font-serif italic text-stone-600 hover:text-green-700 items-center gap-4 group transition-all">
                         <div className="w-10 h-10 bg-stone-50 group-hover:bg-green-50 rounded-xl flex items-center justify-center transition-colors">
                           <History size={18} className="text-stone-400 group-hover:text-green-600" />
                         </div>
-                        My Bookings
+                        {t('profile.my-bookings')}
                       </Link>
                     </motion.div>
                   )}
@@ -278,7 +273,7 @@ const Navbar = ({ forceDark = false }) => {
                 <div className="pt-4 border-t border-stone-100 text-left">
                   <div className="flex items-center gap-3 mb-4">
                     <Globe size={12} className="text-green-700" />
-                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400">Regional Settings</span>
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400">{t('profile.setting')}</span>
                   </div>
                   <div className="grid grid-cols-3 gap-3">
                     {languages.map((l) => (

@@ -144,24 +144,24 @@ const HomePage = () => {
 
   const seasonalImages = {
     spring: {
-      main: "/images/cherry bloss.webp",
+      main: "/images/cherry.jpg",
       sub1: "/images/cherry2.jpg",
-      sub2: "/images/cherry blossoms 2.jpg"
+      sub2: "/images/cherry3.jpg"
     },
     summer: {
       main: "/images/whiteHouse15.jpg",
-      sub1: "/images/summer1.jpg",
+      sub1: "/images/whiteHouse7.jpg",
       sub2: "/images/whiteHouse5.jpg"
     },
     autumn: {
-      main: "/images/autumn.jpg",
-      sub1: "/images/autumn leaves 3.jpg",
-      sub2: "/images/autumn leaves1.webp"
+      main: "/images/autumn1.jpg",
+      sub1: "/images/autumn2.jpg",
+      sub2: "/images/autumn3.jpg"
     },
     night: {
-      main: "/images/night light.webp",
-      sub1: "/images/night light2.webp",
-      sub2: "/images/night light3.webp"
+      main: "/images/night light1.jpg",
+      sub1: "/images/whstreetlight.jpg",
+      sub2: "/images/ivynew2.jpg"
     }
 
   };

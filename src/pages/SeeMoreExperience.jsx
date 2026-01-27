@@ -27,19 +27,19 @@ const SeeMoreExperience = () => {
     const isExist = updatedWishlist.find(item => item.id === exp.id);
 
     if (isExist) {
-        updatedWishlist = updatedWishlist.filter(item => item.id !== exp.id);
+      updatedWishlist = updatedWishlist.filter(item => item.id !== exp.id);
     } else {
-        updatedWishlist.push({
-            id: exp.id,
-            title: exp.titleKey,
-            image: exp.img,
-            type: 'experience', // ဒီမှာ type သတ်မှတ်ပေးပါ
-            category: exp.category
-        });
+      updatedWishlist.push({
+        id: exp.id,
+        title: exp.titleKey,
+        image: exp.img,
+        type: 'experience', // ဒီမှာ type သတ်မှတ်ပေးပါ
+        category: exp.category
+      });
     }
     setWishlist(updatedWishlist);
     localStorage.setItem('user_wishlist', JSON.stringify(updatedWishlist));
-};
+  };
 
   const tabs = [
     { id: 'all', label: t('experience.tabs.all') || 'All' },
@@ -52,10 +52,21 @@ const SeeMoreExperience = () => {
   const searchTerm = queryParams.get('search')?.toLowerCase() || "";
 
   const filtered = experiences.filter(exp => {
-    const matchesTab = activeTab === 'all' || exp.category.toLowerCase() === activeTab.toLowerCase();
-    const matchesSearch = searchTerm === "" ||
-      t(exp.titleKey).toLowerCase().includes(searchTerm) ||
-      exp.tags.some(tag => t(tag).toLowerCase().includes(searchTerm));
+    const matchesTab = activeTab === 'all' || exp.category?.toLowerCase() === activeTab.toLowerCase();
+
+    const lowerSearch = searchTerm.toLowerCase().trim();
+
+    if (lowerSearch === "") return matchesTab;
+
+    const translatedTitle = String(t(exp.titleKey) || "").toLowerCase();
+
+    const matchesTags = exp.tags && exp.tags.some(tag => {
+      const translatedTag = String(t(`tags.${tag}`) || "").toLowerCase();
+      return translatedTag.includes(lowerSearch) || lowerSearch.includes(translatedTag);
+    });
+
+    const matchesSearch = translatedTitle.includes(lowerSearch) || matchesTags;
+
     return matchesTab && matchesSearch;
   });
 
@@ -110,7 +121,7 @@ const SeeMoreExperience = () => {
             {filtered.map((exp) => {
               // card တစ်ခုချင်းစီအတွက် like လုပ်ထားသလား စစ်တဲ့ logic
               const isLiked = wishlist.some(item => item.id === exp.id);
-              
+
               return (
                 <motion.div
                   layout
@@ -135,9 +146,9 @@ const SeeMoreExperience = () => {
                     <button
                       onClick={(e) => toggleWishlist(e, exp)}
                       className="absolute top-3 right-3 z-20 p-2 rounded-full backdrop-blur-md transition-all duration-300 hover:scale-110 active:scale-90 shadow-lg"
-                      style={{ 
+                      style={{
                         backgroundColor: isLiked ? '#15803d' : 'rgba(255, 255, 255, 0.3)',
-                        border: '1px solid rgba(255, 255, 255, 0.2)' 
+                        border: '1px solid rgba(255, 255, 255, 0.2)'
                       }}
                     >
                       <FaHeart

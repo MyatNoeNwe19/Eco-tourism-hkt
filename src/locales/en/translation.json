@@ -157,7 +157,7 @@
     "highlight3": "Authentic Shinto atmosphere and architecture",
     "wisdomTip": "The climb involves many steps; take the 'upper path' for a gradual incline or the main stairs for a workout. Visit during late April to see the Wisteria in bloom!",
     "openStatus": "Open Daily"
-},
+  },
   "seasonal": {
     "subtitle": "Atmosphere",
     "title": "Four Seasons of Kurashiki",
@@ -283,7 +283,17 @@
       "art": "Art",
       "drink": "Drink",
       "lifestyle": "Lifestyle",
-      "culture": "Culture"
+      "culture": "Culture",
+      "kurashiki": "Kurashiki Bikan",
+      "canal": "Canal",
+      "cafe": "Cafe",
+      "denim-street": "Denim Street",
+      "ohara": "Ohara Museum",
+      "greco": "Greco Coffee House",
+      "white": "White House",
+      "tea": "Tea House",
+      "ice": "Ice Cream",
+      "ramen": "Ramen"
     },
     "tabs": {
       "food": "Food",
@@ -292,9 +302,18 @@
       "top_view": "Cultural Landmark",
       "art": "Art",
       "eco": "Eco-Tour",
-     
       "cultural": "Cultural",
-      "local_craft": "Local Craft"
+      "local_craft": "Local Craft",
+      "kurashiki": "Kurashiki Bikan",
+      "canal": "Canal",
+      "cafe": "Cafe",
+      "denim-street": "Denim Street",
+      "ohara": "Ohara Museum",
+      "greco": "Greco Coffee House",
+      "white": "White House",
+      "tea": "Tea House",
+      "ice": "Ice Cream",
+      "ramen": "Ramen"
     }
   },
   "experience": {
@@ -351,7 +370,7 @@
       "art": "Craft & Art",
       "food": "Food",
       "drink": "Drink",
-       "nature": "Nature",
+      "nature": "Nature",
       "lifestyle": "Lifestyle"
     }
   },
@@ -725,7 +744,7 @@
     ]
   },
   "journal": {
-    "interview":{
+    "interview": {
       "title": "Local Voices & Global Perspectives",
       "vd1": " Heritage & Life: Conversations with Kurashiki Locals",
       " vd2": " Hospitality at White House Street: A Staff's Story",
@@ -2338,5 +2357,35 @@
       "item3": "Small Towel",
       "item4": "Sun Hat / Umbrella"
     }
+  },
+  "profile": {
+    "login": "Login",
+    "register": "Register",
+    "login-title": "Your Journey Awaits",
+    "sub-title": "Login to access your personalized trips.",
+    "my-profile": "My Profile",
+    "fav-places": "Favourite Places",
+    "my-bookings": "My Bookings",
+    "logout": "Logout",
+    "wel-back": "Welcome Back",
+    "main-menu": "Main Menu",
+    "my-fav": "My Profile & Favorites",
+    "setting": "Regional Settings",
+    "journey": "My Journey",
+    "search": "Where to next? (e.g. Kurashiki, Food...)"
+  },
+
+ "login": {
+    "title": "Experience the Serenity of Kurashiki",
+    "subtitle": "Your journey to sustainable travel and timeless Japanese beauty begins here.",
+    "signin_title": "Sign In",
+    "signin_subtitle": "Enter your details to continue your journey",
+    "email_label": "Email Address",
+    "password_label": "Password",
+    "forgot_password": "Forgot Password?",
+    "signin_button": "Sign In",
+    "no_account": "Don't have an account?",
+    "create_account": "Create Account",
+    "alert_fill_fields": "Please enter both email and password"
   }
 }
