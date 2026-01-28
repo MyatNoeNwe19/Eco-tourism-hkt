@@ -438,10 +438,10 @@ const Profile = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
                     <div className="lg:col-span-3 space-y-4">
-                        <TabButton active={activeTab === 'journeys'} label="Journeys" icon={<History />} onClick={() => setActiveTab('journeys')} />
-                        <TabButton active={activeTab === 'wishlist'} label="Wishlist" icon={<Heart />} onClick={() => setActiveTab('wishlist')} />
-                        <TabButton active={activeTab === 'impact'} label="Eco Impact" icon={<Leaf />} onClick={() => setActiveTab('impact')} />
-                        <TabButton active={activeTab === 'settings'} label="Settings" icon={<Settings />} onClick={() => setActiveTab('settings')} />
+                        <TabButton active={activeTab === 'journeys'} label={t('profile.journeys')} icon={<History />} onClick={() => setActiveTab('journeys')} />
+                        <TabButton active={activeTab === 'wishlist'} label={t('profile.wishlist')} icon={<Heart />} onClick={() => setActiveTab('wishlist')} />
+                        <TabButton active={activeTab === 'impact'} label={t('profile.eco-impact')} icon={<Leaf />} onClick={() => setActiveTab('impact')} />
+                        <TabButton active={activeTab === 'settings'} label={t('profile.settings')} icon={<Settings />} onClick={() => setActiveTab('settings')} />
                         <button onClick={logout} className="w-full mt-10 p-4 text-red-400 hover:bg-red-50 rounded-2xl flex items-center justify-between group font-black uppercase text-[10px] tracking-widest">
                            {t('profile.exit')} <LogOut size={18} />
                         </button>

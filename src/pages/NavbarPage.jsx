@@ -261,20 +261,45 @@ const Navbar = ({ forceDark = false }) => {
 
                   {isLoggedIn && (
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="pt-6 mt-2 border-t border-stone-100 space-y-4 text-left">
-                      <Link to="/profile" onClick={() => setIsOpen(false)} className="flex text-lg font-serif italic text-stone-600 hover:text-green-700 items-center gap-4 group transition-all">
-                        <div className="w-10 h-10 bg-stone-50 group-hover:bg-green-50 rounded-xl flex items-center justify-center transition-colors">
-                          <User size={18} className="text-stone-400 group-hover:text-green-600" />
-                        </div>
-                        {t('profile.my-fav')}
+                      <Link
+                        to="/profile"
+                        state={{ activeTab: 'journeys' }}
+                        onClick={() => setIsOpen(false)}
+                        className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all"
+                      >
+                        <User size={14} /> {t('profile.my-profile')}
                       </Link>
-                      <Link to="/booking-history" onClick={() => setIsOpen(false)} className="flex text-lg font-serif italic text-stone-600 hover:text-green-700 items-center gap-4 group transition-all">
-                        <div className="w-10 h-10 bg-stone-50 group-hover:bg-green-50 rounded-xl flex items-center justify-center transition-colors">
-                          <History size={18} className="text-stone-400 group-hover:text-green-600" />
-                        </div>
-                        {t('profile.my-bookings')}
+
+                      <Link
+                        to="/profile"
+                        state={{ activeTab: 'journeys' }}
+                        onClick={() => setIsOpen(false)} 
+                        className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all"
+                      >
+                        <History size={14} /> {t('profile.my-bookings')}
                       </Link>
+
+                      <Link
+                        to="/profile"
+                        state={{ activeTab: 'wishlist' }}
+                        onClick={() => setIsOpen(false)} 
+                        className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all"
+                      >
+                        <Bookmark size={14} /> {t('profile.fav-places')}
+                      </Link>
+
+                      <Link
+                        to="/profile"
+                        state={{ activeTab: 'settings' }}
+                        onClick={() => setIsOpen(false)} 
+                        className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all"
+                      >
+                        <Settings size={14} /> {t('profile.setting')}
+                      </Link>
+                      
                     </motion.div>
                   )}
+
                 </nav>
 
                 {/* Regional Settings Section */}
