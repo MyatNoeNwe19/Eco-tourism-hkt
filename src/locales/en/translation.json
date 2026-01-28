@@ -169,10 +169,10 @@
     "autumn_date": "Sept - Nov",
     "nightlight": "NIGHT LIGHT",
     "nightlight_date": "Illumination",
-    "spring_desc": "Experience the poetic beauty of cherry blossoms reflecting on the Kurashiki canal.",
-    "summer_desc": "Vibrant festivals and traditional lanterns lighting up the summer nights.",
-    "autumn_desc": "The historic white walls contrast beautifully with fiery red maple leaves.",
-    "night_desc": "The magical 'Kura-no-Akari' illumination transforms the canal into a golden dreamscape."
+    "spring_desc": "Imagine the historic Kurashiki canal framed by the fleeting, poetic beauty of cherry blossoms in spring.",
+    "summer_desc": "During the summer months, the canal breeze carries the vibrant energy of traditional festivals and lantern-lit nights.",
+    "autumn_desc": "Experience a stunning contrast as the iconic white-walled storehouses meet the warm, fiery hues of autumn foliage.",
+    "night_desc": "The gentle 'Kura-no-Akari' illumination casts a golden, dreamlike reflection"
   },
   "concierge": {
     "title": "Green Trip Concierge",
@@ -2374,8 +2374,7 @@
     "journey": "My Journey",
     "search": "Where to next? (e.g. Kurashiki, Food...)"
   },
-
- "login": {
+  "login": {
     "title": "Experience the Serenity of Kurashiki",
     "subtitle": "Your journey to sustainable travel and timeless Japanese beauty begins here.",
     "signin_title": "Sign In",
