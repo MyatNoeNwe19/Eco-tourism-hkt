@@ -2358,6 +2358,7 @@
       "item4": "Sun Hat / Umbrella"
     }
   },
+
   "profile": {
     "login": "Login",
     "register": "Register",
@@ -2372,8 +2373,45 @@
     "my-fav": "My Profile & Favorites",
     "setting": "Regional Settings",
     "journey": "My Journey",
-    "search": "Where to next? (e.g. Kurashiki, Food...)"
+    "search": "Where to next? (e.g. Kurashiki, Food...)",
+    "env": "Environmental Impact",
+    "step": "Every step you take leaves a green footprint.",
+    "rank": "Adventure Rank",
+    "goal": "Goal: ",
+    "progress":"Overall Progress",
+    "point": "Eco-Points Earned",
+    "complete":"Journeys Completed",
+    "save": "Estimated CO2 Saved (KG)",
+    "badge":"Your Sanctuaries & Badges",
+    "story":"My Travel Stories",
+    "sub-desc":"You haven't booked any journeys yet.",
+    "guest":"Guests",
+    "total":"Grand Total",
+    "empty":"Your sanctuary of favorites is empty.",
+    "account":"Account Settings",
+    "journeys": "Journeys",
+    "wishlist": "Wish Lists",
+    "eco-impact": "Eco Impact",
+    "settings": "Settings",
+    "exit": "Exit Sanctuary",
+    "personal": "Personal Module",
+    "security": "Security Module",
+    "new": "New Password",
+    "current": "Current Password",
+    "update": "Update Password",
+    "confirm": "Confirm New Password",
+    "privacy": "Privacy & Actions",
+    "delete-desc": "Account deletion is permanent. All your data will be cleared from our sanctuary.",
+    "delete":" Delete Account Permanently",
+    "personal-details": "Personal Details",
+    "security-title": "Security",
+    "privacy-title": "Privacy",
+    "personal-desc": "Edit your name, phone and biography",
+    "security-desc": "Update your password and security",
+    "privacy-desc": "Danger zone and account deletion",
+    "back": "Back to Settings"
   },
+
   "login": {
     "title": "Experience the Serenity of Kurashiki",
     "subtitle": "Your journey to sustainable travel and timeless Japanese beauty begins here.",
@@ -2386,5 +2424,19 @@
     "no_account": "Don't have an account?",
     "create_account": "Create Account",
     "alert_fill_fields": "Please enter both email and password"
+  },
+
+  "register": {
+    "title": "Create Account",
+    "sub-desc": "Please fill in the details to register.",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "nationality": "Nationality",
+    "pwd": "Password",
+    "account": "CREATE ACCOUNT",
+    "already": "Already have an account?",
+    "start": "Start Your Eco-Adventure.",
+    "desc": "Join 5,000+ travellers exploring Kurashiki sustainably."
   }
 }

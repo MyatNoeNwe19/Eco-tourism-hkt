@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // navigate ထည့်သုံးပါမယ်
 import { Leaf, User, Mail, Lock, Phone, Globe } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, useTransform } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import Navbar from './NavbarPage';
+import { useTranslation } from 'react-i18next';
 
 const Register = () => {
     const navigate = useNavigate();
     const { register } = useAuth(); // AuthContext က register ကို ယူသုံးမယ်
-
+    const {t, i18n} = useTranslation();
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -51,21 +52,21 @@ const Register = () => {
                             <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6">
                                 <Leaf className="text-white" size={28} />
                             </div>
-                            <h2 className="text-4xl font-serif italic font-bold leading-tight">Start Your Eco-Adventure.</h2>
-                            <p className="mt-4 text-white/80 font-medium">Join 5,000+ travelers exploring Kurashiki sustainably.</p>
+                            <h2 className="text-4xl font-serif italic font-bold leading-tight">{t('register.start')}</h2>
+                            <p className="mt-4 text-white/80 font-medium">{t('register.desc')}</p>
                         </div>
                     </div>
 
                     {/* Left Side: Register Form */}
                     <div className="md:w-[55%] p-8 md:p-16 text-left">
                         <div className="mb-8">
-                            <h3 className="text-3xl font-serif font-bold text-stone-800 mb-2">Create Account</h3>
-                            <p className="text-stone-400 text-sm font-medium">Please fill in the details to register.</p>
+                            <h3 className="text-3xl font-serif font-bold text-stone-800 mb-2">{t('register.title')}</h3>
+                            <p className="text-stone-400 text-sm font-medium">{t('register.sub-desc')}</p>
                         </div>
 
                         <form onSubmit={handleRegister} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-2">
-                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">Full Name</label>
+                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">{t('register.name')}</label>
                                 <div className="relative group">
                                     <User className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-300 group-focus-within:text-green-600 transition-colors" size={16} />
                                     <input name="fullName" required value={formData.fullName} onChange={handleChange} type="text" placeholder="John Doe" className="w-full bg-stone-50 border-none rounded-2xl py-3.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-green-600/10 transition-all outline-none font-medium" />
@@ -73,7 +74,7 @@ const Register = () => {
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">Email</label>
+                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">{t('register.email')}</label>
                                 <div className="relative group">
                                     <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-300 group-focus-within:text-green-600 transition-colors" size={16} />
                                     <input name="email" required value={formData.email} onChange={handleChange} type="email" placeholder="john@example.com" className="w-full bg-stone-50 border-none rounded-2xl py-3.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-green-600/10 transition-all outline-none font-medium" />
@@ -81,7 +82,7 @@ const Register = () => {
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">Phone Number</label>
+                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">{t('register.phone')}</label>
                                 <div className="relative group">
                                     <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-300 group-focus-within:text-green-600 transition-colors" size={16} />
                                     <input name="phone" required value={formData.phone} onChange={handleChange} type="tel" placeholder="+95 9..." className="w-full bg-stone-50 border-none rounded-2xl py-3.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-green-600/10 transition-all outline-none font-medium" />
@@ -89,19 +90,24 @@ const Register = () => {
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">Nationality</label>
+                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">{t('register.nationality')}</label>
                                 <div className="relative group">
                                     <Globe className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-300 group-focus-within:text-green-600 transition-colors" size={16} />
                                     <select name="nationality" value={formData.nationality} onChange={handleChange} className="w-full bg-stone-50 border-none rounded-2xl py-3.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-green-600/10 transition-all outline-none appearance-none font-medium cursor-pointer">
-                                        <option value="Myanmar">Myanmar</option>
                                         <option value="Japan">Japan</option>
+                                        <option value="Myanmar">Myanmar</option>
+                                        <option value="China">China</option>
+                                        <option value="Korea">Korea</option>
+                                        <option value="Vietnum">Vietnum</option>
                                         <option value="United States">United States</option>
+                                        <option value="Thailand">Thailand</option>
+                                        <option value="Bangladesh">Bangladesh</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div className="md:col-span-2 space-y-2">
-                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">Password</label>
+                                <label className="text-[10px] font-black uppercase tracking-widest text-stone-400 ml-1">{t('register.pwd')}</label>
                                 <div className="relative group">
                                     <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-300 group-focus-within:text-green-600 transition-colors" size={16} />
                                     <input name="password" required value={formData.password} onChange={handleChange} type="password" placeholder="Minimum 8 characters" className="w-full bg-stone-50 border-none rounded-2xl py-3.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-green-600/10 transition-all outline-none font-medium" />
@@ -110,15 +116,15 @@ const Register = () => {
 
                             <div className="md:col-span-2 mt-4">
                                 <button type="submit" className="w-full bg-green-700 text-white py-4 rounded-2xl font-bold uppercase tracking-[0.2em] text-[11px] shadow-xl shadow-green-700/20 hover:bg-green-800 transition-all active:scale-[0.98]">
-                                    Create Account
+                                    {t('register.account')}
                                 </button>
                             </div>
                         </form>
 
                         <div className="mt-8 text-center">
                             <p className="text-stone-400 text-xs font-medium">
-                                Already have an account?{' '}
-                                <Link to="/login" className="text-stone-900 font-bold hover:underline underline-offset-4">Sign In</Link>
+                               {t('register.already')}{' '}
+                                <Link to="/login" className="text-stone-900 font-bold hover:underline underline-offset-4">{t('register.signin')}</Link>
                             </p>
                         </div>
                     </div>

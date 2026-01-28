@@ -224,14 +224,12 @@ const TripPlannerPage = () => {
   const [isProcessing, setIsProcessing] = useState(false);
 
   const [newReview, setNewReview] = useState("");
-
-  const [paymentMethod, setPaymentMethod] = useState('card');
-  const [receipt, setReceipt] = useState(null);
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const { isLoggedIn, user } = useAuth();
   const navigate = useNavigate();
+
 
   const formatPrice = (amount) => {
     const converted = amount * EXCHANGE_RATES[currency];
@@ -308,603 +306,510 @@ const TripPlannerPage = () => {
     });
   }, [activeDay, vibe]);
 
-const handleBookingAction = () => {
-  if (!isLoggedIn) {
-    navigate('/login');
-    return;
+  const handleBookingAction = () => {
+    if (!isLoggedIn) {
+      navigate('/login');
+      return;
+    }
+
+    if (bookingStep < 3) {
+      setBookingStep(s => s + 1);
+      return;
+    }
+
+    setIsProcessing(true);
+
+    setTimeout(() => {
+      const newBooking = {
+        id: `BK-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,
+        title: "Kurashiki Cultural & Eco Journey",
+        date: bookingDate || new Date().toLocaleDateString(),
+        guests: (counts.adult + counts.child) || 1,
+        total: calculateTotal(),
+        currency: currency,
+        status: 'Booking Confirmed',
+        timestamp: new Date().toISOString()
+      };
+
+      const storageKey = `bookings_${user.email}`;
+
+      const existingBookings = JSON.parse(localStorage.getItem(storageKey) || '[]');
+
+      localStorage.setItem(storageKey, JSON.stringify([newBooking, ...existingBookings]));
+
+      setIsProcessing(false);
+      setIsSuccess(true);
+    }, 2000);
   }
+    return (
+      <div className="bg-[#F1F5F9] min-h-screen text-stone-900 selection:bg-stone-900 selection:text-white relative">
+        <Navbar />
 
-  // Step 1 နဲ့ 2 မှာဆိုရင် ရှေ့ဆက်သွားမယ်
-  if (bookingStep < 3) {
-    setBookingStep(s => s + 1);
-    return;
-  }
-
-  // Step 3 (Payment) မှာဆိုရင်
-  setIsProcessing(true);
-
-  // API ခေါ်သလိုမျိုး ခဏစောင့်မယ်
-  setTimeout(() => {
-    const bookingId = `BK-${Math.random().toString(36).substr(2, 9).toUpperCase()}`;
-    
-    const newBooking = {
-      id: bookingId,
-      date: bookingDate,
-      total: calculateTotal(),
-      currency: currency,
-      method: paymentMethod,
-      status: paymentMethod === 'kpay' ? 'Pending Approval' : 'Confirmed', // Kpay ဆိုရင် စစ်ဆေးဆဲလို့ပြမယ်
-      timestamp: new Date().toISOString()
-    };
-
-    // ၁။ LocalStorage ထဲမှာ သိမ်းမယ် (ဒါက သင့်ရဲ့ Database အစားသုံးတာပါ)
-    const existingBookings = JSON.parse(localStorage.getItem('user_bookings') || '[]');
-    localStorage.setItem('user_bookings', JSON.stringify([newBooking, ...existingBookings]));
-
-    // ၂။ Profile မှာ ပြဖို့ Noti သိမ်းမယ်
-    const noti = {
-      id: Date.now(),
-      title: "Booking Received!",
-      message: paymentMethod === 'kpay' 
-        ? "We're verifying your KPay screenshot. Usually takes 30 mins." 
-        : "Your trip is confirmed! Check your email for ticket.",
-      type: "success",
-      read: false
-    };
-    const existingNotis = JSON.parse(localStorage.getItem('user_notis') || '[]');
-    localStorage.setItem('user_notis', JSON.stringify([noti, ...existingNotis]));
-
-    setIsProcessing(false);
-    setIsSuccess(true);
-  }, 2500);
-};
-
-  return (
-    <div className="bg-[#F1F5F9] min-h-screen text-stone-900 selection:bg-stone-900 selection:text-white relative">
-      <Navbar />
-
-      {/* HERO SECTION */}
-      <section ref={heroRef} className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-stone-900 relative">
-        <motion.div style={{ y: heroY }} className="absolute inset-0 opacity-60">
-          <img src="./images/autumn1.avif" className="w-full h-full object-cover" alt="Kurashiki" />
-        </motion.div>
-        <div className="relative z-10 text-center px-6">
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-5xl md:text-8xl font-serif italic text-white mb-6">{t('trip.title')}</motion.h1>
-          <p className="text-white/90 font-light italic tracking-widest uppercase text-[15px]">{t('trip.desc')}</p>
-        </div>
-      </section>
-
-      <main className="max-w-7xl mx-auto px-8 lg:px-16 py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-
-          {/* LEFT: BOOKING & TRACKERS */}
-          <div className="lg:col-span-5 sticky top-32 space-y-8 order-2 lg:order-1">
-            <div className="bg-white border border-stone-200 rounded-[50px] p-8 md:p-10 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-green-500 to-stone-900" />
-
-              <div className="flex justify-between items-start mb-8">
-                <div>
-                  <h3 className="text-2xl font-serif italic">{t('trip.reserved')}</h3>
-                  <div className="flex gap-2 mt-2 overflow-x-auto pb-2 scrollbar-hide">
-                    {['JPY', 'USD', 'EUR', 'MMK', 'VND', 'KRW'].map(curr => (
-                      <button key={curr} onClick={() => setCurrency(curr)} className={`text-[8px] px-2 py-0.5 rounded-full font-bold transition-colors whitespace-nowrap ${currency === curr ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-400'}`}>{curr}</button>
-                    ))}
-                  </div>
-                </div>
-                <span className="text-[10px] border-1 border-green-400 bg-stone-100 px-3 py-1 rounded-full font-bold uppercase tracking-widest text-stone-500">{t('trip.step')} {bookingStep}/3</span>
-              </div>
-
-              <AnimatePresence mode="wait">
-                {!isSuccess ? (
-                  <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                    {bookingStep === 1 && (
-                      <div className="space-y-6">
-                        <label className="text-[10px] font-black uppercase text-stone-400 tracking-widest">{t('trip.date')}</label>
-                        <input type="date" value={bookingDate} onChange={(e) => setBookingDate(e.target.value)} className="w-full p-5 bg-stone-50 rounded-3xl border-none outline-none font-bold text-sm focus:ring-1 ring-stone-200" />
-                        <div className="p-5 bg-emerald-50 rounded-3xl flex gap-3 italic">
-                          <Zap size={16} className="text-green-700" />
-                          <p className="text-[11px] text-green-800">{t('trip.bird')}</p>
-                        </div>
-                      </div>
-                    )}
-
-                    {bookingStep === 2 && (
-                      <div className="space-y-4">
-                        {['adult', 'child'].map((k) => (
-                          <div key={k} className="flex justify-between items-center p-5 bg-stone-50 rounded-[30px] border border-stone-100 transition-opacity" style={{ opacity: counts.family > 0 ? 0.4 : 1 }}>
-                            <div>
-                              <p className="text-sm font-bold capitalize">{k}s</p>
-                              <p className="text-[10px] text-stone-400">{formatPrice(PRICES[k.toUpperCase()])}</p>
-                            </div>
-                            <div className="flex items-center gap-4">
-                              <button disabled={counts.family > 0} onClick={() => setCounts({ ...counts, [k]: Math.max(0, counts[k] - 1) })} className="p-2 border rounded-full bg-white disabled:opacity-30"><Minus size={12} /></button>
-                              <span className="text-sm font-bold w-4 text-center">{counts[k]}</span>
-                              <button disabled={counts.family > 0} onClick={() => setCounts({ ...counts, [k]: counts[k] + 1 })} className="p-2 border rounded-full bg-stone-900 text-white disabled:opacity-30"><Plus size={12} /></button>
-                            </div>
-                          </div>
-                        ))}
-                        <div onClick={() => setCounts({ adult: 0, child: 0, family: counts.family ? 0 : 1 })} className={`p-6 rounded-[30px] border-2 transition-all cursor-pointer flex justify-between items-center ${counts.family > 0 ? 'border-emerald-900 bg-emerald-900 text-white shadow-lg' : 'border-stone-100 bg-stone-50 hover:border-emerald-200'}`}>
-                          <div>
-                            <p className="text-sm font-bold">{t('trip.family')}</p>
-                            <p className={`text-[10px] ${counts.family > 0 ? 'text-white/70' : 'text-stone-400'}`}>{t('trip.upto')} {formatPrice(PRICES.FAMILY_BASE)}</p>
-                          </div>
-                          {counts.family > 0 && <CheckCircle2 size={18} />}
-                        </div>
-                      </div>
-                    )}
-
-                    {bookingStep === 3 && (
-                      <div className="space-y-6 animate-in fade-in duration-500">
-                        {/* PAYMENT METHOD SELECTOR */}
-                        <div className="flex gap-3 mb-6">
-                          <button
-                            onClick={() => setPaymentMethod('card')}
-                            className={`flex-1 py-3 rounded-2xl text-[9px] font-black uppercase tracking-tighter transition-all flex items-center justify-center gap-2 border-2 ${paymentMethod === 'card' ? 'border-stone-900 bg-stone-50' : 'border-stone-100 opacity-50'}`}
-                          >
-                            <CreditCard size={14} /> Stripe / Card
-                          </button>
-                          <button
-                            onClick={() => setPaymentMethod('kpay')}
-                            className={`flex-1 py-3 rounded-2xl text-[9px] font-black uppercase tracking-tighter transition-all flex items-center justify-center gap-2 border-2 ${paymentMethod === 'kpay' ? 'border-blue-600 bg-blue-50 text-blue-600' : 'border-stone-100 opacity-50'}`}
-                          >
-                            <Smartphone size={14} /> KBZ Pay
-                          </button>
-                        </div>
-
-                        {paymentMethod === 'card' ? (
-                          <div className="space-y-4">
-                            {/* Total Summary for Card */}
-                            <div className="bg-stone-900 text-white p-6 rounded-[35px] relative overflow-hidden">
-                              <div className="absolute top-0 right-0 p-4 opacity-10"><CreditCard size={60} /></div>
-                              <p className="text-[10px] opacity-40 font-bold uppercase mb-1">Payable Amount</p>
-                              <h4 className="text-3xl font-serif italic">{formatPrice(calculateTotal())}</h4>
-                            </div>
-
-                            {/* Card Input Fields */}
-                            <div className="bg-white border border-stone-100 rounded-[30px] p-5 space-y-3 shadow-sm">
-                              <input type="text" placeholder="CARDHOLDER NAME" className="w-full p-4 bg-stone-50 rounded-2xl text-[10px] font-bold outline-none border border-transparent focus:border-stone-200 uppercase" />
-                              <div className="relative">
-                                <input type="text" placeholder="CARD NUMBER" className="w-full p-4 bg-stone-50 rounded-2xl text-[10px] font-bold outline-none border border-transparent focus:border-stone-200" />
-                                <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-1 opacity-40">
-                                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" className="h-3" alt="visa" />
-                                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" className="h-3" alt="master" />
-                                </div>
-                              </div>
-                              <div className="grid grid-cols-2 gap-3">
-                                <input type="text" placeholder="MM/YY" className="p-4 bg-stone-50 rounded-2xl text-[10px] font-bold text-center border border-transparent focus:border-stone-200" />
-                                <input type="password" placeholder="CVV" className="p-4 bg-stone-50 rounded-2xl text-[10px] font-bold text-center border border-transparent focus:border-stone-200" />
-                              </div>
-                            </div>
-                          </div>
-                        ) : (
-                          <div className="space-y-4">
-                            {/* KPay QR Section */}
-                            <div className="bg-blue-600 text-white p-6 rounded-[35px] flex flex-col items-center text-center">
-                              <div className="bg-white p-2 rounded-2xl mb-4 shadow-lg">
-                                <QrCode size={120} className="text-blue-600" />
-                              </div>
-                              <p className="text-[10px] font-black uppercase opacity-70 tracking-widest">Scan & Transfer to</p>
-                              <h4 className="text-lg font-bold">Noe Noe</h4>
-                              <p className="text-xs font-mono opacity-80">09 960 308 176</p>
-                              <div className="mt-4 px-4 py-1 bg-white/20 rounded-full text-[10px] font-bold italic">
-                                Total: {formatPrice(calculateTotal())}
-                              </div>
-                            </div>
-
-                            {/* Screenshot Upload Field */}
-                            <div className="space-y-2">
-                              <label className="text-[9px] font-black text-stone-400 ml-2 uppercase tracking-widest">Upload Screenshot</label>
-                              <div className="relative h-32 border-2 border-dashed border-blue-100 rounded-[30px] flex flex-col items-center justify-center bg-blue-50/30 overflow-hidden group">
-                                {receipt ? (
-                                  <img src={receipt} className="w-full h-full object-cover" alt="receipt" />
-                                ) : (
-                                  <>
-                                    <ImageIcon size={24} className="text-blue-200 mb-1" />
-                                    <p className="text-[9px] font-bold text-blue-300 uppercase">Tap to Select Image</p>
-                                  </>
-                                )}
-                                <input
-                                  type="file"
-                                  accept="image/*"
-                                  onChange={(e) => {
-                                    const file = e.target.files[0];
-                                    if (file) setReceipt(URL.createObjectURL(file));
-                                  }}
-                                  className="absolute inset-0 opacity-0 cursor-pointer"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        )}
-
-                        {/* Security Note */}
-                        <div className="flex items-center justify-center gap-2 opacity-40 py-2">
-                          <ShieldCheck size={14} className="text-emerald-600" />
-                          <span className="text-[8px] font-black uppercase tracking-widest">256-bit Secure Gateway</span>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* DYNAMIC ACTION BUTTON */}
-                    <div className="mt-8 flex gap-3">
-                      {bookingStep > 1 && (
-                        <button onClick={() => setBookingStep(s => s - 1)} className="px-6 py-4 border border-stone-200 rounded-full text-[10px] font-bold uppercase hover:bg-stone-50 transition-all">
-                          {t('trip.back')}
-                        </button>
-                      )}
-
-                      <button
-                        onClick={handleBookingAction}
-                        disabled={calculateTotal() === 0}
-                        className={`flex-1 py-4 rounded-full text-[10px] font-bold uppercase transition-all shadow-lg ${!isLoggedIn
-                          ? 'bg-amber-500 text-white hover:bg-amber-600 animate-pulse'
-                          : 'bg-stone-900 text-white hover:bg-emerald-800'
-                          }`}
-                      >
-                        {!isLoggedIn
-                          ? "🔒 Login to Reserve"
-                          : bookingStep === 3 ? "Confirm & Pay Now" : t('trip.continue')}
-                      </button>
-                    </div>
-                  </motion.div>
-                ) : (
-                  <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="text-center py-6">
-                    <CheckCircle2 size={56} className="mx-auto text-emerald-600 mb-6" />
-                    <h4 className="text-3xl font-serif italic mb-2">{t('trip.pass')}</h4>
-                    <p className="text-xs text-stone-400 mb-8 leading-relaxed">{t('trip.passage')} {bookingDate} {t('trip.check')}</p>
-                    <button onClick={() => { setIsSuccess(false); setBookingStep(1); }} className="w-full py-4 bg-stone-100 rounded-full text-[10px] font-bold uppercase hover:bg-stone-200 transition-colors">{t('trip.new')}</button>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              <div className="mt-8 pt-8 border-t border-stone-100 flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center text-stone-400 group-hover:text-emerald-800 transition-colors"><PhoneCall size={14} /></div>
-                <div>
-                  <p className="text-[9px] font-black uppercase text-stone-400 tracking-widest">{t('trip.support')}</p>
-                  <p className="text-xs font-bold text-stone-900">+81 86-426-1751</p>
-                </div>
-                <div className="ml-auto flex gap-1">
-                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
-                  <span className="text-[8px] font-bold text-emerald-600 uppercase">Live</span>
-                </div>
-              </div>
-
-
-            </div>
-            {/* 3. Packing Checklist Feature */}
-            <div className="bg-green-200 border border-stone-100 rounded-[40px] p-8 shadow-sm">
-              <h4 className="text-[10px] font-black uppercase text-stone-400 mb-6 tracking-widest flex items-center gap-2">
-                <Briefcase size={14} /> {t('trip.checkList')} {/* ဒါက ခေါင်းစဉ်ပါ */}
-              </h4>
-              <div className="grid grid-cols-1 gap-3">
-                {PACKING_CHECKLIST.map((item, i) => (
-                  <div key={i} className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-stone-50 text-[11px] font-bold">
-                    <item.icon size={14} className="text-emerald-600" />
-
-                    {/* ဒီနေရာမှာ t() သုံးမှ စာသားပေါ်မှာပါ */}
-                    {t(item.item)}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-
-            {/* PHOTO SPOT TRACKER */}
-            <div className="p-8 bg-stone-900 rounded-[40px] text-white shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-4 opacity-5"><Camera size={80} /></div>
-              <div className="flex justify-between items-end mb-6 relative z-10">
-                <h4 className="font-serif italic text-xl">{t('trip.hour')}</h4>
-                <span className="text-emerald-400 font-mono text-2xl">{hour}:00</span>
-              </div>
-              <input type="range" min="6" max="20" value={hour} onChange={(e) => setHour(parseInt(e.target.value))} className="w-full mb-8 h-1 bg-stone-700 accent-emerald-500 rounded-lg appearance-none cursor-pointer relative z-10" />
-              <div className="space-y-4 relative z-10">
-                {PHOTO_SPOTS.map((spot) => (
-                  <div key={spot.name} className={`flex justify-between transition-all duration-500 ${Math.abs(spot.peak - hour) <= 1 ? 'opacity-100 scale-100' : 'opacity-20 scale-95 translate-x-2'}`}>
-                    <div>
-                      {/* t() function များ ထည့်သွင်းပေးထားပါတယ် */}
-                      <p className="text-xs font-bold">{t(spot.name)}</p>
-                      <p className="text-[10px] text-stone-400">{t(spot.description)}</p>
-                    </div>
-                    {Math.abs(spot.peak - hour) <= 1 && <Camera size={14} className="text-emerald-400 animate-pulse" />}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Added Kurashiki-tabi Weather Forecast Feature */}
-            <div className="p-8 bg-emerald-50 border border-emerald-100 rounded-[40px] text-emerald-900 shadow-sm">
-              <div className="flex justify-between items-center mb-4">
-                <h4 className="text-[11px] font-black uppercase tracking-widest">{t('trip.season')}</h4>
-                <CloudRain size={16} />
-              </div>
-              <p className="text-xs font-serif italic mb-2">{t('trip.bloom')}</p>
-              <p className="text-[10px] leading-relaxed opacity-70">{t('trip.rainy')}</p>
-            </div>
+        {/* HERO SECTION */}
+        <section ref={heroRef} className="relative h-[99vh] flex items-center justify-center overflow-hidden bg-stone-900 relative">
+          <motion.div style={{ y: heroY }} className="absolute inset-0 opacity-60">
+            <img src="./images/whiteHouse19.jpg" className="w-full h-full object-cover" alt="Kurashiki" />
+          </motion.div>
+          <div className="relative z-10 text-center px-6">
+            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-5xl md:text-8xl font-serif italic text-white mb-6">{t('trip.title')}</motion.h1>
+            <p className="text-white/90 font-light italic tracking-widest uppercase text-[15px]">{t('trip.desc')}</p>
           </div>
+        </section>
 
-          {/* RIGHT: CONTENT SECTIONS */}
-          <div className="lg:col-span-7 space-y-24 order-1 lg:order-2">
+        <main className="max-w-7xl mx-auto px-8 lg:px-16 py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
 
-            {/* Section 01: Itinerary */}
-            <div id="itinerary" className="scroll-mt-32">
-              <SectionTitle
-                number="01"
-                title={t('trip.sections.s1.title')}
-                subtitle={t('trip.sections.s1.subtitle')}
-              />
+            {/* LEFT: BOOKING & TRACKERS */}
+            <div className="lg:col-span-5 sticky top-32 space-y-8 order-2 lg:order-1">
+              <div className="bg-white border border-stone-200 rounded-[50px] p-8 md:p-10 shadow-2xl relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-green-500 to-stone-900" />
 
-              <div className="flex flex-wrap gap-4 mb-10 overflow-x-auto pb-4 scrollbar-hide">
-                <div className="flex bg-stone-100 p-1 rounded-full">
-                  {[1, 2, 3].map(d => (
-                    <button
-                      key={d}
-                      onClick={() => setActiveDay(d)}
-                      className={`px-10 py-3 rounded-full text-[10px] font-black uppercase tracking-widest transition-all ${activeDay === d ? 'bg-stone-900 text-white shadow-xl' : 'text-stone-400 hover:text-stone-600'}`}
-                    >
-                      {t('trip.step')} {d}
-                    </button>
-                  ))}
-                </div>
-                <div className="flex gap-2 items-center ml-auto overflow-x-auto whitespace-nowrap scrollbar-hide">
-                  <span className="text-[9px] font-bold text-green-800 uppercase mr-2 tracking-widest">
-                    {t('trip.filter')}
-                  </span>
-
-                  {['All', 'Art', 'Gourmet', 'Craft', 'Seasonal'].map(v => (
-                    <button
-                      key={v}
-                      onClick={() => setVibe(v)} // v ရဲ့ value က 'Art', 'Gourmet' စသဖြင့် ဖြစ်မယ်
-                      className={`text-[8px] px-4 py-2 rounded-full border transition-all font-bold ${vibe === v
-                        ? 'bg-emerald-900 text-white border-emerald-900 shadow-md'
-                        : 'text-stone-400 border-stone-200 hover:border-stone-400'
-                        }`}
-                    >
-                      {/* 'All' ဆိုရင် All ပြပြီး ကျန်တာကို i18n tag ထဲက ယူသုံးမယ် */}
-                      {v === 'All' ? 'All' : t(`dayPlan.tags.${v.toLowerCase()}`)}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeDay + vibe}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  className="space-y-2"
-                >
-                  {filteredItinerary.length > 0 ? (
-                    filteredItinerary.map((item, idx) => (
-                      <TimelineItem
-                        key={idx}
-                        {...item}
-                        title={t(item.title)}
-                        desc={t(item.desc)}
-                        tags={item.tags?.map(tag => t(`${tag.toLowerCase()}`))}
-                      />
-                    ))
-                  ) : (
-                    <div className="py-20 text-center">
-                      <p className="text-stone-400 text-sm italic">No activities found for this category.</p>
-                    </div>
-                  )}
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* Section 02: Local Food Guide */}
-            <div>
-              <SectionTitle
-                number="02"
-                title={t('trip.sections.s2.title')}
-                subtitle={t('trip.sections.s2.subtitle')}
-              />
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {LOCAL_FOODS.map((food, i) => (
-                  <div key={i} className="bg-white border border-stone-100 p-6 rounded-[40px] hover:shadow-xl transition-all group">
-                    <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-500">{food.image}</div>
-                    <h4 className="text-sm font-bold mb-1">{t(food.name)}</h4>
-                    <p className="text-[10px] text-stone-400 italic mb-4">{food.price}</p>
-                    <p className="text-[10px] text-stone-500 leading-relaxed">{t(food.desc)}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Section 03: Logistics */}
-            <div id="map" className="scroll-mt-32">
-              <SectionTitle
-                number="03"
-                title={t('trip.sections.s3.title')}
-                subtitle={t('trip.sections.s3.subtitle')}
-              />
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-8 bg-stone-900 text-white rounded-[50px] space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Train className="text-emerald-400" size={18} />
-                    <span className="text-xs font-bold uppercase tracking-widest">{t('trip.logistics.shinkansen')}</span>
-                  </div>
-                  <p className="text-[11px] opacity-70 leading-relaxed">{t('trip.logistics.shinkansen_desc')}</p>
-                </div>
-                <div className="p-8 bg-emerald-900 text-white rounded-[50px] space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Bike className="text-emerald-300" size={18} />
-                    <span className="text-xs font-bold uppercase tracking-widest">{t('trip.logistics.getting_around')}</span>
-                  </div>
-                  <p className="text-[11px] opacity-70 leading-relaxed">{t('trip.logistics.getting_around_desc')}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* --- Review Form Section --- */}
-            <div className="bg-green-900 p-8 rounded-[40px] shadow-xl border border-stone-200 mb-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <input
-                  value={userName}
-                  onChange={(e) => setUserName(e.target.value)}
-                  placeholder={t('trip.review_form.placeholder_name')}
-                  className="bg-stone-50 p-4 rounded-2xl text-xs outline-none border-none focus:ring-1 ring-stone-200 font-bold"
-                />
-
-                <div className="flex items-center justify-between bg-stone-50 px-5 py-4 rounded-2xl">
-                  <span className="text-[10px] font-bold text-stone-400 uppercase tracking-widest">
-                    {t('trip.review_form.rating_label')}
-                  </span>
-                  <div className="flex gap-1.5">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <button
-                        key={star}
-                        type="button"
-                        onClick={() => setUserRating(star)}
-                        className="transition-transform hover:scale-125"
-                      >
-                        <Star
-                          size={20}
-                          className={`${star <= userRating ? "fill-amber-400 text-amber-400" : "text-stone-200"} transition-colors cursor-pointer`}
-                        />
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative">
-                <textarea
-                  value={newReview}
-                  onChange={(e) => setNewReview(e.target.value)}
-                  placeholder={t('trip.review_form.placeholder_text')}
-                  className="w-full bg-stone-50/50 p-6 rounded-[25px] text-xs min-h-[120px] outline-none border-none focus:ring-1 ring-stone-200 resize-none"
-                />
-                <div className="mt-4 flex justify-end gap-3 items-center">
-                  <button type="button" className="p-2 text-stone-300 hover:text-stone-500">
-                    <ImageIcon size={20} />
-                  </button>
-                  <button
-                    onClick={handlePostReview}
-                    className="px-10 py-4 bg-stone-900 text-white rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-emerald-800 transition-all shadow-lg shadow-stone-200"
-                  >
-                    {t('trip.review_form.post_btn')}
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* --- Review List Section --- */}
-            <div id="community" className="space-y-4 py-5 max-h-[450px] bg-green-100 border border-green-200 rounded-2xl overflow-y-auto pr-2 scrollbar-hide scroll-mt-32">
-              {reviews.map(r => (
-                <div key={r.id} className="bg-white p-5 max-w-[580px] mx-auto rounded-[30px] shadow-sm border border-green-100 group relative">
-
-                  {/* Delete Button */}
-                  <button
-                    onClick={() => deleteReview(r.id)}
-                    className="absolute top-4 right-4 p-2 text-stone-300 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100"
-                  >
-                    <Trash2 size={14} />
-                  </button>
-
-                  <div className="flex justify-between items-center mb-3">
-                    <span className="text-[11px] font-black uppercase text-stone-700 tracking-widest">
-                      {r.user}
-                    </span>
-                    <div className="flex gap-0.5 mr-6">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} size={12} className={i < r.rating ? "fill-amber-400 text-amber-400" : "text-stone-100"} />
+                <div className="flex justify-between items-start mb-8">
+                  <div>
+                    <h3 className="text-2xl font-serif italic">{t('trip.reserved')}</h3>
+                    <div className="flex gap-2 mt-2 overflow-x-auto pb-2 scrollbar-hide">
+                      {['JPY', 'USD', 'EUR', 'MMK', 'VND', 'KRW'].map(curr => (
+                        <button key={curr} onClick={() => setCurrency(curr)} className={`text-[8px] px-2 py-0.5 rounded-full font-bold transition-colors whitespace-nowrap ${currency === curr ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-400'}`}>{curr}</button>
                       ))}
                     </div>
                   </div>
-                  <p className="text-xs text-stone-500 italic leading-relaxed">"{r.text}"</p>
+                  <span className="text-[10px] border-1 border-green-400 bg-stone-100 px-3 py-1 rounded-full font-bold uppercase tracking-widest text-stone-500">{t('trip.step')} {bookingStep}/3</span>
                 </div>
-              ))}
-            </div>
 
+                <AnimatePresence mode="wait">
+                  {!isSuccess ? (
+                    <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                      {bookingStep === 1 && (
+                        <div className="space-y-6">
+                          <label className="text-[10px] font-black uppercase text-stone-400 tracking-widest">{t('trip.date')}</label>
+                          <input type="date" value={bookingDate} onChange={(e) => setBookingDate(e.target.value)} className="w-full p-5 bg-stone-50 rounded-3xl border-none outline-none font-bold text-sm focus:ring-1 ring-stone-200" />
+                          <div className="p-5 bg-emerald-50 rounded-3xl flex gap-3 italic">
+                            <Zap size={16} className="text-green-700" />
+                            <p className="text-[11px] text-green-800">{t('trip.bird')}</p>
+                          </div>
+                        </div>
+                      )}
 
+                      {bookingStep === 2 && (
+                        <div className="space-y-4">
+                          {['adult', 'child'].map((k) => (
+                            <div key={k} className="flex justify-between items-center p-5 bg-stone-50 rounded-[30px] border border-stone-100 transition-opacity" style={{ opacity: counts.family > 0 ? 0.4 : 1 }}>
+                              <div>
+                                <p className="text-sm font-bold capitalize">{k}s</p>
+                                <p className="text-[10px] text-stone-400">{formatPrice(PRICES[k.toUpperCase()])}</p>
+                              </div>
+                              <div className="flex items-center gap-4">
+                                <button disabled={counts.family > 0} onClick={() => setCounts({ ...counts, [k]: Math.max(0, counts[k] - 1) })} className="p-2 border rounded-full bg-white disabled:opacity-30"><Minus size={12} /></button>
+                                <span className="text-sm font-bold w-4 text-center">{counts[k]}</span>
+                                <button disabled={counts.family > 0} onClick={() => setCounts({ ...counts, [k]: counts[k] + 1 })} className="p-2 border rounded-full bg-stone-900 text-white disabled:opacity-30"><Plus size={12} /></button>
+                              </div>
+                            </div>
+                          ))}
+                          <div onClick={() => setCounts({ adult: 0, child: 0, family: counts.family ? 0 : 1 })} className={`p-6 rounded-[30px] border-2 transition-all cursor-pointer flex justify-between items-center ${counts.family > 0 ? 'border-emerald-900 bg-emerald-900 text-white shadow-lg' : 'border-stone-100 bg-stone-50 hover:border-emerald-200'}`}>
+                            <div>
+                              <p className="text-sm font-bold">{t('trip.family')}</p>
+                              <p className={`text-[10px] ${counts.family > 0 ? 'text-white/70' : 'text-stone-400'}`}>{t('trip.upto')} {formatPrice(PRICES.FAMILY_BASE)}</p>
+                            </div>
+                            {counts.family > 0 && <CheckCircle2 size={18} />}
+                          </div>
+                        </div>
+                      )}
 
-            {/* Added Kurashiki-tabi Map Access */}
-            <div className="relative group overflow-hidden rounded-[50px] border border-stone-200 h-[300px]">
-              <img src="./images/high view.jpg" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" alt="Map Preview" />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent flex items-end p-10">
-                <div className="flex justify-between items-center w-full text-white">
+                      {bookingStep === 3 && (
+                        <div className="space-y-6">
+                          <div className="bg-stone-900 text-white p-8 rounded-[40px] space-y-4 shadow-xl">
+                            <div className="flex justify-between text-xs opacity-50 uppercase font-bold tracking-tighter"><span>{t('trip.continue')}</span><span>{bookingDate}</span></div>
+                            <div className="h-[1px] bg-white/10" />
+                            <div className="space-y-2 text-xs font-light">
+                              {counts.family > 0 ? <div className="flex justify-between"><span>{t('trip.plan')}</span><span>{formatPrice(PRICES.FAMILY_BASE)}</span></div> :
+                                <><div className="flex justify-between"><span>{t('trip.adult')} x{counts.adult}</span><span>{formatPrice(counts.adult * PRICES.ADULT)}</span></div>
+                                  {counts.child > 0 && <div className="flex justify-between"><span>{t('trip.child')} x{counts.child}</span><span>{formatPrice(counts.child * PRICES.CHILD)}</span></div>}</>}
+                              {isPremium && <div className="flex justify-between text-emerald-400 font-bold"><span>{t('trip.service')}</span><span>{t('trip.included')}</span></div>}
+                              <div className="flex justify-between text-stone-500 italic"><span>{t('trip.booking')}</span><span>{formatPrice(PRICES.BOOKING_FEE)}</span></div>
+                            </div>
+                            <div className="flex justify-between text-2xl font-serif italic pt-4 border-t border-white/10"><span>{t('trip.total')}</span><span>{formatPrice(calculateTotal())}</span></div>
+                          </div>
+                          <div className="flex items-center justify-between p-4 border rounded-3xl bg-white hover:border-emerald-500 transition-colors cursor-pointer" onClick={() => setIsPremium(!isPremium)}>
+                            <div className="flex items-center gap-3">
+                              <ShieldCheck size={20} className={isPremium ? "text-emerald-600" : "text-stone-300"} />
+                              <span className="text-xs font-bold italic text-stone-600">{t('trip.private')}</span>
+                            </div>
+                            <div className={`w-10 h-5 rounded-full transition-colors ${isPremium ? 'bg-emerald-600' : 'bg-stone-200'}`}>
+                              <div className={`w-3 h-3 bg-white rounded-full mt-1 transition-all ${isPremium ? 'ml-6' : 'ml-1'}`} />
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="mt-8 flex gap-3">
+                        {bookingStep > 1 && <button onClick={() => setBookingStep(s => s - 1)} className="px-6 py-4 border border-stone-200 rounded-full text-[10px] font-bold uppercase hover:bg-stone-50 transition-all">{t('trip.back')}</button>}
+                        <button
+                          onClick={() => bookingStep === 3 ? handleBookingAction() : setBookingStep(s => s + 1)}
+                          disabled={calculateTotal() === 0}
+                          className="flex-1 bg-stone-900 text-white py-4 rounded-full text-[10px] font-bold uppercase disabled:opacity-20 hover:bg-emerald-800 transition-all shadow-lg"
+                        >
+                          {bookingStep === 3 ? "Confirm Reservation" : t('trip.continue')}
+                        </button>
+                      </div>
+                    </motion.div>
+                  ) : (
+                    <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="text-center py-6">
+                      <CheckCircle2 size={56} className="mx-auto text-emerald-600 mb-6" />
+                      <h4 className="text-3xl font-serif italic mb-2">{t('trip.pass')}</h4>
+                      <p className="text-xs text-stone-400 mb-8 leading-relaxed">{t('trip.passage')} {bookingDate} {t('trip.check')}</p>
+                      <button onClick={() => { setIsSuccess(false); setBookingStep(1); }} className="w-full py-4 bg-stone-100 rounded-full text-[10px] font-bold uppercase hover:bg-stone-200 transition-colors">{t('trip.new')}</button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+                <div className="mt-8 pt-8 border-t border-stone-100 flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center text-stone-400 group-hover:text-emerald-800 transition-colors"><PhoneCall size={14} /></div>
                   <div>
-                    <h4 className="text-xl font-serif italic mb-1">{t('trip.map_section.title')}</h4>
-                    <p className="text-[10px] opacity-70 uppercase tracking-widest">{t('trip.map_section.subtitle')}</p>
+                    <p className="text-[9px] font-black uppercase text-stone-400 tracking-widest">{t('trip.support')}</p>
+                    <p className="text-xs font-bold text-stone-900">+81 86-426-1751</p>
                   </div>
-                  <button
-                    onClick={() => navigate('/area')}
-                    className="bg-white text-stone-900 p-4 rounded-full shadow-xl hover:bg-emerald-50 transition-colors"
+                  <div className="ml-auto flex gap-1">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+                    <span className="text-[8px] font-bold text-emerald-600 uppercase">Live</span>
+                  </div>
+                </div>
+
+
+              </div>
+              {/* 3. Packing Checklist Feature */}
+              <div className="bg-green-200 border border-stone-100 rounded-[40px] p-8 shadow-sm">
+                <h4 className="text-[10px] font-black uppercase text-stone-400 mb-6 tracking-widest flex items-center gap-2">
+                  <Briefcase size={14} /> {t('trip.checkList')} {/* ဒါက ခေါင်းစဉ်ပါ */}
+                </h4>
+                <div className="grid grid-cols-1 gap-3">
+                  {PACKING_CHECKLIST.map((item, i) => (
+                    <div key={i} className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-stone-50 text-[11px] font-bold">
+                      <item.icon size={14} className="text-emerald-600" />
+
+                      {/* ဒီနေရာမှာ t() သုံးမှ စာသားပေါ်မှာပါ */}
+                      {t(item.item)}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+
+              {/* PHOTO SPOT TRACKER */}
+              <div className="p-8 bg-stone-900 rounded-[40px] text-white shadow-2xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-4 opacity-5"><Camera size={80} /></div>
+                <div className="flex justify-between items-end mb-6 relative z-10">
+                  <h4 className="font-serif italic text-xl">{t('trip.hour')}</h4>
+                  <span className="text-emerald-400 font-mono text-2xl">{hour}:00</span>
+                </div>
+                <input type="range" min="6" max="20" value={hour} onChange={(e) => setHour(parseInt(e.target.value))} className="w-full mb-8 h-1 bg-stone-700 accent-emerald-500 rounded-lg appearance-none cursor-pointer relative z-10" />
+                <div className="space-y-4 relative z-10">
+                  {PHOTO_SPOTS.map((spot) => (
+                    <div key={spot.name} className={`flex justify-between transition-all duration-500 ${Math.abs(spot.peak - hour) <= 1 ? 'opacity-100 scale-100' : 'opacity-20 scale-95 translate-x-2'}`}>
+                      <div>
+                        {/* t() function များ ထည့်သွင်းပေးထားပါတယ် */}
+                        <p className="text-xs font-bold">{t(spot.name)}</p>
+                        <p className="text-[10px] text-stone-400">{t(spot.description)}</p>
+                      </div>
+                      {Math.abs(spot.peak - hour) <= 1 && <Camera size={14} className="text-emerald-400 animate-pulse" />}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Added Kurashiki-tabi Weather Forecast Feature */}
+              <div className="p-8 bg-emerald-50 border border-emerald-100 rounded-[40px] text-emerald-900 shadow-sm">
+                <div className="flex justify-between items-center mb-4">
+                  <h4 className="text-[11px] font-black uppercase tracking-widest">{t('trip.season')}</h4>
+                  <CloudRain size={16} />
+                </div>
+                <p className="text-xs font-serif italic mb-2">{t('trip.bloom')}</p>
+                <p className="text-[10px] leading-relaxed opacity-70">{t('trip.rainy')}</p>
+              </div>
+            </div>
+
+            {/* RIGHT: CONTENT SECTIONS */}
+            <div className="lg:col-span-7 space-y-24 order-1 lg:order-2">
+
+              {/* Section 01: Itinerary */}
+              <div id="itinerary" className="scroll-mt-32">
+                <SectionTitle
+                  number="01"
+                  title={t('trip.sections.s1.title')}
+                  subtitle={t('trip.sections.s1.subtitle')}
+                />
+
+                <div className="flex flex-wrap gap-4 mb-10 overflow-x-auto pb-4 scrollbar-hide">
+                  <div className="flex bg-stone-100 p-1 rounded-full">
+                    {[1, 2, 3].map(d => (
+                      <button
+                        key={d}
+                        onClick={() => setActiveDay(d)}
+                        className={`px-10 py-3 rounded-full text-[10px] font-black uppercase tracking-widest transition-all ${activeDay === d ? 'bg-stone-900 text-white shadow-xl' : 'text-stone-400 hover:text-stone-600'}`}
+                      >
+                        {t('trip.step')} {d}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="flex gap-2 items-center ml-auto overflow-x-auto whitespace-nowrap scrollbar-hide">
+                    <span className="text-[9px] font-bold text-green-800 uppercase mr-2 tracking-widest">
+                      {t('trip.filter')}
+                    </span>
+
+                    {['All', 'Art', 'Gourmet', 'Craft', 'Seasonal'].map(v => (
+                      <button
+                        key={v}
+                        onClick={() => setVibe(v)} // v ရဲ့ value က 'Art', 'Gourmet' စသဖြင့် ဖြစ်မယ်
+                        className={`text-[8px] px-4 py-2 rounded-full border transition-all font-bold ${vibe === v
+                          ? 'bg-emerald-900 text-white border-emerald-900 shadow-md'
+                          : 'text-stone-400 border-stone-200 hover:border-stone-400'
+                          }`}
+                      >
+                        {/* 'All' ဆိုရင် All ပြပြီး ကျန်တာကို i18n tag ထဲက ယူသုံးမယ် */}
+                        {v === 'All' ? 'All' : t(`dayPlan.tags.${v.toLowerCase()}`)}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={activeDay + vibe}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    className="space-y-2"
                   >
-                    <ExternalLink size={20} />
-                  </button>
+                    {filteredItinerary.length > 0 ? (
+                      filteredItinerary.map((item, idx) => (
+                        <TimelineItem
+                          key={idx}
+                          {...item}
+                          title={t(item.title)}
+                          desc={t(item.desc)}
+                          tags={item.tags?.map(tag => t(`${tag.toLowerCase()}`))}
+                        />
+                      ))
+                    ) : (
+                      <div className="py-20 text-center">
+                        <p className="text-stone-400 text-sm italic">No activities found for this category.</p>
+                      </div>
+                    )}
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+
+              {/* Section 02: Local Food Guide */}
+              <div>
+                <SectionTitle
+                  number="02"
+                  title={t('trip.sections.s2.title')}
+                  subtitle={t('trip.sections.s2.subtitle')}
+                />
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {LOCAL_FOODS.map((food, i) => (
+                    <div key={i} className="bg-white border border-stone-100 p-6 rounded-[40px] hover:shadow-xl transition-all group">
+                      <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-500">{food.image}</div>
+                      <h4 className="text-sm font-bold mb-1">{t(food.name)}</h4>
+                      <p className="text-[10px] text-stone-400 italic mb-4">{food.price}</p>
+                      <p className="text-[10px] text-stone-500 leading-relaxed">{t(food.desc)}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
 
-            {/* Section: Testimonial */}
-            <div className="p-10 bg-white border border-stone-100 rounded-[50px] shadow-sm relative italic text-stone-600 font-light text-sm leading-relaxed overflow-hidden">
-              <span className="absolute top-6 left-6 text-5xl text-stone-500 opacity-10 font-serif">“</span>
-              {t('trip.testimonial.quote')}
-              <div className="mt-8 flex items-center gap-4 not-italic">
-                <div className="w-10 h-10 rounded-full bg-stone-200 overflow-hidden"><img src="/public/images/profile3.jpg" alt="Avatar" /></div>
-                <div>
-                  <p className="text-[10px] font-bold text-stone-900">{t('trip.testimonial.user_name')}</p>
-                  <p className="text-[9px] text-stone-400">{t('trip.testimonial.user_country')}</p>
+              {/* Section 03: Logistics */}
+              <div id="map" className="scroll-mt-32">
+                <SectionTitle
+                  number="03"
+                  title={t('trip.sections.s3.title')}
+                  subtitle={t('trip.sections.s3.subtitle')}
+                />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="p-8 bg-stone-900 text-white rounded-[50px] space-y-4">
+                    <div className="flex items-center gap-3">
+                      <Train className="text-emerald-400" size={18} />
+                      <span className="text-xs font-bold uppercase tracking-widest">{t('trip.logistics.shinkansen')}</span>
+                    </div>
+                    <p className="text-[11px] opacity-70 leading-relaxed">{t('trip.logistics.shinkansen_desc')}</p>
+                  </div>
+                  <div className="p-8 bg-emerald-900 text-white rounded-[50px] space-y-4">
+                    <div className="flex items-center gap-3">
+                      <Bike className="text-emerald-300" size={18} />
+                      <span className="text-xs font-bold uppercase tracking-widest">{t('trip.logistics.getting_around')}</span>
+                    </div>
+                    <p className="text-[11px] opacity-70 leading-relaxed">{t('trip.logistics.getting_around_desc')}</p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Section 04: Gallery */}
-            <div id="gallery" className="scroll-mt-32">
-              <SectionTitle
-                number="04"
-                title={t('trip.gallery.title')}
-                subtitle={t('trip.gallery.subtitle')}
-              />
-
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 h-[600px]">
-                <div className="rounded-[30px] overflow-hidden shadow-lg group relative">
-                  <img
-                    src="./images/bigBuilding1.jpg"
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                    alt={t('trip.gallery.title')}
+              {/* --- Review Form Section --- */}
+              <div className="bg-green-900 p-8 rounded-[40px] shadow-xl border border-stone-200 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                  <input
+                    value={userName}
+                    onChange={(e) => setUserName(e.target.value)}
+                    placeholder={t('trip.review_form.placeholder_name')}
+                    className="bg-stone-50 p-4 rounded-2xl text-xs outline-none border-none focus:ring-1 ring-stone-200 font-bold"
                   />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+
+                  <div className="flex items-center justify-between bg-stone-50 px-5 py-4 rounded-2xl">
+                    <span className="text-[10px] font-bold text-stone-400 uppercase tracking-widest">
+                      {t('trip.review_form.rating_label')}
+                    </span>
+                    <div className="flex gap-1.5">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <button
+                          key={star}
+                          type="button"
+                          onClick={() => setUserRating(star)}
+                          className="transition-transform hover:scale-125"
+                        >
+                          <Star
+                            size={20}
+                            className={`${star <= userRating ? "fill-amber-400 text-amber-400" : "text-stone-200"} transition-colors cursor-pointer`}
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                 </div>
 
-                <div className="rounded-[30px] overflow-hidden md:col-span-2 shadow-lg group relative">
-                  <img
-                    src="./images/kojima jeanstreet.jpg"
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                    alt={t('trip.gallery.title')}
+                <div className="relative">
+                  <textarea
+                    value={newReview}
+                    onChange={(e) => setNewReview(e.target.value)}
+                    placeholder={t('trip.review_form.placeholder_text')}
+                    className="w-full bg-stone-50/50 p-6 rounded-[25px] text-xs min-h-[120px] outline-none border-none focus:ring-1 ring-stone-200 resize-none"
                   />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                  <div className="mt-4 flex justify-end gap-3 items-center">
+                    <button type="button" className="p-2 text-stone-300 hover:text-stone-500">
+                      <ImageIcon size={20} />
+                    </button>
+                    <button
+                      onClick={handlePostReview}
+                      className="px-10 py-4 bg-stone-900 text-white rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-emerald-800 transition-all shadow-lg shadow-stone-200"
+                    >
+                      {t('trip.review_form.post_btn')}
+                    </button>
+                  </div>
                 </div>
+              </div>
 
-                <div className="rounded-[30px] overflow-hidden md:col-span-2 shadow-lg group relative">
-                  <img
-                    src="./images/wh2.jpg"
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                    alt={t('trip.gallery.title')}
-                  />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+              {/* --- Review List Section --- */}
+              <div id="community" className="space-y-4 py-5 max-h-[450px] bg-green-100 border border-green-200 rounded-2xl overflow-y-auto pr-2 scrollbar-hide scroll-mt-32">
+                {reviews.map(r => (
+                  <div key={r.id} className="bg-white p-5 max-w-[580px] mx-auto rounded-[30px] shadow-sm border border-green-100 group relative">
+
+                    {/* Delete Button */}
+                    <button
+                      onClick={() => deleteReview(r.id)}
+                      className="absolute top-4 right-4 p-2 text-stone-300 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100"
+                    >
+                      <Trash2 size={14} />
+                    </button>
+
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="text-[11px] font-black uppercase text-stone-700 tracking-widest">
+                        {r.user}
+                      </span>
+                      <div className="flex gap-0.5 mr-6">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} size={12} className={i < r.rating ? "fill-amber-400 text-amber-400" : "text-stone-100"} />
+                        ))}
+                      </div>
+                    </div>
+                    <p className="text-xs text-stone-500 italic leading-relaxed">"{r.text}"</p>
+                  </div>
+                ))}
+              </div>
+
+
+
+              {/* Added Kurashiki-tabi Map Access */}
+              <div className="relative group overflow-hidden rounded-[50px] border border-stone-200 h-[300px]">
+                <img src="./images/high view.jpg" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" alt="Map Preview" />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent flex items-end p-10">
+                  <div className="flex justify-between items-center w-full text-white">
+                    <div>
+                      <h4 className="text-xl font-serif italic mb-1">{t('trip.map_section.title')}</h4>
+                      <p className="text-[10px] opacity-70 uppercase tracking-widest">{t('trip.map_section.subtitle')}</p>
+                    </div>
+                    <button
+                      onClick={() => navigate('/area')}
+                      className="bg-white text-stone-900 p-4 rounded-full shadow-xl hover:bg-emerald-50 transition-colors"
+                    >
+                      <ExternalLink size={20} />
+                    </button>
+                  </div>
                 </div>
+              </div>
 
-                <div className="rounded-[30px] overflow-hidden shadow-lg group relative">
-                  <img
-                    src="./images/ivynew3.jpg"
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                    alt={t('trip.gallery.title')}
-                  />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+              {/* Section: Testimonial */}
+              <div className="p-10 bg-white border border-stone-100 rounded-[50px] shadow-sm relative italic text-stone-600 font-light text-sm leading-relaxed overflow-hidden">
+                <span className="absolute top-6 left-6 text-5xl text-stone-500 opacity-10 font-serif">“</span>
+                {t('trip.testimonial.quote')}
+                <div className="mt-8 flex items-center gap-4 not-italic">
+                  <div className="w-10 h-10 rounded-full bg-stone-200 overflow-hidden"><img src="/public/images/profile3.jpg" alt="Avatar" /></div>
+                  <div>
+                    <p className="text-[10px] font-bold text-stone-900">{t('trip.testimonial.user_name')}</p>
+                    <p className="text-[9px] text-stone-400">{t('trip.testimonial.user_country')}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Section 04: Gallery */}
+              <div id="gallery" className="scroll-mt-32">
+                <SectionTitle
+                  number="04"
+                  title={t('trip.gallery.title')}
+                  subtitle={t('trip.gallery.subtitle')}
+                />
+
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 h-[600px]">
+                  <div className="rounded-[30px] overflow-hidden shadow-lg group relative">
+                    <img
+                      src="./images/bigBuilding1.jpg"
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                      alt={t('trip.gallery.title')}
+                    />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                  </div>
+
+                  <div className="rounded-[30px] overflow-hidden md:col-span-2 shadow-lg group relative">
+                    <img
+                      src="./images/kojima jeanstreet.jpg"
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                      alt={t('trip.gallery.title')}
+                    />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                  </div>
+
+                  <div className="rounded-[30px] overflow-hidden md:col-span-2 shadow-lg group relative">
+                    <img
+                      src="./images/wh2.jpg"
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                      alt={t('trip.gallery.title')}
+                    />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                  </div>
+
+                  <div className="rounded-[30px] overflow-hidden shadow-lg group relative">
+                    <img
+                      src="./images/ivynew3.jpg"
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                      alt={t('trip.gallery.title')}
+                    />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
 
-      <FooterPage></FooterPage>
-      <style>
-        {`
+        <FooterPage></FooterPage>
+        <style>
+          {`
           @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Inter:wght@300;400;700;900&display=swap');
           
           .font-serif { font-family: 'Playfair Display', serif; }
@@ -913,9 +818,9 @@ const handleBookingAction = () => {
             display: none; 
           }
         `}
-      </style>
-    </div>
-  );
-};
+        </style>
+      </div>
+    );
+  };
 
-export default TripPlannerPage;
+  export default TripPlannerPage;

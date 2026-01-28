@@ -137,14 +137,22 @@ const Navbar = ({ forceDark = false }) => {
                           <p className="text-sm font-bold text-stone-800 truncate">{user?.name || "Traveler"}</p>
                           <p className="text-[10px] text-stone-500 truncate font-medium">{user?.email}</p>
                         </div>
-                        <Link to="/profile" onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
+                        <Link to="/profile" state={{ activeTab: 'journeys' }} onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
                           <User size={14} /> {t('profile.my-profile')}
                         </Link>
-                        <Link to="/profile" onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
+                        <Link
+                          to="/profile"
+                          state={{ activeTab: 'journeys' }}
+                          onClick={() => setShowUserMenu(false)}
+                          className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all"
+                        >
+                          <History size={14} /> {t('profile.my-bookings')}
+                        </Link>
+                        <Link to="/profile" state={{ activeTab: 'wishlist' }} onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
                           <Bookmark size={14} /> {t('profile.fav-places')}
                         </Link>
-                        <Link to="/booking-history" onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
-                          <History size={14} /> {t('profile.my-bookings')}
+                        <Link to="/profile" state={{ activeTab: 'settings' }} onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-[12px] font-bold text-stone-600 hover:bg-green-50 hover:text-green-700 rounded-xl transition-all">
+                          <Settings size={14} /> {t('profile.setting')}
                         </Link>
                         <button
                           onClick={() => { logout(); setShowUserMenu(false); }}
